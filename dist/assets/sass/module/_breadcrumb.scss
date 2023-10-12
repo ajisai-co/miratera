@@ -18,6 +18,8 @@
 		font-size: 1.2rem;
 		list-style: none;
 		margin: 0 20px 0 0;
+		color: var(--color-blue);
+		font-weight: bold;
 		&:after{
 			content: ">";
 			position: absolute;
@@ -34,7 +36,8 @@
 		}
 	}
 	a{
-		display: inline-block;		
+		display: inline-block;
+		color: var(--color-blue);
 	}
 }
 @include mediaquery.sp {

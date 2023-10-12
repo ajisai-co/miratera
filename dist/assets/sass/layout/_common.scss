@@ -7,11 +7,11 @@
 	共通部分
 ----------------------------------------*/
 :root {
-	—color-blue: #037CB2;
-	—color-white: #fff;
-	—color-grad01: linear-gradient(rgba(217, 217, 217, 0.98) 0%, rgba(99, 205, 253, 0.66) 100%);
-	—color-grad02: linear-gradient(rgba(70, 131, 183, 0.98) 0%, rgba(99, 205, 253, 0.66) 100%);
-	—color-grad03: linear-gradient(rgba(3, 124, 178, 0.98) 0%, rgba(99, 205, 253, 0.66) 100%);
+	--color-blue: #037CB2;
+	--color-white: #fff;
+	--color-grad01: linear-gradient(90deg, rgba(217, 217, 217, 0.98) 0%, rgba(99, 205, 253, 0.66) 100%);
+	--color-grad02: linear-gradient(90deg, rgba(70, 131, 183, 0.98) 0%, rgba(99, 205, 253, 0.66) 100%);
+	--color-grad03: linear-gradient(90deg, rgba(3, 124, 178, 0.98) 0%, rgba(99, 205, 253, 0.66) 100%);
 }
 body {
 	font-size: setting.$bodyFont;
@@ -28,7 +28,7 @@ body {
 	@return calc($n * 100vw / 375);
 }
 @function calcPc($n) {
-	@return min(calc($n * 100vw / 1366), $n);
+	@return min(calc($n * 100vw / 1920), $n);
 }
 
 .dev-sitemap{
@@ -104,6 +104,48 @@ h3 {
 	}
 }
 
+.m-txt-16 {
+	font-size: calcPc(16);
+	color: var(--color-blue);
+	font-weight: 500;
+	letter-spacing: .1em;
+	line-height: 2.5;
+	@include mediaquery.sp {
+		font-size: calcResp(16);
+	}
+	span {
+		font-size: calcPc(16);
+		color: var(--color-blue);
+		font-weight: 500;
+		letter-spacing: .1em;
+		line-height: 2.5;
+		@include mediaquery.sp {
+			font-size: calcResp(16);
+		}
+	}
+}
+
+.m-txt-14 {
+	font-size: calcPc(14);
+	color: var(--color-blue);
+	font-weight: 500;
+	letter-spacing: .1em;
+	line-height: 2.1;
+	@include mediaquery.sp {
+		font-size: calcResp(14);
+	}
+	span {
+		font-size: calcPc(14);
+		color: var(--color-blue);
+		font-weight: 500;
+		letter-spacing: .1em;
+		line-height: 2.1;
+		@include mediaquery.sp {
+			font-size: calcResp(14);
+		}
+	}
+}
+
 h4 {
 	font-size: calcPc(15);
 	letter-spacing: .1em;
@@ -114,7 +156,7 @@ h4 {
 	}
 }
 
-p, span {
+p, span, a {
 	display: block;
 	font-size: calcPc(16);
 	letter-spacing: .1em;
@@ -128,8 +170,45 @@ p, span {
 .m-inner {
 	max-width: 1208px;
 	width: 63%;
+	margin: 0 auto;
 	@include mediaquery.sp {
 		width: 100%;
 		padding: 0 20px;
+	}
+}
+
+.m-box-grad01 {
+	background: var(--color-grad01);
+	color: var(--color-blue);
+	font-size: calcPc(31);
+	letter-spacing: .17em;
+}
+
+.m-btn-blue {
+	position: relative;
+	background: var(--color-blue);
+	display: inline-block;
+	color: var(--color-white);
+	font-size: calcPc(16);
+	letter-spacing: .2em;
+	font-weight: bold;
+	border-radius: calcPc(19);
+	padding: calcPc(11) 0;
+	line-height: 1;
+	@include mediaquery.sp {
+		font-size: calcResp(16);
+		border-radius: calcResp(19);
+		padding: calcResp(11) 0;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		right: calcPc(16);
+		top: calcPc(14);
+		width: calcPc(7);
+		height: calcPc(7);
+		border-top: 1px solid #fff;
+		border-right: 1px solid #fff;
+		transform: rotate(45deg);
 	}
 }

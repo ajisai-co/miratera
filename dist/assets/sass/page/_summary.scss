@@ -1,0 +1,268 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.l-summary {
+    .m-breadcrumb {
+        & + h2 {
+            margin-top: common.calcPc(117);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(117);
+            }
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: common.calcPc(31);
+        font-weight: 500;
+        letter-spacing: .17em;
+        color: var(--color-blue);
+        @include mediaquery.sp {
+            font-size: common.calcResp(31);
+        }
+    }
+    h3 {
+        font-size: common.calcPc(20);
+        color: var(--color-blue);
+        font-weight: bold;
+        margin-top: common.calcPc(48);
+        @include mediaquery.sp {
+            font-size: common.calcResp(20);
+            margin-top: common.calcResp(48);
+        }
+        & + .m-box-grad01 {
+            margin-top: common.calcPc(32);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(32);
+            }
+        }
+    }
+    &__policy {
+        .lead {
+            margin-top: common.calcPc(64);
+            font-size: common.calcPc(18);
+            letter-spacing: .1em;
+            line-height: 2.1;
+            color: var(--color-blue);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(64);
+                font-size: common.calcResp(18);
+            }
+            & + h3 {
+                margin-top: common.calcPc(64);
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(64);
+                }
+            }
+        }
+        p, span {
+            font-size: common.calcPc(20);
+            color: var(--color-blue);
+            line-height: 2.1;
+            @include mediaquery.sp {
+                font-size: common.calcResp(20);
+            }
+        }
+        p {
+            margin-top: common.calcPc(24);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(24);
+            }
+        }
+        .column {
+            margin-top: common.calcPc(32);
+            padding: common.calcPc(32) common.calcPc(30);
+            border-top: 1px solid var(--color-blue);
+            border-bottom: 1px solid var(--color-blue);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(32);
+                padding: common.calcResp(32) common.calcResp(30);
+            }
+            .head {
+                font-size: common.calcPc(16);
+                letter-spacing: .147em;
+                color: var(--color-blue);
+                font-weight: bold;
+                @include mediaquery.sp {
+                    font-size: common.calcResp(16);
+                }
+            }
+            .body {
+                margin-top: common.calcPc(16);
+                span {
+                    font-size: common.calcPc(16);
+                    letter-spacing: .147em;
+                    color: var(--color-blue);
+                    font-weight: 500;
+                    @include mediaquery.sp {
+                        font-size: common.calcResp(16);
+                    }
+                }
+            }
+        }
+        .link {
+            a, p {
+                font-size: common.calcPc(16);
+                letter-spacing: .147em;
+                color: var(--color-blue);
+                font-weight: 500;
+                @include mediaquery.sp {
+                    font-size: common.calcResp(16);
+                }
+            }
+            a {
+                text-decoration: underline;
+                transition: .4s;
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+    }
+    
+    .l-summary-company {
+        margin-bottom: common.calcPc(208);
+        @include mediaquery.sp {
+            margin-bottom: common.calcPc(108);
+        }
+    &__column {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: common.calcPc(20) common.calcPc(51);
+        border-bottom: 1px solid var(--color-blue);
+        .head {
+            font-size: common.calcPc(18);
+            letter-spacing: .1em;
+            line-height: 2.1;
+            color: var(--color-blue);
+            font-weight: bold;
+            width: 32.3%;
+            @include mediaquery.sp {
+                font-size: common.calcResp(18);
+            }
+        }
+        .body {
+            width: 67.7%;
+            font-size: common.calcPc(18);
+            letter-spacing: .1em;
+            line-height: 2.1;
+            color: var(--color-blue);
+            font-weight: 500;
+            @include mediaquery.sp {
+                font-size: common.calcResp(18);
+            }
+        }
+    }
+    .m-box-grad01 {
+        text-align: center;
+        padding: common.calcPc(76) 0 common.calcPc(73);
+        @include mediaquery.sp {
+            padding: common.calcResp(76) 0 common.calcResp(73);
+        }
+        & + p {
+            margin-top: common.calcPc(32);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(32);
+            }
+        }
+    }
+    p, span {
+        font-size: common.calcPc(16);
+        color: var(--color-blue);
+        line-height: 2.1;
+        @include mediaquery.sp {
+            font-size: common.calcResp(16);
+        }
+    }
+    &__intro {
+        .m-inner {
+            display: flex;
+            @include mediaquery.sp {
+                display: block;
+            }
+        }
+        .sub {
+            order: 1;
+        }
+        .main {
+            order: 1;
+            .lead {
+                font-size: common.calcPc(22);
+                color: var(--color-blue);
+                letter-spacing: .2em;
+                margin-bottom: 0;
+            }
+            h3 {
+                display: flex;
+                align-items: center;
+                margin: 0 0 common.calcPc(56);
+                @include mediaquery.sp {
+                    margin: 0 0 common.calcResp(56);
+                }
+                .jp {
+                    letter-spacing: .2em;
+                    font-weight: 500;
+                    font-size: common.calcPc(37);
+                    color: var(--color-blue);
+                    @include mediaquery.sp {
+                        font-size: common.calcResp(37);
+                    }
+                }
+                .en {
+                    color: var(--color-blue);
+                    font-size: common.calcPc(19);
+                    margin-left: common.calcPc(13);
+                    @include mediaquery.sp {
+                        font-size: common.calcResp(19);
+                        margin-left: common.calcResp(13);
+                    }
+                }
+            }
+            p {
+                & + .m-box-grad01 {
+                    margin-top: common.calcPc(28);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(28);
+                    }
+                }
+            }
+            .m-box-grad01 {
+                padding: common.calcPc(29) common.calcPc(64) common.calcPc(28);
+                @include mediaquery.sp {
+                    padding: common.calcResp(29) common.calcResp(64) common.calcResp(28);
+                }
+                .head {
+                    margin-bottom: common.calcPc(16);
+                    @include mediaquery.sp {
+                        margin-bottom: common.calcResp(16);
+                    }
+                }
+                & + .btns {
+                    margin-top: common.calcPc(32);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(32);
+                    }
+                }
+            }
+            .btns {
+                a {
+                    text-align: center;
+                    width: common.calcPc(211);
+                    @include mediaquery.sp {
+                        width: common.calcResp(211);
+                    }
+                    & + a {
+                        margin-left: common.calcPc(16);
+                        @include mediaquery.sp {
+                            margin-left: common.calcResp(16);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
