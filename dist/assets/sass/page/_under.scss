@@ -3,3 +3,106 @@
 @use "../layout/common";
 @use "../mixin/clearfix";
 @use "../mixin/csshack";
+
+.l-under-head {
+    background: var(--color-blue);
+    margin: 0 0 common.calcPc(140);
+    @include mediaquery.sp {
+        margin: 0 0 common.calcResp(140);
+    }
+    .m-breadcrumb {
+        a, li {
+            color: var(--color-white);
+        }
+    }
+    h2 {
+        &.-under {
+            padding: common.calcPc(100) 0 common.calcPc(140);
+            @include mediaquery.sp {
+                padding: common.calcResp(100) 0 common.calcResp(140);
+            }
+        }
+    }
+}
+
+.l-under-intro {
+    position: relative;
+    padding: common.calcPc(132) 0 common.calcPc(160);
+    margin: 0 auto common.calcPc(180);
+    @include mediaquery.sp {
+        padding: common.calcResp(132) 0 common.calcResp(160);
+        margin: 0 auto common.calcResp(180);
+    }
+    &__main {
+        width: common.calcPc(742);
+        h3 {
+            color: var(--color-blue);
+            & + p {
+                margin-top: common.calcPc(48);
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(48);
+                }
+            }
+        }
+        p {
+            color: var(--color-blue);
+            & + p {
+                margin-top: common.calcPc(40);
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(40);
+                }
+            }
+        }
+    }
+    &__sub {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: common.calcPc(555);
+    }
+}
+
+.l-under-section {
+    .m-treatment {
+        margin: 0 0 common.calcPc(208);
+        @include mediaquery.sp {
+            margin: 0 0 common.calcResp(208);
+        }
+    }
+    .m-box-grad01 {
+        padding: common.calcPc(70) common.calcPc(111) common.calcPc(72) common.calcPc(160);
+        @include mediaquery.sp {
+            padding: common.calcResp(70) common.calcResp(111) common.calcResp(72) common.calcResp(160);
+        }
+        & + .m-column01 {
+            margin-top: common.calcPc(136);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(136);
+            }
+        }
+    }
+}
+
+.l-under-price {
+    position: relative;
+    padding: common.calcPc(340) 0 0;
+    margin: 0 0 common.calcPc(150);
+    &::before {
+        content: "";
+        width: 100%;
+        height: calc(100% + common.calcPc(560));
+        background: var(--color-grad01);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 0% 82%);
+    }
+    &__head {
+        @extend .m-txt-31;
+        text-align: center;
+        & + .m-pricelist {
+            margin-top: common.calcPc(85);
+        }
+    }
+}

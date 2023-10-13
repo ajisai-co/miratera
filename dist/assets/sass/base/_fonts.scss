@@ -22,3 +22,8 @@
 @mixin Mincho-Hira{
     font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
+@mixin Coco-Gothic {
+	font-family: 'CocoGothic', sans-serif;
+	src: url("../fonts/CocoGothic_trial.ttf");
+	src: url("../fonts/CocoGothic-Bold_trial.ttf");
+}
