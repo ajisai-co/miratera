@@ -3,3 +3,103 @@
 @use "../layout/common";
 @use "../mixin/clearfix";
 @use "../mixin/csshack";
+
+.l-footer {
+    padding-top: common.calcPc(160);
+    background: var(--color-blue);
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 common.calcPc(160);
+        &__item {
+            img {
+                width: common.calcPc(572);
+            }
+        }
+    }
+    &__logo {
+        text-align: center;
+        margin: 0 0 common.calcPc(56);
+        img {
+            width: common.calcPc(476);
+        }
+    }
+    &__nav {
+        margin: 0 0 common.calcPc(80);
+        &__list {
+            display: flex;
+            position: relative;
+            &::before {
+                content: "";
+                width: 1px;
+                height: common.calcPc(12);
+                background: var(--color-white);
+                position: absolute;
+                left: 0;
+                top: common.calcPc(10);
+            }
+        }
+        &__item {
+            position: relative;
+            color: var(--color-white);
+            font-size: common.calcPc(13);
+            letter-spacing: .1em;
+            font-weight: 500;
+            text-align: center;
+            @include mediaquery.sp {
+                font-size: common.calcResp(13);
+            }
+            &::after {
+                content: "";
+                width: 1px;
+                height: common.calcPc(12);
+                background: var(--color-white);
+                position: absolute;
+                right: 0;
+                top: common.calcPc(10);
+            }
+            a {
+                color: var(--color-white);
+                font-size: common.calcPc(13);
+                letter-spacing: .1em;
+                font-weight: 500;
+                text-align: center;
+                padding: 0 common.calcPc(24);
+                @include mediaquery.sp {
+                    font-size: common.calcResp(13);
+                }
+            }
+            &.-modifier {
+                padding: 0 common.calcPc(24);
+            }
+        }
+        &__inner {
+            margin-top: common.calcPc(10);
+            li {
+                position: relative;
+                color: var(--color-white);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0.5em;
+                    top: 50%;
+                    width: 2px;
+                    height: 2px;
+                    background: var(--color-white);
+                }
+            }
+            a {
+                text-align: left;
+                line-height: 1.5;
+            }
+        }
+    }
+    &__copyright {
+        text-align: center;
+        background: #015579;
+        padding: common.calcPc(10) 0;
+        small {
+            color: var(--color-white);
+        }
+    }
+}
