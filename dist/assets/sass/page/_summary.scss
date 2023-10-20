@@ -179,11 +179,9 @@
         }
     }
     &__intro {
-        .m-inner {
-            display: flex;
-            @include mediaquery.sp {
-                display: block;
-            }
+        display: flex;
+        @include mediaquery.sp {
+            display: block;
         }
         .sub {
             order: 1;

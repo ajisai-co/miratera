@@ -421,6 +421,12 @@ p, span, a {
 			text-align: center;
 			color: var(--color-blue);
 		}
+		& + & {
+			margin-top: calcPc(40);
+			@include mediaquery.sp {
+				margin-top: calcResp(40);
+			}
+		}
 	}
 	& + h3 {
 		text-align: center;
