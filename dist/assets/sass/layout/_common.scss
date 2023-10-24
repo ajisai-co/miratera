@@ -753,6 +753,12 @@ p, span, a {
 		border-top: 1px solid #fff;
 		border-right: 1px solid #fff;
 		transform: rotate(45deg);
+		@include mediaquery.sp {
+			right: calcResp(16);
+			top: calcResp(14);
+			width: calcResp(7);
+			height: calcResp(7);
+		}
 	}
 }
 

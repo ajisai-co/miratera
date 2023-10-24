@@ -218,15 +218,22 @@
             align-items: center;
             flex-direction: column;
             @include mediaquery.sp {
-                width: common.calcResp(160);
-                height: common.calcResp(160);
-                top: common.calcResp(-80);
+                width: common.calcResp(140);
+                height: common.calcResp(140);
+                top: common.calcResp(-90);
                 left: 50%;
                 transform: translateX(-50%);
                 margin: 0 auto;
             }
             span {
-                @extend .m-txt-28;
+                font-size: common.calcPc(26);
+                color: var(--color-blue);
+                font-weight: bold;
+                letter-spacing: .17em;
+                line-height: 1.714;
+                @include mediaquery.sp {
+                    font-size: common.calcResp(14);
+                }
             }
         }
         .body {
