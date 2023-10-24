@@ -16,7 +16,7 @@
         flex-wrap: wrap;
         margin: 0 0 common.calcPc(160);
         @include mediaquery.sp {
-            margin: 0 0 common.calcResp(94);
+            margin: 0 0 common.calcResp(50);
         }
         &__item {
             img {
@@ -48,14 +48,17 @@
     &__nav {
         margin: 0 0 common.calcPc(80);
         @include mediaquery.sp {
-            margin: 0 0 common.calcResp(80);
+            margin: 0 0 common.calcResp(60);
         }
         &__list {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
             position: relative;
+            @include mediaquery.sp {
+                justify-content: space-between;
+            }
             &::before {
                 content: "";
                 width: 1px;
@@ -65,8 +68,7 @@
                 left: 0;
                 top: common.calcPc(10);
                 @include mediaquery.sp {
-                    height: common.calcResp(12);
-                    top: common.calcResp(6);
+                    content: none;
                 }
             }
         }
@@ -78,23 +80,10 @@
             font-weight: 500;
             text-align: center;
             @include mediaquery.sp {
-                width: 33%;
-                font-size: common.calcResp(9);
-                &:nth-child(5) {
-                    &::before {
-                        content: "";
-                        width: 1px;
-                        height: common.calcPc(12);
-                        background: var(--color-white);
-                        position: absolute;
-                        left: 0;
-                        top: common.calcPc(10);
-                        @include mediaquery.sp {
-                            height: common.calcResp(12);
-                            top: common.calcResp(6);
-                        }
-                    }
-                }
+                width: 50%;
+                font-size: common.calcResp(14);
+                text-align: left;
+                margin-bottom: common.calcResp(14);
             }
             &::after {
                 content: "";
@@ -105,8 +94,7 @@
                 right: 0;
                 top: common.calcPc(10);
                 @include mediaquery.sp {
-                    height: common.calcResp(12);
-                    top: common.calcResp(6);
+                    content: none;
                 }
             }
             a {
@@ -117,18 +105,32 @@
                 text-align: center;
                 padding: 0 common.calcPc(24);
                 @include mediaquery.sp {
-                    font-size: common.calcResp(9);
+                    padding: 0;
+                    text-align: left;
+                    font-size: common.calcResp(13);
                 }
             }
             &.-modifier {
                 padding: 0 common.calcPc(24);
+                &::before ,
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 100%;
+                    background: var(--color-white);
+                    position: absolute;
+                    top: common.calcPc(10);
+                    @include mediaquery.sp {
+                        content: none;
+                    }
+                }
+                &::before {
+                    left: -1px;
+                }
+                &::after {
+                    right: 0;
+                }
                 @include mediaquery.sp {
-                    width: common.calcResp(240);
-                    display: inline-flex;
-                    justify-content: center;
-                    margin: common.calcResp(16) 0;
-                    border-left: 1px solid #fff;
-                    border-right: 1px solid #fff;
                     &::after {
                         content: none;
                     }
@@ -151,6 +153,9 @@
                     width: 2px;
                     height: 2px;
                     background: var(--color-white);
+                    @include mediaquery.sp {
+                        left: -6px;
+                    }
                 }
             }
             a {
