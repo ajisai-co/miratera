@@ -22,10 +22,18 @@
 @mixin Mincho-Hira{
     font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
+@font-face {
+	font-family: 'CocoGothic';
+	src: url("../fonts/CocoGothic_trial.ttf") format("truetype");
+	src: url("../fonts/CocoGothic-Bold_trial.ttf") format("truetype");
+}
 @mixin Coco-Gothic {
 	font-family: 'CocoGothic', sans-serif;
-	src: url("../fonts/CocoGothic_trial.ttf");
-	src: url("../fonts/CocoGothic-Bold_trial.ttf");
+}
+@font-face {
+	font-family: 'dni-alternate';
+	src: url("../fonts/din-regularalternate.otf") format("opentype");
+	src: url("../fonts/din-alternate-bold.ttf") format("truetype");
 }
 @mixin Montserrat {
 	font-family: 'Montserrat', sans-serif;
