@@ -14,11 +14,3 @@ require_once(dirname(__FILE__)."/templates/analytics.php"); ?>
 <header role="banner" class="l-header">
 	
 </header>
-
-<?php 
-if( is_front_page() ){
-	require_once(dirname(__FILE__)."/templates/mainvisual.php");
-}else{
-	require_once(dirname(__FILE__)."/templates/pagevisual.php");
-}
-?>
