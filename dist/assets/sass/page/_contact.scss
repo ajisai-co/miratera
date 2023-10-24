@@ -8,14 +8,26 @@
     max-width: 1288px;
     margin: 0 auto;
     padding: 117px 40px 170px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    @include mediaquery.pc {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    @include mediaquery.sp {
+        padding: 80px 24px;
+    }
     &__sub{
-        width: 46.6%;
+        @include mediaquery.pc {
+            width: 46.6%;
+        }
+        @include mediaquery.sp {
+            margin-bottom: 6rem;
+        }
     }
     &__main{
-        width: 46.7%;
+        @include mediaquery.pc {
+            width: 46.7%;
+        }
     }
     &__head{
         margin: 0 0 5.5rem;
@@ -25,6 +37,9 @@
             letter-spacing: .17em;
             line-height: 1.7;
             color: var(--color-blue);
+            @include mediaquery.sp {
+                font-size: 2.4rem;
+            }
         }
     }
     &__lead{
@@ -39,11 +54,19 @@
         padding: 4.2rem 0 5.3rem;
         text-align: center;
         margin-bottom: 5.5rem;
+        @include mediaquery.sp {
+            padding: 3rem 1.2rem;
+            text-align: left;
+        }
         &__head{
             font-size: 2.4rem;
             letter-spacing: .17em;
             margin: 0 0 3rem;
             color: var(--color-blue);
+            @include mediaquery.sp {
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+            }
         }
         ul{
             display: inline-block;
@@ -54,6 +77,10 @@
             line-height: 2.5;
             color: var(--color-blue);
             text-align: left;
+            @include mediaquery.sp {
+                font-size: 1.4rem;
+                line-height: 1.7;
+            }
         }
     }
     &__tel{
@@ -68,6 +95,10 @@
             font-weight: bold;
             letter-spacing: .147em;
             margin: 0 0 1rem;
+            line-height: 1.5;
+            @include mediaquery.sp {
+                font-size: 1.4rem;
+            }
         }
         .tel{
             display: flex;
@@ -80,6 +111,9 @@
                 margin-right: 2.8rem;
                 position: relative;
                 top: 3px;
+                @include mediaquery.sp {
+                    margin-right: 1rem;
+                }
             }
             &__body{
                 a{
@@ -87,11 +121,17 @@
                     color: var(--color-blue);
                     @include fonts.Lato;
                     line-height: 1;
+                    @include mediaquery.sp {
+                        font-size: 3rem;
+                    }
                 }
                 p{
                     font-size: 1.4rem;
                     letter-spacing: .2em;
                     color: var(--color-blue);
+                    @include mediaquery.sp {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
@@ -102,6 +142,9 @@
     background: #B7E0F2;
     padding: 44px 36px;
     border-radius: 6px;
+    @include mediaquery.sp {
+        padding: 30px 18px;
+    }
     &__item{
         & + .p-contact-form__item{
             margin-top: 33px;
@@ -124,7 +167,8 @@
         border-radius: 20px;
     }
     input[type="text"],
-    input[type="tel"]{
+    input[type="tel"],
+    textarea{
         border: 1px solid var(--color-blue);
         border-radius: 6px;
         padding: 16px 19px;

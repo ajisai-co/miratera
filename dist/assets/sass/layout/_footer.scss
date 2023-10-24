@@ -105,7 +105,10 @@
     &.-contact{
         padding: 0;
         .m-inner{
-            padding: 30px 0;
+            padding: 30px 20px;
+            @include mediaquery.sp {
+                padding: 15px 10px;
+            }
         }
         a{
             display: inline-block;
@@ -113,6 +116,9 @@
             font-size: 1.6rem;
             padding-right: 20px;
             position: relative;
+            @include mediaquery.sp {
+                font-size: 1.4rem;
+            }
             &:after{
                 content: '';
                 position: absolute;
