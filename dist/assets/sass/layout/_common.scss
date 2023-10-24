@@ -916,7 +916,11 @@ p, span, a {
 	gap: calcPc(29);
 	@include mediaquery.sp {
 		gap: calcResp(29);
+<<<<<<< HEAD
 		grid-template-columns: repeat(1, 1fr);
+=======
+		display: block;
+>>>>>>> 2f261a3499fd39b87b558baa2af418ab602ddae3
 	}
 	&__item {
 		position: relative;
@@ -1006,6 +1010,7 @@ p, span, a {
 	@include mediaquery.sp {
 		grid-template-columns: repeat(1, 1fr);
 		gap: calcResp(30);
+		display: block;
 	}
 	&__item {
 		position: relative;
