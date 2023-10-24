@@ -1,12 +1,10 @@
 <%- include('parts/_header'); %>
 <main role="main" class="l-common">
-     <div class="m-inner">
-          <div class="m-breadcrumb">
-               <ol>
-                    <li><a href="">ホーム</a></li>
-                    <li>お問い合わせ（法人様向け）</li>
-               </ol>
-          </div>
+     <div class="m-breadcrumb">
+          <ol>
+               <li><a href="">ホーム</a></li>
+               <li>お問い合わせ（法人様向け）</li>
+          </ol>
      </div>
      <section class="p-contact">
           <div class="p-contact__sub">
@@ -32,33 +30,36 @@
                     </div>
                </div>
           </div>
-          <div class="p-contact__main">
-               <div class="p-contact__column">
-                    <div class="head">会社名<span class="require">必須</span></div>
-                    <input type="text" class="body" placeholder="株式会社〇〇">
-               </div>
-               <div class="p-contact__column">
-                    <div class="head">担当者 氏名<span class="require">必須</span></div>
-                    <input type="text" class="body" placeholder="アジサイ　太郎">
-               </div>
-               <div class="p-contact__column">
-                    <div class="head">メールアドレス<span class="require">必須</span></div>
-                    <input type="text" class="body" placeholder="ajisai.tarou@ajisai-co.com">
-               </div>
-               <div class="p-contact__column">
-                    <div class="head">連絡のとれる電話番号<span class="require">必須</span></div>
-                    <input type="text" class="body" placeholder="000-0000-0000">
-               </div>
-               <div class="p-contact__column">
-                    <div class="head">お問い合わせ内容<span class="require">必須</span></div>
-                    <input type="text" class="body" placeholder="詳しい料金体系についておしえてください。">
-               </div>
-               <div class="p-contact__policy">
-                    <input type="checkbox" name="policy" id="">
-                    <label for=""><a href="">プライバシーポリシー</a>に同意する</label>
-               </div>
-               <button>問い合わせを送信する</button>
+          <div class="p-contact__main p-contact-form">
+               <form action="">
+                    <div class="p-contact-form__item">
+                         <div class="head">会社名<span class="require">必須</span></div>
+                         <input type="text" placeholder="株式会社〇〇">
+                    </div>
+                    <div class="p-contact-form__item">
+                         <div class="head">担当者 氏名<span class="require">必須</span></div>
+                         <input type="text" placeholder="アジサイ　太郎">
+                    </div>
+                    <div class="p-contact-form__item">
+                         <div class="head">メールアドレス<span class="require">必須</span></div>
+                         <input type="text" placeholder="ajisai.tarou@ajisai-co.com">
+                    </div>
+                    <div class="p-contact-form__item">
+                         <div class="head">連絡のとれる電話番号<span class="require">必須</span></div>
+                         <input type="tel" placeholder="000-0000-0000">
+                    </div>
+                    <div class="p-contact-form__item">
+                         <div class="head">お問い合わせ内容<span class="require">必須</span></div>
+                         <input type="text" placeholder="詳しい料金体系についておしえてください。">
+                    </div>
+                    <div class="p-contact-form__policy">
+                         <input type="checkbox" name="policy" id="">
+                         <label for=""><a href="">プライバシーポリシー</a>に同意する</label>
+                    </div>
+                    <button>問い合わせを送信する</button>
+               </form>
           </div>
      </section>
 </main>
-<%- include('parts/_footer', {page:'contact'}); %>
+<%- include('parts/_footer-contact', {page:'contact'}); %>
+fz

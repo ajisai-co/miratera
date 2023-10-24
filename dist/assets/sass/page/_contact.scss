@@ -7,7 +7,7 @@
 .p-contact{
     max-width: 1288px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 117px 40px 170px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -77,15 +77,119 @@
                 font-size: 1.4rem;
                 color: var(--color-blue);
                 @include fonts.Coco-Gothic;
+                margin-right: 2.8rem;
+                position: relative;
+                top: 3px;
             }
-            &_body{
+            &__body{
                 a{
                     font-size: 4.1rem;
                     color: var(--color-blue);
                     @include fonts.Lato;
+                    line-height: 1;
+                }
+                p{
+                    font-size: 1.4rem;
+                    letter-spacing: .2em;
+                    color: var(--color-blue);
                 }
             }
         }
     }
+}
 
+.p-contact-form{
+    background: #B7E0F2;
+    padding: 44px 36px;
+    border-radius: 6px;
+    &__item{
+        & + .p-contact-form__item{
+            margin-top: 33px;
+        }
+    }
+    .head{
+        font-size: 1.6rem;
+        color: var(--color-blue);
+        margin-bottom: 1.2rem;
+    }
+    .require{
+        font-size: 1.2rem;
+        color: #fff;
+        background: #FF5757;
+        padding: 2px 11px;
+        line-height: 1;
+        text-align: center;
+        display: inline-block;
+        margin-left: 13px;
+        border-radius: 20px;
+    }
+    input[type="text"],
+    input[type="tel"]{
+        border: 1px solid var(--color-blue);
+        border-radius: 6px;
+        padding: 16px 19px;
+        background: #fff;
+        font-size: 1.4rem;
+        letter-spacing: .1em;
+        color: #333;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            color: #B7B7B7;
+        }
+    }
+    &__policy{
+        display: flex;
+        align-items: center;
+        margin-top: 23px;
+        input[type="checkbox"]{
+            border: 1px solid var(--color-blue);
+            width: 18px;
+            height: 18px;
+            background: #fff;
+            margin-right: 1rem;
+            border-radius: 3px;
+            &:checked{
+                background: var(--color-blue);
+            }
+        }
+        label{
+            color: #707070;
+            font-size: 1.4rem;
+            display: flex;
+            line-height: 1;
+        }
+        a{
+            font-size: 1.4rem;
+            color: var(--color-blue);
+            line-height: 1;
+        }
+    }
+    button{
+        margin-top: 44px;
+        display: block;
+        width: 100%;
+        background: var(--color-blue);
+        color: #fff;
+        font-size: 1.4rem;
+        letter-spacing: .2em;
+        text-align: center;
+        padding: 1.6rem;
+        border-radius: 50px;
+        position: relative;
+        transition: .4s;
+        &:after{
+            content: '';
+            position: absolute;
+            background: url(../images/_common/icon_arrow01.svg) no-repeat center / contain;
+            width: 5px;
+            height: 10px;
+            top: calc( 50% - 5px );
+            right: 20px;
+        }
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
 }
