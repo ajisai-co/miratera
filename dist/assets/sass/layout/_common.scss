@@ -784,6 +784,10 @@ p, span, a {
 
 .m-btn-tran {
 	text-align: center;
+	margin-top: calcPc(100);
+	@include mediaquery.sp {
+		margin-top: calcResp(40);
+	}
 	a {
 		position: relative;
 		border: 1px solid var(--color-blue);
