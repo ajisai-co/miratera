@@ -226,7 +226,7 @@ h3 {
 	letter-spacing: .1em;
 	line-height: 2.5;
 	@include mediaquery.sp {
-		font-size: calcResp(12);
+		font-size: calcResp(14);
 	}
 	span {
 		font-size: calcPc(16);
@@ -235,7 +235,7 @@ h3 {
 		letter-spacing: .1em;
 		line-height: 2.5;
 		@include mediaquery.sp {
-			font-size: calcResp(16);
+			font-size: calcResp(14);
 		}
 	}
 }
@@ -695,7 +695,7 @@ p, span, a {
 	padding: calcPc(11) 0;
 	line-height: 1;
 	@include mediaquery.sp {
-		font-size: calcResp(16);
+		font-size: calcResp(13);
 		border-radius: calcResp(19);
 		padding: calcResp(11) 0;
 	}
