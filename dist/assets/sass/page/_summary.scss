@@ -305,35 +305,37 @@
                 }
             }
         }
-        .company-grad-box02{
-            background: linear-gradient(135deg,#f0f0f0 0,rgba(#d9d9d9,.4) 30%,rgba(#63cdfd,.4) 70%);
-            padding: common.calcPc(24);
-            color: var(--color-blue);
-            margin: common.calcPc(32) 0;
+        
+    }
+}
+
+.m-company-grad-box02{
+    background: linear-gradient(135deg,#f0f0f0 0,rgba(#d9d9d9,.4) 30%,rgba(#63cdfd,.4) 70%);
+    padding: common.calcPc(24);
+    color: var(--color-blue);
+    margin: common.calcPc(32) 0;
+    @include mediaquery.sp {
+        padding: common.calcResp(20);
+        margin: common.calcResp(20) 0;
+    }
+    li{
+        padding-left: common.calcPc(11);
+        position: relative;
+        @include mediaquery.sp {
+            padding-left: common.calcResp(11);
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            width: common.calcPc(5);
+            height: common.calcPc(5);
+            background: var(--color-blue);
+            left: 0;
+            top: common.calcPc(12);
             @include mediaquery.sp {
-                padding: common.calcResp(20);
-                margin: common.calcResp(20) 0;
-            }
-            li{
-                padding-left: common.calcPc(11);
-                position: relative;
-                @include mediaquery.sp {
-                    padding-left: common.calcResp(11);
-                }
-                &:before{
-                    content: '';
-                    position: absolute;
-                    width: common.calcPc(5);
-                    height: common.calcPc(5);
-                    background: var(--color-blue);
-                    left: 0;
-                    top: common.calcPc(12);
-                    @include mediaquery.sp {
-                        width: common.calcResp(5);
-                        height: common.calcResp(5);
-                        top: common.calcResp(12);
-                    }
-                }
+                width: common.calcResp(5);
+                height: common.calcResp(5);
+                top: common.calcResp(12);
             }
         }
     }

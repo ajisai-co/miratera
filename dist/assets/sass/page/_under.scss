@@ -778,7 +778,9 @@
                 &:nth-child(1) {
                     width: common.calcPc(565);
                     @include mediaquery.sp {
-                        width: 100%;
+                        width: 80%;
+                        display: block;
+                        margin: 0 auto;
                     }
                 }
                 &:nth-child(2) {
@@ -797,7 +799,7 @@
         .main {
             padding-top: common.calcPc(128);
             @include mediaquery.sp {
-                padding-top: common.calcResp(128);
+                padding-top: common.calcResp(70);
             }
             h3 {
                 @extend .m-txt-20;
@@ -879,6 +881,22 @@
         }
     }
     .m-box-grad01 {
+        @include mediaquery.sp {
+            margin: common.calcResp(40) auto;
+            width: calc( 100% - 40px );
+            padding: common.calcResp(24) common.calcResp(16);
+            &__txt{
+                margin-top: common.calcResp(24);
+                text-align: left;
+                line-height: 1.8;
+                span{
+                    text-align: left;
+                    font-size: common.calcResp(14);
+                    display: inline;
+                    line-height: 1.8;
+                }
+            }
+        }
         & + .l-under-about__feature {
             margin-top: common.calcPc(359);
             @include mediaquery.sp {
@@ -891,10 +909,11 @@
         &::before {
             content: "";
             width: 100%;
-            background: var(--color-grad03);
+            height: 140vh;
+            background: linear-gradient( rgba(3, 124, 178, 0.67) 0%, rgba(99, 205, 253, 0.66) 100%);
             position: absolute;
             left: 0;
-            top: calc(-1 * common.calcPc(379));
+            top: calc( -1 * common.calcPc(300) );
             z-index: -1;
             clip-path: polygon(0 common.calcPc(406), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(385)));
             @include mediaquery.sp {
