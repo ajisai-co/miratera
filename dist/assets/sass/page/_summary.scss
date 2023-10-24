@@ -119,6 +119,7 @@
             a {
                 text-decoration: underline;
                 transition: .4s;
+                word-wrap: break-word;
                 &:hover {
                     opacity: .7;
                 }
