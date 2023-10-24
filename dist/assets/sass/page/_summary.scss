@@ -7,13 +7,13 @@
 .l-summary {
     padding-bottom: common.calcPc(321);
     @include mediaquery.sp {
-        padding-bottom: common.calcResp(321);
+        padding-bottom: common.calcResp(100);
     }
     .m-breadcrumb {
         & + h2 {
             margin-top: common.calcPc(117);
             @include mediaquery.sp {
-                margin-top: common.calcResp(117);
+                margin-top: common.calcResp(60);
             }
         }
     }
@@ -24,7 +24,7 @@
         letter-spacing: .17em;
         color: var(--color-blue);
         @include mediaquery.sp {
-            font-size: common.calcResp(31);
+            font-size: common.calcResp(20);
         }
     }
     h3 {
@@ -33,8 +33,8 @@
         font-weight: bold;
         margin-top: common.calcPc(48);
         @include mediaquery.sp {
-            font-size: common.calcResp(20);
-            margin-top: common.calcResp(48);
+            font-size: common.calcResp(16);
+            margin-top: common.calcResp(30);
         }
         & + .m-box-grad01 {
             margin-top: common.calcPc(32);
@@ -52,7 +52,7 @@
             color: var(--color-blue);
             @include mediaquery.sp {
                 margin-top: common.calcResp(64);
-                font-size: common.calcResp(18);
+                font-size: common.calcResp(14);
             }
             & + h3 {
                 margin-top: common.calcPc(64);
@@ -66,7 +66,7 @@
             color: var(--color-blue);
             line-height: 2.1;
             @include mediaquery.sp {
-                font-size: common.calcResp(20);
+                font-size: common.calcResp(14);
             }
         }
         p {
@@ -81,8 +81,8 @@
             border-top: 1px solid var(--color-blue);
             border-bottom: 1px solid var(--color-blue);
             @include mediaquery.sp {
-                margin-top: common.calcResp(32);
-                padding: common.calcResp(32) common.calcResp(30);
+                margin-top: common.calcResp(20);
+                padding: common.calcResp(20) common.calcResp(16);
             }
             .head {
                 font-size: common.calcPc(16);
@@ -90,7 +90,7 @@
                 color: var(--color-blue);
                 font-weight: bold;
                 @include mediaquery.sp {
-                    font-size: common.calcResp(16);
+                    font-size: common.calcResp(14);
                 }
             }
             .body {
@@ -101,7 +101,7 @@
                     color: var(--color-blue);
                     font-weight: 500;
                     @include mediaquery.sp {
-                        font-size: common.calcResp(16);
+                        font-size: common.calcResp(14);
                     }
                 }
             }
@@ -113,7 +113,7 @@
                 color: var(--color-blue);
                 font-weight: 500;
                 @include mediaquery.sp {
-                    font-size: common.calcResp(16);
+                    font-size: common.calcResp(14);
                 }
             }
             a {
@@ -126,13 +126,13 @@
             }
         }
     }
-    }
+}
     
-    .l-summary-company {
-        margin-bottom: common.calcPc(208);
-        @include mediaquery.sp {
-            margin-bottom: common.calcPc(108);
-        }
+.l-summary-company {
+    margin-bottom: common.calcPc(208);
+    @include mediaquery.sp {
+        margin-bottom: common.calcPc(108);
+    }
     &__column {
         display: flex;
         justify-content: flex-start;
