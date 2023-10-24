@@ -179,7 +179,7 @@ h3 {
 	letter-spacing: .17em;
 	line-height: 1.7;
 	@include mediaquery.sp {
-		font-size: calcResp(16);
+		font-size: calcResp(15);
 	}
 }
 
@@ -1056,7 +1056,7 @@ p, span, a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	@include mediaquery.sp {
-
+		display: block;
 	}
 	&__item {
 		position: relative;
@@ -1065,6 +1065,8 @@ p, span, a {
 		width: 48.7%;
 		margin-bottom: calcPc(30);
 		@include mediaquery.sp {
+			width: 100%;
+			margin-bottom: calcResp(30);
 			padding: calcResp(26) calcResp(16);
 		}
 		&::before, &::after {
@@ -1113,6 +1115,7 @@ p, span, a {
 		}
 		&.-flex{
 			display: flex;
+			align-items: center;
 		}
 	}
 	&__head {
@@ -1128,7 +1131,7 @@ p, span, a {
 		& + .m-pricelist__lead {
 			margin-top: calcPc(30);
 			@include mediaquery.sp {
-				margin-top: calcResp(30);
+				margin-top: calcResp(20);
 			}
 		}
 		& + .m-pricelist__inner {
@@ -1146,7 +1149,7 @@ p, span, a {
 		& + .m-pricelist__inner {
 			margin-top: calcPc(36);
 			@include mediaquery.sp {
-				margin-top: calcResp(36);
+				margin-top: calcResp(20);
 			}
 		}
 	}
@@ -1155,8 +1158,8 @@ p, span, a {
 		padding-top: calcPc(30);
 		margin-top: calcPc(32);
 		@include mediaquery.sp {
-			padding-top: calcResp(30);
-			margin-top: calcResp(32);
+			padding-top: calcResp(20);
+			margin-top: calcResp(20);
 		}
 		.lbl {
 			display: inline-block;
@@ -1190,7 +1193,7 @@ p, span, a {
 			letter-spacing: .1em;
 			line-height: 1.7;
 			@include mediaquery.sp {
-				font-size: calcResp(16);
+				font-size: calcResp(14);
 			}
 			
 		}
@@ -1307,6 +1310,11 @@ p, span, a {
 		color: var(--color-blue);
 		font-size: calcPc(20);
 		letter-spacing: .1em;
+		@include mediaquery.sp {
+			font-size: calcResp(14);
+			line-height: 1.6;
+			margin-top: calcResp(20);
+		}
 		span {
 			font-size: calcPc(15);
 			letter-spacing: .1em;
@@ -1314,6 +1322,7 @@ p, span, a {
 			color: var(--color-blue);
 			@include mediaquery.sp {
 				font-size: calcResp(15);
+				display: block;
 			}
 		}
 		& + .m-btn-tran {
@@ -1327,6 +1336,10 @@ p, span, a {
 		color: var(--color-blue);
 		font-size: calcPc(20);
 		margin-left: calcPc(40);
+		@include mediaquery.sp {
+			font-size: calcResp(16);
+			margin-left: calcResp(30);
+		}
 	}
 }
 
