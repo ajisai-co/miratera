@@ -116,7 +116,7 @@
 
 .l-under-price {
     position: relative;
-    padding: common.calcPc(340) 0 0;
+    padding: common.calcPc(240) 0 0;
     margin: 0 0 common.calcPc(150);
     @include mediaquery.sp {
         padding: common.calcResp(160) 0 0;
@@ -139,8 +139,15 @@
         }
     }
     &__head {
-        @extend .m-txt-31;
+        font-size: calcPc(31);
+        color: var(--color-blue);
+        font-weight: 500;
+        letter-spacing: .17em;
+        line-height: 1.71;
         text-align: center;
+        @include mediaquery.sp {
+            font-size: calcResp(20);
+        }
         & + .m-pricelist {
             margin-top: common.calcPc(85);
             @include mediaquery.sp {
@@ -169,7 +176,7 @@
     }
     .m-pricelist {
         & + .l-under-price__head {
-            margin-top: common.calcPc(52);
+            margin-top: common.calcPc(180);
             @include mediaquery.sp {
                 margin-top: common.calcResp(40);
             }

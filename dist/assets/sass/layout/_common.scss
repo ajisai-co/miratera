@@ -362,9 +362,10 @@ p, span, a {
 }
 
 .m-inner {
-	max-width: 1208px;
-	width: 63%;
+	max-width: 1268px;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 calcPc(30);
 	@include mediaquery.sp {
 		width: 100%;
 		padding: 0 calcResp(16);
@@ -1051,17 +1052,18 @@ p, span, a {
 }
 
 .m-pricelist {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: calcPc(30);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	@include mediaquery.sp {
-		grid-template-columns: repeat(1, 1fr);
-		gap: calcResp(30);
+
 	}
 	&__item {
 		position: relative;
 		background: var(--color-white);
 		padding: calcPc(38) calcPc(56);
+		width: 48.7%;
+		margin-bottom: calcPc(30);
 		@include mediaquery.sp {
 			padding: calcResp(26) calcResp(16);
 		}
@@ -1103,10 +1105,26 @@ p, span, a {
 				}
 			}
 		}
+		&.-fullsize{
+			width: 100%;
+			p{
+				color: var(--color-blue);
+			}
+		}
+		&.-flex{
+			display: flex;
+		}
 	}
 	&__head {
-		@extend .m-txt-28;
+		font-size: calcPc(24);
+		color: var(--color-blue);
+		font-weight: bold;
+		letter-spacing: .17em;
+		line-height: 1.714;
 		text-align: center;
+		@include mediaquery.sp {
+			font-size: calcResp(18);
+		}
 		& + .m-pricelist__lead {
 			margin-top: calcPc(30);
 			@include mediaquery.sp {
@@ -1143,7 +1161,7 @@ p, span, a {
 		.lbl {
 			display: inline-block;
 			font-size: calcPc(17);
-			color: var(--color-blue);
+			color: #fff;
 			font-weight: 500;
 			letter-spacing: .17em;
 			line-height: 1.7;
@@ -1166,8 +1184,15 @@ p, span, a {
 			margin-top: calcResp(15);
 		}
 		li, strong {
-			@extend .m-txt-20;
+			font-size: calcPc(20);
 			color: var(--color-blue);
+			font-weight: bold;
+			letter-spacing: .1em;
+			line-height: 1.7;
+			@include mediaquery.sp {
+				font-size: calcResp(16);
+			}
+			
 		}
 	}
 	&__plan02 {
@@ -1205,6 +1230,7 @@ p, span, a {
 				@extend .m-txt-20;
 				color: var(--color-blue);
 				font-weight: 500;
+				width: calc( 100% - calcPc(147) );
 			}
 		}
 	}
@@ -1278,6 +1304,9 @@ p, span, a {
 		}
 	}
 	&__caption {
+		color: var(--color-blue);
+		font-size: calcPc(20);
+		letter-spacing: .1em;
 		span {
 			font-size: calcPc(15);
 			letter-spacing: .1em;
@@ -1293,6 +1322,11 @@ p, span, a {
 				margin-top: calcResp(40);
 			}
 		}
+	}
+	&__txt{
+		color: var(--color-blue);
+		font-size: calcPc(20);
+		margin-left: calcPc(40);
 	}
 }
 
