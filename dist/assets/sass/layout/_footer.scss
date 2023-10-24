@@ -102,4 +102,32 @@
             color: var(--color-white);
         }
     }
+    &.-contact{
+        padding: 0;
+        .m-inner{
+            padding: 30px 20px;
+            @include mediaquery.sp {
+                padding: 15px 10px;
+            }
+        }
+        a{
+            display: inline-block;
+            color: #fff;
+            font-size: 1.6rem;
+            padding-right: 20px;
+            position: relative;
+            @include mediaquery.sp {
+                font-size: 1.4rem;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                background: url(../images/_common/icon_arrow01.svg) no-repeat center / contain;
+                width: 5px;
+                height: 10px;
+                top: calc( 50% - 5px );
+                right: 0;
+            }
+        }
+    }
 }
