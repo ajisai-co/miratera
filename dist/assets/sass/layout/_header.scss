@@ -10,14 +10,23 @@
     justify-content: center;
     background: var(--color-blue);
     padding: common.calcPc(47) common.calcPc(44) common.calcPc(23) common.calcPc(100);
+    @include mediaquery.sp {
+        padding: common.calcResp(47) common.calcResp(44) common.calcResp(23) common.calcResp(100);
+    }
     &__logo {
         img {
             width: common.calcPc(71);
             height: auto;
+            @include mediaquery.sp {
+                width: common.calcResp(71);
+            }
         }
     }
     &__nav {
         margin-left: auto;
+        @include mediaquery.sp {
+            display: none;
+        }
         &__list {
             display: flex;
             justify-content: flex-start;
@@ -58,6 +67,9 @@
     }
     &__contact {
         margin-left: common.calcPc(130);
+        @include mediaquery.sp {
+            display: none;
+        }
         a {
             position: relative;
             color: #fff;
