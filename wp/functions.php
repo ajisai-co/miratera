@@ -40,6 +40,8 @@ add_action('wp_head', 'adds_head');
 //wp_footerに追加
 function adds_footer() {
 	echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>'."\n";
+	echo '<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>'."\n";
+	echo '<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>'."\n";
 	echo '<script src="'.get_template_directory_uri().'/assets/js/init.js"></script>'."\n";
 }
 add_action('wp_footer', 'adds_footer');
