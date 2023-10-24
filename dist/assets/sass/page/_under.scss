@@ -166,12 +166,13 @@
         position: relative;
         padding: common.calcPc(21) 0;
         @include mediaquery.sp {
-            padding: common.calcResp(21) 0;
+            padding: 0;
+            margin-top: common.calcResp(120);
         }
         & + & {
             margin-top: common.calcPc(45);
             @include mediaquery.sp {
-                margin-top: common.calcResp(45);
+                margin-top: common.calcResp(100);
             }
         }
         .head {
@@ -188,8 +189,12 @@
             align-items: center;
             flex-direction: column;
             @include mediaquery.sp {
-                width: common.calcResp(273);
-                height: common.calcResp(273);
+                width: common.calcResp(160);
+                height: common.calcResp(160);
+                top: common.calcResp(-80);
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 auto;
             }
             span {
                 @extend .m-txt-28;
@@ -201,8 +206,8 @@
             padding: common.calcPc(64) common.calcPc(47) common.calcPc(43) common.calcPc(184);
             border-radius: common.calcPc(3);
             @include mediaquery.sp {
-                margin-left: common.calcResp(140);
-                padding: common.calcResp(64) common.calcResp(47) common.calcResp(43) common.calcResp(184);
+                margin-left: 0;
+                padding: common.calcResp(64) common.calcResp(20) common.calcResp(43);
                 border-radius: common.calcResp(3);
             }
             p {
