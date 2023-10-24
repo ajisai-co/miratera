@@ -91,7 +91,7 @@ h2 {
 			color: var(--color-white);
 			@include fonts.Coco-Gothic;
 			@include mediaquery.sp {
-				font-size: calcResp(87);
+				font-size: calcResp(20);
 			}
 		}
 		.jp {
@@ -102,7 +102,7 @@ h2 {
 			color: var(--color-white);
 			@include fonts.Coco-Gothic;
 			@include mediaquery.sp {
-				font-size: calcResp(87);
+				font-size: calcResp(28);
 			}
 		}
 	}
@@ -125,7 +125,7 @@ h3 {
 	letter-spacing: .17em;
 	line-height: 1.71;
 	@include mediaquery.sp {
-		font-size: calcResp(31);
+		font-size: calcResp(20);
 	}
 	span {
 		font-size: calcPc(31);
@@ -134,7 +134,7 @@ h3 {
 		letter-spacing: .17em;
 		line-height: 1.71;
 		@include mediaquery.sp {
-			font-size: calcResp(31);
+			font-size: calcResp(18);
 		}
 
 	}
@@ -190,7 +190,7 @@ h3 {
 	letter-spacing: .15em;
 	line-height: 1.7;
 	@include mediaquery.sp {
-		font-size: calcResp(18);
+		font-size: calcResp(14);
 	}
 	span {
 		font-size: calcPc(18);
@@ -199,7 +199,7 @@ h3 {
 		letter-spacing: .15em;
 		line-height: 1.7;
 		@include mediaquery.sp {
-			font-size: calcResp(18);
+			font-size: calcResp(14);
 		}
 	}
 }
@@ -233,6 +233,7 @@ h3 {
 	line-height: 2.5;
 	@include mediaquery.sp {
 		font-size: calcResp(14);
+		line-height: 2;
 	}
 	span {
 		font-size: calcPc(16);
@@ -242,6 +243,7 @@ h3 {
 		line-height: 2.5;
 		@include mediaquery.sp {
 			font-size: calcResp(14);
+			line-height: 2;
 		}
 	}
 }
@@ -310,7 +312,7 @@ p, span, a {
 .l-under {
 	padding-bottom: calcPc(321);
 	@include mediaquery.sp {
-		padding-bottom: calcResp(321);
+		padding-bottom: calcResp(120);
 	}
 }
 
@@ -375,6 +377,11 @@ p, span, a {
 	font-size: calcPc(31);
 	letter-spacing: .17em;
 	padding: calcPc(76) calcPc(105) calcPc(106);
+	@include mediaquery.sp {
+		padding: calcResp(76) 20px calcResp(106);
+		margin: 0 30px;
+		width: calc(100% - 60px);
+	}
 	&::before {
 		content: "";
 		position: absolute;
@@ -731,9 +738,10 @@ p, span, a {
 		padding: calcPc(24) calcPc(80) calcPc(22) calcPc(86);
 		line-height: 1;
 		@include mediaquery.sp {
-			font-size: calcResp(19);
+			width: 100%;
+			font-size: calcResp(14);
 			border-radius: calcResp(33);
-			padding: calcResp(24) calcResp(80) calcResp(22) calcResp(86);
+			padding: calcResp(24) calcResp(20) calcResp(22) calcResp(24);
 		}
 		&::after {
 			content: "";
@@ -761,7 +769,7 @@ p, span, a {
 		margin: 0 0 calcPc(48);
 		@extend .m-txt-31;
 		@include mediaquery.sp {
-			margin: 0 0 calcResp(48);
+			margin: 0 0 calcResp(32);
 		}
 	}
 	&__lead {
@@ -769,7 +777,7 @@ p, span, a {
 		margin: 0 0 calcPc(48);
 		@extend .m-txt-16;
 		@include mediaquery.sp {
-			margin: 0 0 calcResp(48);
+			margin: 0 0 calcResp(40);
 		}
 	}
 	&__list {
@@ -777,6 +785,7 @@ p, span, a {
 		grid-template-columns: repeat(4, 1fr);
 		gap: calcPc(21);
 		@include mediaquery.sp {
+			grid-template-columns: repeat(2, 1fr);
 			gap: calcResp(21);
 		}
 		li {
@@ -796,6 +805,7 @@ p, span, a {
 			gap: calcPc(21) calcPc(33);
 			@include mediaquery.sp {
 				gap: calcResp(21) calcResp(33);
+				grid-template-columns: repeat(2, 1fr);
 			}
 			li {
 				background: #fff;
@@ -806,7 +816,7 @@ p, span, a {
 		& + .m-pricelist {
 			margin-top: calcPc(96);
 			@include mediaquery.sp {
-				margin-top: calcResp(96);
+				margin-top: calcResp(40);
 			}
 		}
 	}
@@ -820,11 +830,13 @@ p, span, a {
 	padding: calcPc(42) 0;
 	@include mediaquery.sp {
 		padding: calcResp(42) 0;
+		margin: 0 30px;
+		width: calc(100% - 60px);
 	}
 	& + & {
 		margin-top: calcPc(114);
 		@include mediaquery.sp {
-			margin-top: calcResp(114);
+			margin-top: calcResp(64);
 		}
 	}
 	&__head {
@@ -838,7 +850,7 @@ p, span, a {
 		background: #fff;
 		padding: 0 20px;
 		@include mediaquery.sp {
-			top: calc(-1 * calcResp(17));
+			top: calc(-1 * calcResp(20));
 		}
 	}
 	&__txt {
@@ -857,7 +869,7 @@ p, span, a {
 	& + .m-box-grad01 {
 		margin-top: calcPc(150);
 		@include mediaquery.sp {
-			margin-top: calcResp(150);
+			margin-top: calcResp(80);
 		}
 	}
 }
@@ -904,6 +916,7 @@ p, span, a {
 	gap: calcPc(29);
 	@include mediaquery.sp {
 		gap: calcResp(29);
+		grid-template-columns: repeat(1, 1fr);
 	}
 	&__item {
 		position: relative;
@@ -965,7 +978,8 @@ p, span, a {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	@include mediaquery.sp {
-		padding: 0 calcResp(132);
+		padding: 0 calcResp(20);
+		grid-template-columns: repeat(2, 1fr);
 	}
 	li {
 		color: var(--color-blue);
@@ -990,6 +1004,7 @@ p, span, a {
 	grid-template-columns: repeat(2, 1fr);
 	gap: calcPc(30);
 	@include mediaquery.sp {
+		grid-template-columns: repeat(1, 1fr);
 		gap: calcResp(30);
 	}
 	&__item {
@@ -997,7 +1012,7 @@ p, span, a {
 		background: var(--color-white);
 		padding: calcPc(38) calcPc(56);
 		@include mediaquery.sp {
-			padding: calcResp(38) calcResp(56);
+			padding: calcResp(32) calcResp(24);
 		}
 		&::before, &::after {
 			content: "";
@@ -1074,7 +1089,10 @@ p, span, a {
 		.column {
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 			width: 100%;
+			@include mediaquery.sp {
+			}
 		}
 		.lbl {
 			@extend .m-txt-17;
@@ -1087,7 +1105,7 @@ p, span, a {
 			margin-right: calcPc(28);
 			@include mediaquery.sp {
 				padding: calcResp(7) calcResp(21) calcResp(7) calcResp(17);
-				margin-right: calcResp(28);
+				margin-right: calcResp(12);
 			}
 		}
 		.price {
@@ -1099,6 +1117,7 @@ p, span, a {
 			margin-right: calcPc(21);
 			@include mediaquery.sp {
 				margin-right: calcResp(21);
+				font-size: calcResp(38);
 			}
 			span {
 				color: var(--color-blue);
@@ -1115,13 +1134,14 @@ p, span, a {
 			@include mediaquery.sp {
 				border-radius: calcResp(22);
 				padding: calcResp(2) calcResp(12);
+				margin-top: calcResp(10);
 			}
 		}
 	}
 	& + .m-btn-tran {
 		margin-top: calcPc(116);
 		@include mediaquery.sp {
-			margin-top: calcResp(116);
+			margin-top: calcResp(40);
 		}
 	}
 }

@@ -8,7 +8,7 @@
     background: var(--color-blue);
     margin: 0 0 common.calcPc(140);
     @include mediaquery.sp {
-        margin: 0 0 common.calcResp(140);
+        margin: 0 0 common.calcResp(64);
     }
     .m-breadcrumb {
         a, li {
@@ -19,7 +19,7 @@
         &.-under {
             padding: common.calcPc(100) 0 common.calcPc(140);
             @include mediaquery.sp {
-                padding: common.calcResp(100) 0 common.calcResp(140);
+                padding: common.calcResp(64) 0 common.calcResp(80);
             }
         }
     }
@@ -400,7 +400,7 @@
         & + .l-under-person__column {
             margin-top: common.calcPc(84);
             @include mediaquery.sp {
-                margin-top: common.calcResp(84);
+                margin-top: common.calcResp(40);
             }
         }
     }
@@ -421,6 +421,12 @@
     }
     &__column {
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include mediaquery.sp {
+            flex-direction: column;
+        }
         &.-modifier {
             &::before {
                 content: "";
@@ -433,34 +439,43 @@
                 z-index: -1;
                 opacity: .4;
                 clip-path: polygon(0 common.calcPc(381), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(381)));
+                @include mediaquery.sp {
+                    height: calc(100% + common.calcResp(289));
+                    top: calc(-1 * common.calcResp(100));
+                }
             }
-        }
-        .m-inner {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            .main {
+                @include mediaquery.sp {
+                    margin-bottom: common.calcResp(24);
+                }
+            }
         }
         h3 {
             display: block;
             width: 100%;
             margin: 0 0 common.calcPc(48);
             @include mediaquery.sp {
-                margin: 0 0 common.calcResp(48);
+                margin: 0 0 common.calcResp(24);
             }
         }
         .main {
             width: common.calcPc(664);
+            @include mediaquery.sp {
+                width: 100%;
+                order: 1;
+            }
             h3 {
                 text-align: left;
                 @extend .m-txt-24;
                 padding-top: common.calcPc(40);
                 @include mediaquery.sp {
-                    padding-top: common.calcResp(40);
+                    text-align: center;
+                    padding-top: common.calcResp(24);
                 }
                 & + p {
                     margin-top: common.calcPc(48);
                     @include mediaquery.sp {
-                        margin-top: common.calcResp(48);
+                        margin-top: common.calcResp(20);
                     }
                 }
             }
@@ -469,14 +484,21 @@
                 & + p {
                     margin-top: common.calcPc(40);
                     @include mediaquery.sp {
-                        margin-top: common.calcResp(40);
+                        margin-top: common.calcResp(16);
                     }
                 }
             }
         }
         .sub {
+            @include mediaquery.sp {
+                order: 0;
+                text-align: center;
+            }
             img {
                 width: common.calcPc(457);
+                @include mediaquery.sp {
+                    width: 80%;
+                }
             }
         }
         & + .l-under-person__bg {
@@ -496,7 +518,7 @@
         & + .m-pricelist {
             margin-top: common.calcPc(164);
             @include mediaquery.sp {
-                margin-top: common.calcResp(164);
+                margin-top: common.calcResp(80);
             }
         }
     }
@@ -535,7 +557,7 @@
         & + .l-under-person__column {
             margin-top: common.calcPc(289);
             @include mediaquery.sp {
-                margin-top: common.calcResp(289);
+                margin-top: common.calcResp(160);
             }
         }
         &__head {
@@ -551,14 +573,18 @@
         & + .l-under-shinkyu__list {
             margin-top: common.calcPc(82);
             @include mediaquery.sp {
-                margin-top: common.calcResp(82);
+                margin-top: common.calcResp(32);
             }
         }
     }
     &__list {
         display: flex;
         justify-content: center;
+        @include mediaquery.sp {
+            display: block;
+        }
         li {
+            position: relative;
             width: common.calcPc(192);
             height: common.calcPc(192);
             background: #fff;
@@ -568,6 +594,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            @include mediaquery.sp {
+                width: common.calcResp(200);
+                height: common.calcResp(200);
+                margin: 0 auto;
+            }
+            img {
+                position: absolute;
+                top: common.calcPc(20);
+                width: common.calcPc(43);
+                @include mediaquery.sp {
+                    top: common.calcResp(24);
+                    width: common.calcResp(43);
+                }
+            }
             p {
                 text-align: center;
                 span {
@@ -579,30 +619,39 @@
             & + li {
                 margin-left: common.calcPc(64);
                 @include mediaquery.sp {
-                    margin-left: common.calcResp(64);
+                    margin: common.calcResp(32) auto 0;
                 }
             }
         }
         & + .l-under-shinkyu__column {
             margin-top: common.calcPc(86);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(80);
+            }
         }
     }
     &__column {
         display: flex;
+        @include mediaquery.sp {
+            display: block;
+        }
         & + & {
             margin-top: common.calcPc(115);
             @include mediaquery.sp {
-                margin-top: common.calcResp(115);
+                margin-top: common.calcResp(64);
             }
         }
         .head {
             margin-right: common.calcPc(51);
             @include mediaquery.sp {
-                margin-right: common.calcResp(51);
+                margin: 0 0 common.calcResp(20);
             }
             img {
                 width: common.calcPc(52);
                 height: auto;
+                @include mediaquery.sp {
+                    width: common.calcResp(52);
+                }
             }
         }
         .body {
@@ -613,7 +662,7 @@
                 & + p {
                     margin-top: common.calcPc(32);
                     @include mediaquery.sp {
-                        margin-top: common.calcResp(32);
+                        margin-top: common.calcResp(20);
                     }
                 }
             }
@@ -624,7 +673,7 @@
                 & + p {
                     margin-top: common.calcPc(32);
                     @include mediaquery.sp {
-                        margin-top: common.calcResp(32);
+                        margin-top: common.calcResp(16);
                     }
                 }
             }
@@ -632,7 +681,8 @@
         & + .m-box-grad01 {
             margin-top: common.calcPc(101);
             @include mediaquery.sp {
-                margin-top: common.calcResp(101);
+                width: 100%;
+                margin: common.calcResp(101) 0 0;
             }
         }
     }
@@ -645,15 +695,26 @@
             position: absolute;
             right: 0;
             top: 0;
+            @include mediaquery.sp {
+                position: relative;
+            }
             img {
                 &:nth-child(1) {
                     width: common.calcPc(565);
+                    @include mediaquery.sp {
+                        width: 100%;
+                    }
                 }
                 &:nth-child(2) {
                     position: absolute;
                     right: calc(-1 * common.calcPc(149));
                     bottom: calc(-1 * common.calcPc(128));
                     width: common.calcPc(425);
+                    @include mediaquery.sp {
+                        right: calc(-1 * common.calcResp(0));
+                        bottom: calc(-1 * common.calcResp(60));
+                        width: common.calcResp(200);
+                    }
                 }
             }
         }
@@ -678,7 +739,7 @@
                 & + h3 {
                     margin-top: common.calcPc(137);
                     @include mediaquery.sp {
-                        margin-top: common.calcResp(137);
+                        margin-top: common.calcResp(64);
                     }
                 }
             }
@@ -686,11 +747,18 @@
                 display: inline-block;
                 position: relative;
                 padding: common.calcPc(24) common.calcPc(31);
+                @include mediaquery.sp {
+                    padding: common.calcResp(16) common.calcResp(24);
+                }
                 &::before, &::after {
                     content: "";
                     position: absolute;
                     width: common.calcPc(57);
                     height: common.calcPc(24);
+                    @include mediaquery.sp {
+                        width: common.calcResp(57);
+                        height: common.calcResp(24);
+                    }
                 }
                 &::before {
                     top: 0;
@@ -708,15 +776,21 @@
                     @extend .m-txt-31;
                     &:nth-child(2) {
                         padding-left: 2em;
+                        @include mediaquery.sp {
+                            padding-left: 1.5em;
+                        }
                     }
                     &:nth-child(3) {
                         padding-left: 4em;
+                        @include mediaquery.sp {
+                            padding-left: 3em;
+                        }
                     }
                 }
                 & + p {
                     margin-top: common.calcPc(52);
                     @include mediaquery.sp {
-                        margin-top: common.calcResp(52);
+                        margin-top: common.calcResp(24);
                     }
                 }
             }
@@ -732,7 +806,7 @@
         & + .l-under-about__feature {
             margin-top: common.calcPc(359);
             @include mediaquery.sp {
-                margin-top: common.calcResp(359);
+                margin-top: common.calcResp(160);
             }
         }
     }
@@ -741,13 +815,16 @@
         &::before {
             content: "";
             width: 100%;
-            height: calc(100% + common.calcPc(888));
             background: var(--color-grad03);
             position: absolute;
             left: 0;
             top: calc(-1 * common.calcPc(379));
             z-index: -1;
             clip-path: polygon(0 common.calcPc(406), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(385)));
+            @include mediaquery.sp {
+                height: calc(100% + common.calcResp(300));
+                top: calc(-1 * common.calcResp(120));
+            }
         }
         .head {
             text-align: center;
@@ -758,7 +835,7 @@
             & + .column {
                 margin-top: common.calcPc(64);
                 @include mediaquery.sp {
-                    margin-top: common.calcResp(64);
+                    margin-top: common.calcResp(40);
                 }
             }
         }
@@ -769,19 +846,35 @@
             padding: common.calcPc(43) common.calcPc(50) common.calcPc(43) common.calcPc(57);
             border-radius: common.calcPc(3);
             box-shadow: 0px 0px 25px rgba(3, 124, 178, 0.44);
+            @include mediaquery.sp{
+                display: block;
+                padding: common.calcResp(43) common.calcResp(20) common.calcResp(43) common.calcResp(20);
+            }
             .head {
                 display: flex;
                 align-items: center;
                 width: common.calcPc(426);
                 padding-right: common.calcPc(50);
+                @include mediaquery.sp {
+                    width: 100%;
+                    padding: 0 0 common.calcResp(24);
+                    justify-content: center;
+                }
                 .img {
                     width: common.calcPc(83);
                     text-align: center;
+                    @include mediaquery.sp {
+                        width: common.calcResp(24);
+                    }
                 }
                 h4 {
                     width: common.calcPc(260);
                     margin-left: auto;
                     text-align: center;
+                    @include mediaquery.sp {
+                        width: auto;
+                        margin: 0 0 0 common.calcResp(20);
+                    }
                     span {
                         @extend .m-txt-20;
                         color: var(--color-blue);
@@ -792,6 +885,12 @@
                 width: common.calcPc(665);
                 border-left: 1px solid var(--color-blue);
                 padding: common.calcPc(20) 0 common.calcPc(20) common.calcPc(57);
+                @include mediaquery.sp {
+                    width: 100%;
+                    padding: common.calcResp(20) 0 0;
+                    border-top: 1px solid var(--color-blue);
+                    border-left: none;
+                }
                 p {
                     @extend .m-txt-16;
                     span {
@@ -809,7 +908,7 @@
         & + .l-under-about__person {
             margin-top: common.calcPc(356);
             @include mediaquery.sp {
-                margin-top: common.calcResp(356);
+                margin-top: common.calcResp(240);
             }
         }
     }
@@ -822,18 +921,30 @@
         }
         .sub {
             order: 1;
+            @include mediaquery.sp {
+                margin: 0 0 common.calcResp(24);
+            }
             img {
                 width: common.calcPc(555);
+                @include mediaquery.sp {
+                    width: 100%;
+                }
             }
         }
         .main {
             order: 0;
             width: common.calcPc(571);
+            @include mediaquery.sp {
+                width: 100%;
+            }
             .lead {
-                font-size: common.calcPc(22);
+                @extend .m-txt-22;
+                font-weight: 500;
                 color: var(--color-blue);
                 letter-spacing: .2em;
-                margin-bottom: 0;
+                @include mediaquery.sp {
+                    margin-bottom: common.calcResp(10);
+                }
             }
             h3 {
                 display: flex;
@@ -841,6 +952,7 @@
                 margin: 0 0 common.calcPc(56);
                 @include mediaquery.sp {
                     margin: 0 0 common.calcResp(56);
+                    display: block;
                 }
                 .jp {
                     letter-spacing: .2em;
@@ -848,7 +960,9 @@
                     font-size: common.calcPc(37);
                     color: var(--color-blue);
                     @include mediaquery.sp {
+                        line-height: 1;
                         font-size: common.calcResp(37);
+                        margin-bottom: common.calcResp(12);
                     }
                 }
                 .en {
@@ -857,7 +971,9 @@
                     margin-left: common.calcPc(13);
                     @include mediaquery.sp {
                         font-size: common.calcResp(19);
-                        margin-left: common.calcResp(13);
+                        margin-left: 0;
+                        line-height: 1;
+                        padding-left: 4px;
                     }
                 }
             }
@@ -872,7 +988,9 @@
             .m-box-grad01 {
                 padding: common.calcPc(29) common.calcPc(64) common.calcPc(28);
                 @include mediaquery.sp {
-                    padding: common.calcResp(29) common.calcResp(64) common.calcResp(28);
+                    padding: common.calcResp(29) common.calcResp(20);
+                    margin: 0;
+                    width: 100%;
                 }
                 .head {
                     margin-bottom: common.calcPc(16);

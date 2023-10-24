@@ -5,20 +5,64 @@
 @use "../mixin/csshack";
 
 .l-header {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     background: var(--color-blue);
     padding: common.calcPc(47) common.calcPc(44) common.calcPc(23) common.calcPc(100);
     @include mediaquery.sp {
-        padding: common.calcResp(47) common.calcResp(44) common.calcResp(23) common.calcResp(100);
+        padding: common.calcResp(20) common.calcResp(23);
     }
     &__logo {
+        z-index: 20;
         img {
             width: common.calcPc(71);
             height: auto;
             @include mediaquery.sp {
-                width: common.calcResp(71);
+                width: common.calcResp(56);
+            }
+        }
+    }
+    &__hum {
+        display: none;
+        @include mediaquery.sp {
+            display: block;
+            width: 58px;
+            height: 58px;
+            background: #015579;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            z-index: 20;
+            .txt {
+                color: var(--color-white);
+                font-size: 6px;
+                line-height: 1;
+                transition: .4s;
+            }
+            .bar {
+                height: 2px;
+                width: 22px;
+                background: var(--color-white);
+                margin-top: 7px;
+                transition: .4s;
+            }
+            &.-active {
+                .txt {
+                    opacity: 0;
+                }
+                .bar {
+                    &:nth-child(2) {
+                        transform: translateY(4.5px) rotate(45deg);
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(-4.5px) rotate(-45deg);
+                    }
+                }
             }
         }
     }
@@ -26,16 +70,35 @@
         margin-left: auto;
         @include mediaquery.sp {
             display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: #015579;
+            z-index: 10;
         }
         &__list {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            @include mediaquery.sp {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: common.calcResp(120) common.calcResp(30);
+            }
         }
         &__item {
             color: #fff;
             position: relative;
             border-left: 1px solid #fff;
+            @include mediaquery.sp {
+                border-top: 1px solid #fff;
+                border-left: none;
+                width: 100%;
+                &:last-child {
+                    border-bottom: 1px solid #fff;
+                }
+            }
             a {
                 color: #fff;
                 padding: 0 common.calcPc(22);
@@ -45,24 +108,105 @@
                 line-height: 1;
                 font-weight: bold;
                 @include mediaquery.sp {
+                    width: 100%;
+                    padding: common.calcResp(20) 0;
                     font-size: common.calcResp(15);
                 }
             }
             &.-modifier {
+                position: relative;
                 color: #fff;
-                padding: 0 common.calcPc(22);
+                padding: 0 common.calcPc(32) 0 common.calcPc(22);
                 display: block;
                 font-size: common.calcPc(15);
                 letter-spacing: .1em;
                 line-height: 1;
                 font-weight: bold;
                 @include mediaquery.sp {
-                    font-size: calcResp(15);
+                    padding: common.calcResp(20) 0;
+                    font-size: common.calcResp(15);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: common.calcPc(2);
+                    right: common.calcPc(16);
+                    width: common.calcPc(6);
+                    height: common.calcPc(6);
+                    border-top: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    transform: rotate(135deg);
                 }
             }
         }
         &__inner {
-            display: none;
+            display: block;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            top: common.calcPc(40);
+            z-index: 10;
+            width: common.calcPc(347);
+            padding: common.calcPc(24) common.calcPc(32);
+            @include mediaquery.sp {
+                width: 100%;
+                background: none;
+                position: relative;
+            }
+            .head {
+                color: var(--color-blue);
+                margin: 0 0 common.calcPc(20);
+                @include mediaquery.sp {
+                    margin: 0 0 common.calcResp(20);
+                    color: var(--color-white)
+                }
+            }
+            .column {
+                p {
+                    @extend .m-txt-14;
+                    font-weight: bold;
+                    @include mediaquery.sp {
+                        color: var(--color-white);
+                    }
+                }
+                a {
+                    position: relative;
+                    display: block;
+                    color: var(--color-blue);
+                    padding: common.calcPc(8) 0;
+                    border-bottom: 1px dashed var(--color-blue);
+                    @include mediaquery.sp {
+                        color: var(--color-white);
+                        padding: common.calcResp(8) 0;
+                        border-bottom: 1px dashed var(--color-white);
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: common.calcPc(10);
+                        right: common.calcPc(0);
+                        width: common.calcPc(6);
+                        height: common.calcPc(6);
+                        border-top: 1px solid var(--color-blue);
+                        border-right: 1px solid var(--color-blue);
+                        transform: rotate(45deg);
+                        @include mediaquery.sp {
+                            top: common.calcResp(10);
+                            right: common.calcResp(0);
+                            width: common.calcResp(6);
+                            height: common.calcResp(6);
+                            border-top: 1px solid var(--color-white);
+                            border-right: 1px solid var(--color-white);
+                        }
+                    }
+                }
+                & + .column {
+                    margin-top: common.calcPc(24);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(24);
+                    }
+                }
+            }
         }
     }
     &__contact {
