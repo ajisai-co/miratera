@@ -10,8 +10,14 @@
     justify-content: center;
     background: var(--color-blue);
     padding: common.calcPc(47) common.calcPc(44) common.calcPc(23) common.calcPc(100);
+    &__logo {
+        img {
+            width: common.calcPc(71);
+            height: auto;
+        }
+    }
     &__nav {
-        margin: 0 auto;
+        margin-left: auto;
         &__list {
             display: flex;
             justify-content: flex-start;
@@ -51,7 +57,7 @@
         }
     }
     &__contact {
-        margin-left: auto;
+        margin-left: common.calcPc(130);
         a {
             position: relative;
             color: #fff;

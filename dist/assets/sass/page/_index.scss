@@ -219,7 +219,18 @@
 }
 
 .p-front-hero {
-
+    position: relative;
+    &__bg {
+        background: var(--color-blue);
+    }
+    &__txt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: common.calcPc(1143);
+        height: auto;
+    }
 }
 
 .p-front-about {

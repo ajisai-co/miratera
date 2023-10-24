@@ -5,6 +5,10 @@
 @use "../mixin/csshack";
 
 .l-summary {
+    padding-bottom: common.calcPc(321);
+    @include mediaquery.sp {
+        padding-bottom: common.calcResp(321);
+    }
     .m-breadcrumb {
         & + h2 {
             margin-top: common.calcPc(117);
@@ -180,14 +184,20 @@
     }
     &__intro {
         display: flex;
+        justify-content: space-between;
         @include mediaquery.sp {
             display: block;
         }
         .sub {
             order: 1;
+            img {
+                width: common.calcPc(565);
+                height: auto;
+            }
         }
         .main {
-            order: 1;
+            order: 0;
+            width: common.calcPc(571);
             .lead {
                 font-size: common.calcPc(22);
                 color: var(--color-blue);

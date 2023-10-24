@@ -96,7 +96,7 @@
         background: var(--color-grad01);
         position: absolute;
         left: 0;
-        top: 0;
+        top: calc(-1 * common.calcPc(349));
         z-index: -1;
         clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 0% 82%);
     }
