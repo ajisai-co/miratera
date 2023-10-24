@@ -157,7 +157,7 @@ h3 {
 	letter-spacing: .17em;
 	line-height: 1.68;
 	@include mediaquery.sp {
-		font-size: calcResp(22);
+		font-size: calcResp(18);
 	}
 }
 
@@ -367,7 +367,7 @@ p, span, a {
 	margin: 0 auto;
 	@include mediaquery.sp {
 		width: 100%;
-		padding: 0 30px;
+		padding: 0 calcResp(16);
 	}
 }
 
@@ -697,6 +697,9 @@ p, span, a {
 .m-box-grad02 {
 	background: var(--color-grad03);
 	padding: calcPc(76) calcPc(105) calcPc(138);
+	@include mediaquery.sp {
+		padding: calcResp(24) calcResp(16);
+	}
 	.m-label01 {
 		& + h3 {
 			margin-top: calcPc(40);
@@ -719,7 +722,7 @@ p, span, a {
 	& + .m-link {
 		margin-top: calcPc(149);
 		@include mediaquery.sp {
-			margin-top: calcResp(149);
+			margin-top: calcResp(70);
 		}
 	}
 }
@@ -806,6 +809,7 @@ p, span, a {
 		@extend .m-txt-16;
 		@include mediaquery.sp {
 			margin: 0 0 calcResp(40);
+			text-align: left;
 		}
 	}
 	&__list {
@@ -858,8 +862,7 @@ p, span, a {
 	padding: calcPc(42) 0;
 	@include mediaquery.sp {
 		padding: calcResp(42) 0;
-		margin: 0 30px;
-		width: calc(100% - 60px);
+		margin: 0 auto;
 	}
 	& + & {
 		margin-top: calcPc(114);
@@ -878,7 +881,8 @@ p, span, a {
 		background: #fff;
 		padding: 0 20px;
 		@include mediaquery.sp {
-			top: calc(-1 * calcResp(20));
+			top: calc(-1 * calcResp(12));
+			word-break: keep-all;
 		}
 	}
 	&__txt {
@@ -909,10 +913,15 @@ p, span, a {
 	place-content: center;
 	@include mediaquery.sp {
 		grid-template-columns: repeat(2, 1fr);
-		gap: calcResp(24);
+		display: block;
 	}
 	li {
 		margin-inline: auto;
+		@include mediaquery.sp {
+			& + li {
+				margin-top: calcResp(40);
+			}
+		}
 	}
 	&__thumb {
 		& + .m-list01__head {
@@ -951,7 +960,7 @@ p, span, a {
 		background: var(--color-blue);
 		padding: calcPc(40) calcPc(32);
 		@include mediaquery.sp {
-			padding: calcResp(40) calcResp(32);
+			padding: calcResp(20) calcResp(16);
 		}
 		& + & {
 			&::before {
@@ -965,7 +974,11 @@ p, span, a {
 				border-right: 2px solid var(--color-blue);
 				transform: rotate(45deg);
 				@include mediaquery.sp {
-					left: calc(-1 * calcResp(16));
+					width: calcResp(14);
+					height: calcResp(14);
+					top: calcResp(-24);
+					left: calc( 50% - calcResp(7) );
+					transform: rotate(135deg);
 				}
 			}
 		}
@@ -975,8 +988,12 @@ p, span, a {
 		margin: 0 0 calcPc(16);
 		height: calcPc(80);
 		@include mediaquery.sp {
-			height: calcResp(80);
+			height: calcResp(40);
 			margin: 0 0 calcResp(16);
+			img{
+				height: 100%;
+				width: auto;
+			}
 		}
 	}
 	&__head {
@@ -1040,7 +1057,7 @@ p, span, a {
 		background: var(--color-white);
 		padding: calcPc(38) calcPc(56);
 		@include mediaquery.sp {
-			padding: calcResp(32) calcResp(24);
+			padding: calcResp(26) calcResp(16);
 		}
 		&::before, &::after {
 			content: "";
@@ -1048,8 +1065,8 @@ p, span, a {
 			height: calcPc(62);
 			position: absolute;
 			@include mediaquery.sp {
-				width: calcResp(156);
-				height: calcResp(62);
+				width: calcResp(100);
+				height: calcResp(48);
 			}
 		}
 		&::before {
@@ -1065,8 +1082,14 @@ p, span, a {
 			border-bottom: 2px solid var(--color-blue);
 		}
 		h5 {
-			@extend .m-txt-22;
+			font-size: calcPc(22);
+			font-weight: bold;
+			letter-spacing: .17em;
+			line-height: 1.68;
 			color: var(--color-blue);
+			@include mediaquery.sp {
+				font-size: calcResp(16);
+			}
 			& + .column {
 				margin-top: calcPc(4);
 				@include mediaquery.sp {
@@ -1113,16 +1136,20 @@ p, span, a {
 		}
 		.lbl {
 			display: inline-block;
-			@extend .m-txt-17;
+			font-size: calcPc(17);
+			color: var(--color-blue);
+			font-weight: 500;
+			letter-spacing: .17em;
+			line-height: 1.7;
 			font-weight: bold;
 			line-height: 1;
-			color: var(--color-white);
 			background: var(--color-blue);
 			padding: calcPc(7) calcPc(21) calcPc(7) calcPc(17);
 			clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
 			margin-right: calcPc(28);
 			@include mediaquery.sp {
-				padding: calcResp(7) calcResp(21) calcResp(7) calcResp(17);
+				font-size: calcResp(14);
+				padding: calcResp(7) calcResp(16) calcResp(7) calcResp(12);
 				margin-right: calcResp(12);
 			}
 		}
@@ -1195,16 +1222,18 @@ p, span, a {
 			}
 		}
 		.lbl {
-			@extend .m-txt-17;
-			font-weight: bold;
+			font-size: calcPc(17);
+			color: #fff;
+			letter-spacing: .17em;
 			line-height: 1;
-			color: var(--color-white);
+			font-weight: bold;
 			background: var(--color-blue);
 			padding: calcPc(7) calcPc(21) calcPc(7) calcPc(17);
 			clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
 			margin-right: calcPc(28);
 			@include mediaquery.sp {
-				padding: calcResp(7) calcResp(21) calcResp(7) calcResp(17);
+				font-size: calcResp(12);
+				padding: calcResp(7) calcResp(17) calcResp(7) calcResp(12);
 				margin-right: calcResp(12);
 			}
 		}
@@ -1216,8 +1245,9 @@ p, span, a {
 			color: var(--color-blue);
 			margin-right: calcPc(21);
 			@include mediaquery.sp {
-				margin-right: calcResp(21);
-				font-size: calcResp(38);
+				margin-right: 0;
+				font-size: calcResp(30);
+				width: 70%;
 			}
 			span {
 				color: var(--color-blue);
@@ -1227,11 +1257,14 @@ p, span, a {
 			display: block;
 			border: 1px solid var(--color-blue);
 			color: var(--color-blue);
-			@extend .m-txt-17;
+			font-size: calcPc(17);
+			letter-spacing: .17em;
+			line-height: 1.7;
 			font-weight: bold;
 			border-radius: calcPc(22);
 			padding: calcPc(2) calcPc(12);
 			@include mediaquery.sp {
+				font-size: calcResp(14);
 				border-radius: calcResp(22);
 				padding: calcResp(2) calcResp(12);
 				margin-top: calcResp(10);
@@ -1269,7 +1302,7 @@ p, span, a {
             padding: calcPc(27) calcPc(41) calcPc(24) calcPc(42);
             @include mediaquery.sp {
                 border-radius: calcResp(15);
-                padding: calcResp(27) calcResp(41) calcResp(24) calcResp(42);
+                padding: calcResp(27) calcResp(20);
             }
             &::before {
 				counter-increment: number;
@@ -1277,7 +1310,7 @@ p, span, a {
 				position: absolute;
 				width: calcPc(51);
 				height: calcPc(51);
-				left: calc(-1 * calcPc(25));
+				left: calcPc(25);
 				top: calcPc(12);
 				background: var(--color-blue);
 				border: 1px solid #fff;
@@ -1290,10 +1323,20 @@ p, span, a {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				@include mediaquery.sp {
+					width: calcResp(38);
+					height: calcResp(38);
+					font-size: calcResp(16);
+					left: calcResp(15);
+					top: calcResp(22);
+				}
 			}
 			&.-modifier {
 				&::before {
 					font-size: calcPc(18);
+					@include mediaquery.sp {
+						font-size: calcResp(14);
+					}
 				}
 			}
             & + li {
@@ -1307,10 +1350,15 @@ p, span, a {
 				line-height: 1.64;
             }
             h4 {
-                @extend .m-txt-22;
+				font-size: calcPc(22);
+				font-weight: bold;
+				letter-spacing: .17em;
+				line-height: 1.68;
                 margin: 0 0 calcPc(14);
                 @include mediaquery.sp {
+					font-size: calcResp(16);
                     margin: 0 0 calcResp(14);
+					padding-left: calcResp(40);
                 }
             }
             p {
@@ -1359,6 +1407,12 @@ p, span, a {
 		gap: calcPc(18);
 		@include mediaquery.sp {
 			gap: calcResp(18);
+			display: block;
+			li{
+				& + li {
+					margin-top: calcResp(15);
+				}
+			}
 		}
 		a {
 			position: relative;
@@ -1372,8 +1426,8 @@ p, span, a {
 			align-items: center;
 			border-radius: calcPc(6);
 			@include mediaquery.sp {
-				width: calcResp(391);
-				height: calcResp(156);
+				width: 100%;
+				height: calcResp(140);
 				border-radius: calcResp(6);
 			}
 			.jp {
@@ -1399,6 +1453,12 @@ p, span, a {
 				position: absolute;
 				top: calcPc(66);
 				right: calcPc(29);
+				@include mediaquery.sp {
+					width: calcResp(27);
+					height: calcResp(27);
+					top: calcResp(55);
+					right: calcResp(19);
+				}
 			}
 			&::after {
 				content: "";
@@ -1410,6 +1470,12 @@ p, span, a {
 				position: absolute;
 				top: calcPc(75);
 				right: calcPc(40);
+				@include mediaquery.sp {
+					width: calcResp(8);
+					height: calcResp(8);
+					top: calcResp(65);
+					right: calcResp(30);
+				}
 			}
 		}
 	}
