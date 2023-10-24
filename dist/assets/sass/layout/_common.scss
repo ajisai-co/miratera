@@ -904,6 +904,7 @@ p, span, a {
 	gap: calcPc(29);
 	@include mediaquery.sp {
 		gap: calcResp(29);
+		display: block;
 	}
 	&__item {
 		position: relative;
@@ -991,6 +992,7 @@ p, span, a {
 	gap: calcPc(30);
 	@include mediaquery.sp {
 		gap: calcResp(30);
+		display: block;
 	}
 	&__item {
 		position: relative;
