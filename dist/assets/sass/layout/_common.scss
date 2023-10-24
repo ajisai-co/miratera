@@ -379,7 +379,8 @@ p, span, a {
 	padding: calcPc(76) calcPc(105) calcPc(106);
 	@include mediaquery.sp {
 		padding: calcResp(76) 20px calcResp(106);
-		margin: 0 30px;
+		margin-left: 30px;
+		margin-right: 30px;
 		width: calc(100% - 60px);
 	}
 	&::before {
@@ -391,6 +392,7 @@ p, span, a {
 		height: 100%;
 		background: grad01(135);
 		opacity: .4;
+		z-index: -1;
 	}
 	&__head {
 		text-align: center;
@@ -461,6 +463,7 @@ p, span, a {
 		grid-template-columns: repeat(2, 1fr);
 		gap: calcPc(36) 0;
 		@include mediaquery.sp {
+			grid-template-columns: repeat(1, 1fr);
 			width: 100%;
 			gap: calcResp(36) 0;
 		}
@@ -507,20 +510,28 @@ p, span, a {
 			margin-top: calcPc(85);
 			border-top: 1px solid var(--color-blue);
 			@include mediaquery.sp {
-				padding-top: calcResp(85);
-				margin-top: calcResp(85);
+				padding-top: calcResp(40);
+				margin-top: calcResp(40);
 			}
 		}
 	}
 	&__column {
 		margin: 0 auto;
 		display: flex;
+		flex-wrap: wrap;
 		.sub {
 			width: calcPc(379);
 			margin: 0 calcPc(62) 0 0;
+			@include mediaquery.sp {
+				width: 100%;
+				margin: 0 0 calcResp(20);
+			}
 		}
 		.main {
 			width: calcPc(555);
+			@include mediaquery.sp {
+				width: 100%;
+			}
 			.head {
 				margin: 0 0 calcPc(14);
 				display: inline-block;
@@ -539,6 +550,9 @@ p, span, a {
 			h4 {
 				@extend .m-txt-16;
 				margin: 0 0 calcPc(30);
+				@include mediaquery.sp {
+					margin: 0 0 calcResp(30);
+				}
 				span {
 					font-weight: bold;
 					line-height: 1.3;
@@ -555,15 +569,22 @@ p, span, a {
 			.sub {
 				order: 1;
 				margin: 0 0 0 calcPc(62);
+				@include mediaquery.sp {
+					margin: 0 0 calcResp(20);
+					order: 0;
+				}
 			}
 			.main {
 				order: 0;
+				@include mediaquery.sp {
+					order: 1;
+				}
 			}
 		}
 		& + & {
 			margin-top: calcPc(85);
 			@include mediaquery.sp {
-				margin-top: calcResp(85);
+				margin-top: calcResp(40);
 			}
 		}
 	}
@@ -571,6 +592,9 @@ p, span, a {
 		position: absolute;
 		right: calc(-1 * calcPc(28));
 		bottom: 0;
+		@include mediaquery.sp {
+			right: calc(-1 * calcResp(28));
+		}
 	}
 	&__comment {
 		display: flex;
@@ -579,7 +603,7 @@ p, span, a {
 		& + & {
 			margin-top: calcPc(69);
 			@include mediaquery.sp {
-				margin-top: calcResp(69);
+				margin-top: calcResp(40);
 			}
 		}
 		.sub {
@@ -587,8 +611,8 @@ p, span, a {
 				width: calcPc(130);
 				height: calcPc(185);
 				@include mediaquery.sp {
-					width: calcResp(130);
-					height: calcResp(185);
+					width: calcResp(60);
+					height: auto;
 				}
 			}
 		}
@@ -600,7 +624,8 @@ p, span, a {
 			border-radius: calcPc(15);
 			box-shadow: 0px 0px 10px rgba(3, 124, 178, 0.15);
 			@include mediaquery.sp {
-				width: calcResp(820);
+				padding: calcResp(18) calcResp(20);
+				width: calc(100% - calcResp(60));
 			}
 			h4 {
 				@extend .m-txt-18;
@@ -631,7 +656,7 @@ p, span, a {
 				content: "";
 				position: absolute;
 				top: 25%;
-				left: calc(-1 * calcPc(18));
+				left: -18px;
 				width: 0;
 				height: 0;
 				border-style: solid;
@@ -639,6 +664,9 @@ p, span, a {
 				border-color: transparent transparent #fff transparent;
 				transform: rotate(-70deg);
 				box-shadow: 0px 0px 10px rgba(3, 124, 178, 0.15);
+				@include mediaquery.sp {
+
+				}
 			}
 		}
 		&.-reverse {
@@ -652,7 +680,7 @@ p, span, a {
 				order: 0;
 				&::before {
 					left: auto;
-					right: calc(-1 * calcPc(18));
+					right: -18px;
 					transform: rotate(70deg);
 				}
 			}
@@ -916,11 +944,7 @@ p, span, a {
 	gap: calcPc(29);
 	@include mediaquery.sp {
 		gap: calcResp(29);
-<<<<<<< HEAD
 		grid-template-columns: repeat(1, 1fr);
-=======
-		display: block;
->>>>>>> 2f261a3499fd39b87b558baa2af418ab602ddae3
 	}
 	&__item {
 		position: relative;
@@ -1010,7 +1034,6 @@ p, span, a {
 	@include mediaquery.sp {
 		grid-template-columns: repeat(1, 1fr);
 		gap: calcResp(30);
-		display: block;
 	}
 	&__item {
 		position: relative;
@@ -1080,6 +1103,78 @@ p, span, a {
 			}
 		}
 	}
+	&__body {
+		border-top: 1px dashed var(--color-blue);
+		padding-top: calcPc(30);
+		margin-top: calcPc(32);
+		@include mediaquery.sp {
+			padding-top: calcResp(30);
+			margin-top: calcResp(32);
+		}
+		.lbl {
+			display: inline-block;
+			@extend .m-txt-17;
+			font-weight: bold;
+			line-height: 1;
+			color: var(--color-white);
+			background: var(--color-blue);
+			padding: calcPc(7) calcPc(21) calcPc(7) calcPc(17);
+			clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+			margin-right: calcPc(28);
+			@include mediaquery.sp {
+				padding: calcResp(7) calcResp(21) calcResp(7) calcResp(17);
+				margin-right: calcResp(12);
+			}
+		}
+	}
+	&__plan01 {
+		margin-top: calcPc(15);
+		@include mediaquery.sp {
+			margin-top: calcResp(15);
+		}
+		li, strong {
+			@extend .m-txt-20;
+			color: var(--color-blue);
+		}
+	}
+	&__plan02 {
+		li {
+			display: flex;
+			@include mediaquery.sp {
+				flex-direction: column
+			}
+			& + li {
+				margin-top: calcPc(20);
+				@include mediaquery.sp {
+					margin-top: calcResp(20);
+				}
+			}
+			.head {
+				@extend .m-txt-18;
+				background: var(--color-blue);
+				color: var(--color-white);
+				font-weight: bold;
+				width: calcPc(134);
+				height: calcPc(31);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: calcPc(16);
+				margin-right: calcPc(13);
+				@include mediaquery.sp {
+					width: calcResp(134);
+					height: calcResp(31);
+					border-radius: calcResp(16);
+					margin: 0 0 calcResp(13);
+				}
+			}
+			.body {
+				@extend .m-txt-20;
+				color: var(--color-blue);
+				font-weight: 500;
+			}
+		}
+	}
 	&__inner {
 		border-top: 1px dashed var(--color-blue);
 		li {
@@ -1143,10 +1238,21 @@ p, span, a {
 			}
 		}
 	}
-	& + .m-btn-tran {
-		margin-top: calcPc(116);
-		@include mediaquery.sp {
-			margin-top: calcResp(40);
+	&__caption {
+		span {
+			font-size: calcPc(15);
+			letter-spacing: .1em;
+			line-height: 2.2;
+			color: var(--color-blue);
+			@include mediaquery.sp {
+				font-size: calcResp(15);
+			}
+		}
+		& + .m-btn-tran {
+			margin-top: calcPc(116);
+			@include mediaquery.sp {
+				margin-top: calcResp(40);
+			}
 		}
 	}
 }
@@ -1447,7 +1553,7 @@ p, span, a {
 .m-works {
 	padding: 0 calcPc(40);
 	@include mediaquery.sp {
-		padding: 0 calcResp(40);
+		padding: 0 calcResp(20);
 	}
 	&__head {
 		h4 {
@@ -1458,7 +1564,7 @@ p, span, a {
 		& + .m-works__list {
 			margin-top: calcPc(36);
 			@include mediaquery.sp {
-				margin-top: calcResp(36);
+				margin-top: calcResp(20);
 			}
 		}
 	}
@@ -1466,14 +1572,18 @@ p, span, a {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		gap: calcPc(19) calcPc(13);
+		@include mediaquery.sp {
+			grid-template-columns: repeat(3, 1fr);
+			gap: calcResp(16) calcResp(10);
+		}
 	}
 	& + .m-list01 {
 		margin-top: calcPc(58);
 		padding-top: calcPc(69);
 		border-top: 1px solid var(--color-blue);
 		@include mediaquery.sp {
-			margin-top: calcResp(58);
-			padding-top: calcResp(69);
+			margin-top: calcResp(40);
+			padding-top: calcResp(48);
 		}
 	}
 }

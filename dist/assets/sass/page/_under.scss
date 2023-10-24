@@ -89,6 +89,10 @@
     position: relative;
     padding: common.calcPc(340) 0 0;
     margin: 0 0 common.calcPc(150);
+    @include mediaquery.sp {
+        padding: common.calcResp(160) 0 0;
+        margin: 0 0 common.calcResp(150);
+    }
     &::before {
         content: "";
         width: 100%;
@@ -99,6 +103,11 @@
         top: calc(-1 * common.calcPc(349));
         z-index: -1;
         clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 0% 82%);
+        @include mediaquery.sp {
+            height: calc(100% + common.calcResp(100));
+            top: calc(-1 * common.calcResp(0));
+            clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 98%);
+        }
     }
     &__head {
         @extend .m-txt-31;
@@ -106,13 +115,13 @@
         & + .m-pricelist {
             margin-top: common.calcPc(85);
             @include mediaquery.sp {
-                margin-top: common.calcResp(85);
+                margin-top: common.calcResp(24);
             }
         }
         & + .l-under-price__lead {
             margin-top: common.calcPc(48);
             @include mediaquery.sp {
-                margin-top: common.calcResp(48);
+                margin-top: common.calcResp(20);
             }
         }
     }
@@ -126,6 +135,20 @@
             margin-top: common.calcPc(52);
             @include mediaquery.sp {
                 margin-top: common.calcResp(52);
+            }
+        }
+    }
+    .m-pricelist {
+        & + .l-under-price__head {
+            margin-top: common.calcPc(52);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(40);
+            }
+        }
+        & + .m-pricelist__caption {
+            margin-top: common.calcPc(40);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(24);
             }
         }
     }
@@ -222,7 +245,7 @@
         & + .m-txt-16 {
             margin-top: common.calcPc(80);
             @include mediaquery.sp {
-                margin-top: common.calcResp(80);
+                margin-top: common.calcResp(40);
             }
         }
     }
@@ -230,7 +253,7 @@
         & + .m-box-grad01 {
             margin-top: common.calcPc(110);
             @include mediaquery.sp {
-                margin-top: common.calcResp(110);
+                margin-top: common.calcResp(80);
             }
         }
         & + .m-list02 {
@@ -243,12 +266,15 @@
     .m-box-grad01 {
         padding: common.calcPc(76) common.calcPc(105) common.calcPc(107);
         @include mediaquery.sp {
-            padding: common.calcResp(76) common.calcResp(105) common.calcResp(107);
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            padding: common.calcResp(76) common.calcResp(20) common.calcResp(107);
         }
         & + .m-txt-16 {
             margin-top: common.calcPc(108);
             @include mediaquery.sp {
-                margin-top: common.calcResp(108);
+                margin-top: common.calcResp(40);
             }
         }
     }
@@ -276,7 +302,7 @@
             padding: common.calcPc(41) common.calcPc(72) common.calcPc(36) common.calcPc(204);
             @include mediaquery.sp {
                 border-radius: common.calcResp(15);
-                padding: common.calcResp(27) common.calcResp(72) common.calcResp(36) common.calcResp(204);
+                padding: common.calcResp(27) common.calcResp(20) common.calcResp(36);
             }
             & + li {
                 margin-top: common.calcPc(38);
@@ -303,6 +329,16 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+                @include mediaquery.sp {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    transform: none;
+                    width: common.calcResp(103);
+                    height: common.calcResp(103);
+                    font-size: common.calcResp(43);
+                    margin: 0 auto common.calcResp(24);
+                }
 			}
             .head {
                 @extend .m-txt-22;
@@ -325,7 +361,7 @@
         & + .m-txt-16 {
             margin-top: common.calcPc(80);
             @include mediaquery.sp {
-                margin-top: common.calcResp(80);
+                margin-top: common.calcResp(40);
             }
         }
     }
@@ -333,7 +369,7 @@
         & + .m-box-grad01 {
             margin-top: common.calcPc(110);
             @include mediaquery.sp {
-                margin-top: common.calcResp(110);
+                margin-top: common.calcResp(80);
             }
         }
         & + .m-list02 {
@@ -346,12 +382,15 @@
     .m-box-grad01 {
         padding: common.calcPc(76) common.calcPc(105) common.calcPc(107);
         @include mediaquery.sp {
-            padding: common.calcResp(76) common.calcResp(105) common.calcResp(107);
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            padding: common.calcResp(40) common.calcResp(20) common.calcResp(48);
         }
         &:nth-child(4) {
             padding: common.calcPc(76) common.calcPc(72) common.calcPc(107);
             @include mediaquery.sp {
-                padding: common.calcResp(76) common.calcResp(72) common.calcResp(107);
+                padding: common.calcResp(40) common.calcResp(20) common.calcResp(80);
             }
         }
         &__head {
@@ -373,8 +412,8 @@
                 width: common.calcPc(105);
                 height: common.calcPc(220);
                 @include mediaquery.sp {
-                    width: common.calcResp(105);
-                    height: common.calcResp(220);
+                    width: common.calcResp(80);
+                    height: auto;
                 }
             }
         }
