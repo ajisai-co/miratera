@@ -520,7 +520,7 @@ p, span, a {
 		display: flex;
 		flex-wrap: wrap;
 		.sub {
-			width: calcPc(379);
+			width: calcPc(360);
 			margin: 0 calcPc(62) 0 0;
 			@include mediaquery.sp {
 				width: 100%;

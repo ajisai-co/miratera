@@ -123,7 +123,31 @@ $(function(){
 	 */
 	// slideAll();
 	
+	/** 
+	 * 共通ページ 
+	 */
+	innerMenu();
 });
+
+var innerMenu = function() {
+	    // ホバーした要素を選択
+		var hoverElement = $('.js-menu');
+
+		// フェードインする要素を選択
+		var fadeInElement = $('.js-menuTarget');
+	
+		// hoverElementにマウスが乗った時のイベント
+		hoverElement.mouseenter(function() {
+			// fadeInElementをフェードインさせる
+			fadeInElement.fadeIn();
+		});
+	
+		// hoverElementからマウスが離れた時のイベント
+		hoverElement.mouseleave(function() {
+			// fadeInElementをフェードアウトさせる
+			fadeInElement.fadeOut();
+		});
+}
 
 var pageTop = function(){
 	// hogeの部分を書き換える
