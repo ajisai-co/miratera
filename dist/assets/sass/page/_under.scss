@@ -223,6 +223,9 @@
                 }
             }
             .btn {
+                @include mediaquery.sp{
+                    text-align: center;
+                }
                 .m-btn-blue {
                     border-radius: common.calcPc(23);
                     padding: common.calcPc(16) common.calcPc(50);

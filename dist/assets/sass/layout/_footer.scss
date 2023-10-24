@@ -7,27 +7,54 @@
 .l-footer {
     padding-top: common.calcPc(160);
     background: var(--color-blue);
+    @include mediaquery.sp {
+        padding: common.calcResp(113) 0 0;
+    }
     &__link {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 0 0 common.calcPc(160);
+        @include mediaquery.sp {
+            margin: 0 0 common.calcResp(94);
+        }
         &__item {
             img {
                 width: common.calcPc(572);
+                @include mediaquery.sp {
+                    width: 100%;
+                }
+            }
+            & + & {
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(15);
+                }
             }
         }
     }
     &__logo {
         text-align: center;
         margin: 0 0 common.calcPc(56);
+        @include mediaquery.sp {
+            margin: 0 0 common.calcResp(32);
+        }
         img {
             width: common.calcPc(476);
+            @include mediaquery.sp {
+                width: 100%;
+            }
         }
     }
     &__nav {
         margin: 0 0 common.calcPc(80);
+        @include mediaquery.sp {
+            margin: 0 0 common.calcResp(80);
+        }
         &__list {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
             position: relative;
             &::before {
                 content: "";
@@ -37,6 +64,10 @@
                 position: absolute;
                 left: 0;
                 top: common.calcPc(10);
+                @include mediaquery.sp {
+                    height: common.calcResp(12);
+                    top: common.calcResp(6);
+                }
             }
         }
         &__item {
@@ -47,7 +78,23 @@
             font-weight: 500;
             text-align: center;
             @include mediaquery.sp {
-                font-size: common.calcResp(13);
+                width: 33%;
+                font-size: common.calcResp(9);
+                &:nth-child(5) {
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: common.calcPc(12);
+                        background: var(--color-white);
+                        position: absolute;
+                        left: 0;
+                        top: common.calcPc(10);
+                        @include mediaquery.sp {
+                            height: common.calcResp(12);
+                            top: common.calcResp(6);
+                        }
+                    }
+                }
             }
             &::after {
                 content: "";
@@ -57,6 +104,10 @@
                 position: absolute;
                 right: 0;
                 top: common.calcPc(10);
+                @include mediaquery.sp {
+                    height: common.calcResp(12);
+                    top: common.calcResp(6);
+                }
             }
             a {
                 color: var(--color-white);
@@ -66,15 +117,29 @@
                 text-align: center;
                 padding: 0 common.calcPc(24);
                 @include mediaquery.sp {
-                    font-size: common.calcResp(13);
+                    font-size: common.calcResp(9);
                 }
             }
             &.-modifier {
                 padding: 0 common.calcPc(24);
+                @include mediaquery.sp {
+                    width: common.calcResp(240);
+                    display: inline-flex;
+                    justify-content: center;
+                    margin: common.calcResp(16) 0;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    &::after {
+                        content: none;
+                    }
+                }
             }
         }
         &__inner {
             margin-top: common.calcPc(10);
+            @include mediaquery.sp {
+                margin: 0 0 0 common.calcResp(10);
+            }
             li {
                 position: relative;
                 color: var(--color-white);
@@ -98,6 +163,9 @@
         text-align: center;
         background: #015579;
         padding: common.calcPc(10) 0;
+        @include mediaquery.sp {
+            padding: common.calcResp(10) 0;
+        }
         small {
             color: var(--color-white);
         }
