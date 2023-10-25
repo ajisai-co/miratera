@@ -1,6 +1,8 @@
-<?php 
-if( !is_front_page() && is_page('contact') ):
-?>
+<?php if( !is_front_page() && is_page('shinkyu') ): ?>
+
+<?php endif; ?>
+
+<?php if( !is_front_page() && is_page('contact') ): ?>
 <section class="m-contact-under">
     <div class="m-inner">
         <h3 class="head">CONTACT</h3>

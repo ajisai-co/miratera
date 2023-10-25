@@ -67,8 +67,8 @@ gulp.task("sass", () => {
     .pipe(sass())
     .pipe(postcss(postcssOption))
     // キリカエ
-    .pipe(gulp.dest("../public/assets/css/"));
-    // .pipe(gulp.dest("../wp/assets/css/"));
+    // .pipe(gulp.dest("../public/assets/css/"));
+    .pipe(gulp.dest("../wp/assets/css/"));
 });
 
 gulp.task("ejs", () => {
@@ -98,8 +98,8 @@ gulp.task('js', function(done) {
   gulp.src('./assets/js/init.js')
       .pipe(uglify())
       // キリカエ
-      .pipe(gulp.dest('../public/assets/js/'));
-      // .pipe(gulp.dest('../wp/assets/js/'));
+      // .pipe(gulp.dest('../public/assets/js/'));
+      .pipe(gulp.dest('../wp/assets/js/'));
   done();
 });
 

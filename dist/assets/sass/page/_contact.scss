@@ -151,9 +151,11 @@
         }
     }
     .head{
-        font-size: 1.6rem;
-        color: var(--color-blue);
-        margin-bottom: 1.2rem;
+        p {
+            font-size: 1.6rem;
+            color: var(--color-blue);
+            margin-bottom: 1.2rem;
+        }
     }
     .require{
         font-size: 1.2rem;
@@ -168,6 +170,7 @@
     }
     input[type="text"],
     input[type="tel"],
+    input[type="email"],
     textarea{
         border: 1px solid var(--color-blue);
         border-radius: 6px;
@@ -183,16 +186,26 @@
         }
     }
     &__policy{
-        display: flex;
-        align-items: center;
         margin-top: 23px;
-        input[type="checkbox"]{
+        p {
+            display: flex;
+            align-items: center;
+        }
+        .wpcf7-form-control-wrap{
+            position: inherit;
+        }
+        input[type="checkbox"] {
+            position: relative;
             border: 1px solid var(--color-blue);
             width: 18px;
             height: 18px;
             background: #fff;
             margin-right: 1rem;
             border-radius: 3px;
+            z-index: 10;
+            &:hover{
+                cursor: pointer;
+            }
             &:checked{
                 background: var(--color-blue);
             }
@@ -209,19 +222,8 @@
             line-height: 1;
         }
     }
-    button{
-        margin-top: 44px;
-        display: block;
-        width: 100%;
-        background: var(--color-blue);
-        color: #fff;
-        font-size: 1.4rem;
-        letter-spacing: .2em;
-        text-align: center;
-        padding: 1.6rem;
-        border-radius: 50px;
+    &__submit{
         position: relative;
-        transition: .4s;
         &:after{
             content: '';
             position: absolute;
@@ -231,9 +233,26 @@
             top: calc( 50% - 5px );
             right: 20px;
         }
-        &:hover{
-            cursor: pointer;
-            opacity: 0.7;
+        .wpcf7-submit{
+            margin-top: 44px;
+            display: block;
+            width: 100%;
+            background: var(--color-blue);
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: .2em;
+            text-align: center;
+            padding: 1.6rem;
+            border-radius: 50px;
+            position: relative;
+            transition: .4s;
+            &:hover{
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+        .wpcf7-spinner {
+            display: none !important;
         }
     }
 }

@@ -26,7 +26,7 @@
             <div class="m-label02"><p>ABOUT US</p></div>
             <h4><span class="u-device-sp">健康な人づくりから、</span><span class="u-device-sp">元気な街づくりを。</span></h4>
             <p><span>私たちは鍼灸の技術を生かし、働く人々の健康な日々をサポートし、</span><span>企業の安定的な運営を支え、成長に必要不可欠な要素として貢献しています。</span><span>これを通じて、より良い社会の創造に貢献する使命を担っています。</span></p>
-            <div class="btn"><a href="<?php echo home_url();?>/">詳細を見る</a></div>
+            <div class="btn"><a href="<?php echo home_url();?>/about">詳細を見る</a></div>
         </div>
     </section>
     <section class="p-front-service">
@@ -44,43 +44,29 @@
                 <p><span>会社の福利厚生として、福岡みらいテラス鍼灸をご利用いただけます。</span><span>簡単な条件をクリアすれば、福利厚生費として経費計上することができ、</span><span>節税しながら社員の健康を守ることができます。</span></p>
                 <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_front03.webp" alt="" width="" height="" loading="lazy"></div>
                 <div class="p-front-support__btn">
-                        <div class="btn"><a href="<?php echo home_url();?>/">法人向け 訪問鍼灸</a></div>
-                        <div class="btn"><a href="<?php echo home_url();?>/">鍼灸の福利厚生導入支援</a></div>
+                        <div class="btn"><a href="<?php echo home_url();?>/business">法人向け 訪問鍼灸</a></div>
+                        <div class="btn"><a href="<?php echo home_url();?>/welfare">鍼灸の福利厚生導入支援</a></div>
                 </div>
             </div>
             <ul class="m-list">
+                <?php
+                    $args = new WP_Query(
+                        array(
+                            'post_type' => 'post',
+                            'category_name' => 'business',
+                        )
+                    );
+                    if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
+                ?>
                 <li>
-                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                        <div class="body">
-                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                        </div>
-                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                    <div class="thumb"><?php ajsai_the_post_thumbnail()?></div>
+                    <div class="body">
+                        <h4><?php the_title(); ?></h4>
+                        <p><?php the_excerpt(); ?></p>
+                    </div>
+                    <div class="more"><a href="<?php the_permalink(); ?>">MORE</a></div>
                 </li>
-                <li>
-                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                        <div class="body">
-                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                        </div>
-                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-                </li>
-                <li>
-                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                        <div class="body">
-                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                        </div>
-                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-                </li>
-                <li>
-                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                        <div class="body">
-                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                        </div>
-                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-                </li>
+                <?php endwhile; endif; wp_reset_postdata(); ?>
             </ul>
         </div>
     </section>
@@ -92,40 +78,26 @@
             <p><span>世間から鍼灸にもたれているイメージを1歩超えて、福岡みらいテラス鍼灸のこだわりをご紹介。</span><span>痛みが取れるだけではない価値を提供するために日々邁進しております。</span></p>
             <h4>丁寧なカウンセリングと、先進の技術、確かな施術。</h4>
             <p><span>院長の日野がカウンセリングから施術まで一貫して行い、根本の原因にアプローチしていきます。</span><span>「鍼灸は初めて」という方がほとんどですが、皆さま笑顔で帰られますのでご安心ください。</span></p>
-            <div class="btn"><a href="<?php echo home_url();?>/">詳細を見る</a></div>
+            <div class="btn"><a href="<?php echo home_url();?>/shinkyu">詳細を見る</a></div>
             <ul class="m-list">
+                <?php
+                    $args = new WP_Query(
+                        array(
+                            'post_type' => 'post',
+                            'category_name' => 'commit',
+                        )
+                    );
+                    if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
+                ?>
                 <li>
-                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                    <div class="thumb"><?php ajsai_the_post_thumbnail()?></div>
                     <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                        <h4><?php the_title(); ?></h4>
+                        <p><?php the_excerpt(); ?></p>
                     </div>
-                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                    <div class="more"><a href="<?php the_permalink(); ?>">MORE</a></div>
                 </li>
-                <li>
-                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                    <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                    </div>
-                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-                </li>
-                <li>
-                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                    <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                    </div>
-                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-                </li>
-                <li>
-                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                    <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                    </div>
-                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-                </li>
+                <?php endwhile; endif; wp_reset_postdata(); ?>
             </ul>
         </div>
     </section>
@@ -137,71 +109,47 @@
             <p><span>「辛い、痛いを、この街からひとつずつ無くしたい」という想いでお客様と向き合っています。</span><span>一人ひとりの健康づくりを通して、この街を活気ある元気な街にしたいと願っています。</span></p>
         </div>
         <ul class="m-list m-inner">
+            <?php
+                $args = new WP_Query(
+                    array(
+                        'post_type' => 'post',
+                        'category_name' => 'person',
+                    )
+                );
+                if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
+            ?>
             <li>
-                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                <div class="thumb"><?php ajsai_the_post_thumbnail()?></div>
                 <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                    <h4><?php the_title(); ?></h4>
+                    <p><?php the_excerpt(); ?></p>
                 </div>
-                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                <div class="more"><a href="<?php the_permalink(); ?>">MORE</a></div>
             </li>
-            <li>
-                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                </div>
-                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-            </li>
-            <li>
-                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                </div>
-                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-            </li>
-            <li>
-                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
-                <div class="body">
-                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
-                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
-                </div>
-                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
-            </li>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
         </ul>
     </section>
     <section class="p-front-info m-inner">
         <h3><span>お知らせ</span></h3>
         <div class="m-label02"><p>NEWS</p></div>
         <ul class="p-front-info__list">
-            <li><a href="<?php echo home_url();?>/">
-                <time datetime="2023.00.00">2023.00.00</time>
-                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
+            <?php
+                $args = new WP_Query(
+                    array(
+                        'post_type' => 'information',
+                        'posts_per_page' => '5',
+                    )
+                );
+                if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
+            ?>
+            <li><a href="<?php the_permalink(); ?>">
+                <time datetime="<?php the_time('Y/m/d'); ?>"><?php the_time('Y/m/d'); ?></time>
+                <h4><?php the_title(); ?></h4>
                 <div class="more">MORE</div>
             </a></li>
-            <li><a href="<?php echo home_url();?>/">
-                <time datetime="2023.00.00">2023.00.00</time>
-                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
-                <div class="more">MORE</div>
-            </a></li>
-            <li><a href="<?php echo home_url();?>/">
-                <time datetime="2023.00.00">2023.00.00</time>
-                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
-                <div class="more">MORE</div>
-            </a></li>
-            <li><a href="<?php echo home_url();?>/">
-                <time datetime="2023.00.00">2023.00.00</time>
-                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
-                <div class="more">MORE</div>
-            </a></li>
-            <li><a href="<?php echo home_url();?>/">
-                <time datetime="2023.00.00">2023.00.00</time>
-                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
-                <div class="more">MORE</div>
-            </a></li>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
         </ul>
-        <div class="btn"><a href="<?php echo home_url();?>/">NEWS一覧</a></div>
+        <div class="btn"><a href="<?php echo home_url();?>/news">NEWS一覧</a></div>
     </section>
     <section class="p-front-contact">
         <div class="m-inner">

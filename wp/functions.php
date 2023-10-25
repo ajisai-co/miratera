@@ -57,11 +57,11 @@ function my_pre_get_posts( $query ) {
     if ( is_admin() || ! $query -> is_main_query() ) return;
     
     // is_~の条件分岐タグを使ってページごとの設定をする
-    // if ( $query -> is_home() ) {
-    //     $paged = get_query_var('paged');
-    //     $query -> set( 'posts_per_page', '' );
-    //     $query -> set( 'paged', $paged );
-    // }
+    if ( $query -> is_front() ) {
+        // $paged = get_query_var('paged');
+        $query -> set( 'posts_per_page', '4' );
+        // $query -> set( 'paged', $paged );
+    }
 }
 
 
