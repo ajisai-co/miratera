@@ -1,9 +1,237 @@
 <?php get_header();?>
-<?php 
-// コンテンツを取得
-if(have_posts()): while(have_posts()): the_post();
- the_content();
-endwhile; endif; wp_reset_postdata();
-?>
+<main role="main" class="l-common p-front">
 
+    <section class="p-front-hero">
+        <div class="p-front-hero__bg">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_hero_pc.webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_hero_sp.webp" alt="" width="" height="" loading="lazy">
+            </picture>
+            <div class="p-front-hero__txt">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/txt_front.svg" alt="" width="" height="" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="p-front-about">
+        <div class="sub">
+            <div class="txt">
+                <span class="head">院長</span>
+                <span class="jp">日野 智之</span>
+                <span class="en">Hino Satoshi</span>
+            </div>
+            <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_front01.webp" alt="" width="" height="" loading="lazy"></div>
+        </div>
+        <div class="main">
+            <h3><span>みらいテラス</span><span>鍼灸とは</span></h3>
+            <div class="m-label02"><p>ABOUT US</p></div>
+            <h4><span class="u-device-sp">健康な人づくりから、</span><span class="u-device-sp">元気な街づくりを。</span></h4>
+            <p><span>私たちは鍼灸の技術を生かし、働く人々の健康な日々をサポートし、</span><span>企業の安定的な運営を支え、成長に必要不可欠な要素として貢献しています。</span><span>これを通じて、より良い社会の創造に貢献する使命を担っています。</span></p>
+            <div class="btn"><a href="<?php echo home_url();?>/">詳細を見る</a></div>
+        </div>
+    </section>
+    <section class="p-front-service">
+        <div class="p-front-service__body">
+            <h3><span>企業向け</span><span>鍼灸サービス</span></h3>
+            <div class="m-label02"><p>SERVICE for Business</p></div>
+            <h4><span class="u-device-sp">オフィスに訪問し、</span><span class="u-device-sp">定期的な鍼灸治療を提供。</span></h4>
+            <p><span>鍼灸は目・肩・腰の不調、メンタル不調や慢性的な疲労など働く人々をとりまく健康リスクに対して</span><span>効果を発揮し、うつ病や体調不良による休職や離職リスクを未然に低下させます。</span></p>
+        </div>
+    </section>
+    <section class="p-front-support">
+        <div class="m-inner">
+            <div class="txt">
+                <h4><span><span class="u-device-sp">社員の健康を、</span><span class="u-device-sp">会社の福利厚生で守る。</span></span><span><span class="u-device-sp">より良い職場環境が、</span><span class="u-device-sp">安定経営に繋がる時代。</span></span></h4>
+                <p><span>会社の福利厚生として、福岡みらいテラス鍼灸をご利用いただけます。</span><span>簡単な条件をクリアすれば、福利厚生費として経費計上することができ、</span><span>節税しながら社員の健康を守ることができます。</span></p>
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_front03.webp" alt="" width="" height="" loading="lazy"></div>
+                <div class="p-front-support__btn">
+                        <div class="btn"><a href="<?php echo home_url();?>/">法人向け 訪問鍼灸</a></div>
+                        <div class="btn"><a href="<?php echo home_url();?>/">鍼灸の福利厚生導入支援</a></div>
+                </div>
+            </div>
+            <ul class="m-list">
+                <li>
+                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                        <div class="body">
+                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                        </div>
+                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+                <li>
+                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                        <div class="body">
+                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                        </div>
+                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+                <li>
+                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                        <div class="body">
+                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                        </div>
+                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+                <li>
+                        <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                        <div class="body">
+                            <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                            <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                        </div>
+                        <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="p-front-commit">
+        <div class="m-inner">
+            <h3><span>鍼灸へのこだわり</span></h3>
+            <div class="m-label02"><p>SHINKYU</p></div>
+            <h4>いたくない鍼、あつくない灸。</h4>
+            <p><span>世間から鍼灸にもたれているイメージを1歩超えて、福岡みらいテラス鍼灸のこだわりをご紹介。</span><span>痛みが取れるだけではない価値を提供するために日々邁進しております。</span></p>
+            <h4>丁寧なカウンセリングと、先進の技術、確かな施術。</h4>
+            <p><span>院長の日野がカウンセリングから施術まで一貫して行い、根本の原因にアプローチしていきます。</span><span>「鍼灸は初めて」という方がほとんどですが、皆さま笑顔で帰られますのでご安心ください。</span></p>
+            <div class="btn"><a href="<?php echo home_url();?>/">詳細を見る</a></div>
+            <ul class="m-list">
+                <li>
+                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                    <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                    </div>
+                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+                <li>
+                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                    <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                    </div>
+                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+                <li>
+                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                    <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                    </div>
+                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+                <li>
+                    <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                    <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                    </div>
+                    <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="p-front-person">
+        <div class="p-front-person__body">
+            <h3><span>個人向け</span><span>アットホームはりきゅうひの</span></h3>
+            <div class="m-label02"><p>SERVICE for Person</p></div>
+            <h4><span class="u-device-sp">JR「古賀」駅そば、</span><span class="u-device-sp">お気軽にご来院ください。</span></h4>
+            <p><span>「辛い、痛いを、この街からひとつずつ無くしたい」という想いでお客様と向き合っています。</span><span>一人ひとりの健康づくりを通して、この街を活気ある元気な街にしたいと願っています。</span></p>
+        </div>
+        <ul class="m-list m-inner">
+            <li>
+                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                </div>
+                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+            </li>
+            <li>
+                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                </div>
+                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+            </li>
+            <li>
+                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                </div>
+                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+            </li>
+            <li>
+                <div class="thumb"><img src="https://placehold.jp/271x168.png" alt="" width="" height="" loading="lazy"></div>
+                <div class="body">
+                        <h4>ここに記事タイトルここにタイトルが入ります。</h4>
+                        <p>ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。これはダミー。ここにテキストが入ります。…</p>
+                </div>
+                <div class="more"><a href="<?php echo home_url();?>/">MORE</a></div>
+            </li>
+        </ul>
+    </section>
+    <section class="p-front-info m-inner">
+        <h3><span>お知らせ</span></h3>
+        <div class="m-label02"><p>NEWS</p></div>
+        <ul class="p-front-info__list">
+            <li><a href="<?php echo home_url();?>/">
+                <time datetime="2023.00.00">2023.00.00</time>
+                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
+                <div class="more">MORE</div>
+            </a></li>
+            <li><a href="<?php echo home_url();?>/">
+                <time datetime="2023.00.00">2023.00.00</time>
+                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
+                <div class="more">MORE</div>
+            </a></li>
+            <li><a href="<?php echo home_url();?>/">
+                <time datetime="2023.00.00">2023.00.00</time>
+                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
+                <div class="more">MORE</div>
+            </a></li>
+            <li><a href="<?php echo home_url();?>/">
+                <time datetime="2023.00.00">2023.00.00</time>
+                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
+                <div class="more">MORE</div>
+            </a></li>
+            <li><a href="<?php echo home_url();?>/">
+                <time datetime="2023.00.00">2023.00.00</time>
+                <h4>福岡みらいテラス鍼灸オープン。ホームページを公開しました。</h4>
+                <div class="more">MORE</div>
+            </a></li>
+        </ul>
+        <div class="btn"><a href="<?php echo home_url();?>/">NEWS一覧</a></div>
+    </section>
+    <section class="p-front-contact">
+        <div class="m-inner">
+            <h3 class="p-front-contact__head">
+                <span class="en">CONTACT</span>
+                <span class="jp">お問い合わせ</span>
+            </h3>
+            <div class="p-front-contact__column">
+                <div class="p-front-contact__item">
+                        <div class="head"><span>福岡みらいテラス鍼灸</span><span>（訪問鍼灸）</span></div>
+                        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を</p>
+                        <div class="btns"><a href="<?php echo home_url();?>/">お問い合わせ</a></div>
+                </div>
+                <div class="p-front-contact__item">
+                        <div class="head"><span>アットホームはりきゅうひの</span><span>（店舗鍼灸）</span></div>
+                        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を</p>
+                        <div class="tel">
+                            <div class="tel__head">TEL</div>
+                            <div class="tel__body">
+                                <a href="tel:0929425521">092-942-5521</a>
+                                <p>火曜・日曜定休 9:00〜19:00</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <a href="<?php echo home_url();?>/">LINE</a>
+                            <a href="<?php echo home_url();?>/">Instagram</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <?php get_footer();?>
