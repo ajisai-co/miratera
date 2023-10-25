@@ -1,0 +1,190 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.l-under-person {
+    .m-txt-31 {
+        text-align: center;
+        & + .l-under-person__column {
+            margin-top: common.calcPc(84);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(40);
+            }
+        }
+    }
+    &__bg {
+        position: relative;
+        &::before {
+            content: "";
+            background: common.grad01(15);
+            width: 100%;
+            height: calc(100% + common.calcPc(660));
+            position: absolute;
+            left: 0;
+            top: calc(-1 * common.calcPc(356));
+            z-index: -1;
+            opacity: .4;
+            clip-path: polygon(0 common.calcPc(239), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(239)));
+        }
+    }
+    &__column {
+        position: relative;
+        @include mediaquery.sp {
+            flex-direction: column;
+        }
+        &.-modifier {
+            &::before {
+                content: "";
+                background: common.grad01(15);
+                width: 100%;
+                height: calc(100% + common.calcPc(289));
+                position: absolute;
+                left: 0;
+                top: calc(-1 * common.calcPc(289));
+                z-index: -1;
+                opacity: .4;
+                clip-path: polygon(0 common.calcPc(381), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(381)));
+                @include mediaquery.sp {
+                    height: calc(100% + common.calcResp(289));
+                    top: calc(-1 * common.calcResp(100));
+                }
+            }
+            .main {
+                @include mediaquery.sp {
+                    margin-bottom: common.calcResp(24);
+                }
+            }
+        }
+        &__body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1268px;
+            padding: 0 common.calcPc(30);
+            margin: 0 auto;
+            @include mediaquery.sp {
+                padding: 0 common.calcResp(20);
+            }
+        }
+        h3 {
+            display: block;
+            width: 100%;
+            margin: 0 0 common.calcPc(48);
+            @include mediaquery.sp {
+                margin: 0 0 common.calcResp(24);
+            }
+        }
+        .main {
+            width: 52.5%;
+            @include mediaquery.sp {
+                width: 100%;
+                order: 1;
+            }
+            h3 {
+                text-align: left;
+                @extend .m-txt-24;
+                padding-top: common.calcPc(40);
+                @include mediaquery.sp {
+                    text-align: center;
+                    padding-top: common.calcResp(24);
+                }
+                & + p {
+                    margin-top: common.calcPc(48);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(20);
+                    }
+                }
+            }
+            p {
+                @extend .m-txt-16;
+                & + p {
+                    margin-top: common.calcPc(40);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(16);
+                    }
+                }
+            }
+        }
+        .sub {
+            width: 37.8%;
+            @include mediaquery.sp {
+                order: 0;
+                text-align: center;
+                width: 100%;
+                margin-bottom: common.calcResp(10);
+            }
+            img {
+                width: 100%;
+                @include mediaquery.sp {
+                    width: 80%;
+                }
+            }
+        }
+        & + .l-under-person__bg {
+            margin-top: common.calcPc(84);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(84);
+            }
+        }
+        & + .m-treatment {
+            margin-top: common.calcPc(260);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(100);
+            }
+        }
+    }
+    .m-treatment {
+        & + .m-pricelist {
+            margin-top: common.calcPc(164);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(80);
+            }
+        }
+    }
+    .l-under-person__bg {
+        & + .m-btn-tran {
+            margin-top: common.calcPc(164);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(80);
+            }
+        }
+        & + h3 {
+            margin-top: common.calcPc(261);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(100);
+            }
+        }
+    }
+    h3 {
+        @extend .m-txt-31;
+        & + .m-list02 {
+            margin-top: common.calcPc(72);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(40);
+            }
+        }
+    }
+    .m-list02 {
+        & + .m-column01 {
+            margin-top: common.calcPc(108);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(60);
+                width: 90%;
+            }
+        }
+    }
+    .m-column01 {
+        & + .l-under-person__column {
+            margin-top: common.calcPc(289);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(160);
+            }
+        }
+        &__head {
+            @extend .m-txt-18;
+            font-weight: bold;
+        }
+    }
+}

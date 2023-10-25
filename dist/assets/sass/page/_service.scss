@@ -1,0 +1,103 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.l-under-service {
+    &__head {
+        @extend .m-txt-31;
+        text-align: center;
+    }
+    .m-txt-31 {
+        text-align: center;
+    }
+    &__column {
+        position: relative;
+        padding: common.calcPc(21) 0;
+        @include mediaquery.sp {
+            padding: 0;
+            margin-top: common.calcResp(120);
+        }
+        & + & {
+            margin-top: common.calcPc(45);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(100);
+            }
+        }
+        .head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            width: common.calcPc(273);
+            height: common.calcPc(273);
+            background: #fff;
+            filter: drop-shadow(0px 0px 19px rgba(133, 199, 229, 0.55));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            @include mediaquery.sp {
+                width: common.calcResp(140);
+                height: common.calcResp(140);
+                top: common.calcResp(-90);
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 auto;
+            }
+            span {
+                font-size: common.calcPc(26);
+                color: var(--color-blue);
+                font-weight: bold;
+                letter-spacing: .17em;
+                line-height: 1.714;
+                @include mediaquery.sp {
+                    font-size: common.calcResp(14);
+                }
+            }
+        }
+        .body {
+            background: #B7E0F2;
+            margin-left: common.calcPc(140);
+            padding: common.calcPc(64) common.calcPc(47) common.calcPc(43) common.calcPc(184);
+            border-radius: common.calcPc(3);
+            @include mediaquery.sp {
+                margin-left: 0;
+                padding: common.calcResp(64) common.calcResp(20) common.calcResp(43);
+                border-radius: common.calcResp(3);
+            }
+            p {
+                span {
+                    @extend .m-txt-18;
+                    line-height: 2.1;
+                }
+                & + .btn {
+                    margin-top: common.calcPc(28);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(28);
+                    }
+                }
+            }
+            .btn {
+                @include mediaquery.sp{
+                    text-align: center;
+                }
+                .m-btn-blue {
+                    border-radius: common.calcPc(23);
+                    padding: common.calcPc(16) common.calcPc(50);
+                    @include mediaquery.sp {
+                        border-radius: common.calcResp(23);
+                        padding: common.calcResp(16) common.calcResp(50);
+                    }
+                    &::after {
+                        top: common.calcPc(20);
+                        @include mediaquery.sp {
+                            top: common.calcResp(20);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -423,7 +423,7 @@
         }
     }
     &__body {
-        width: common.calcPc(768);
+        width: common.calcPc(800);
         margin: 0 common.calcPc(265) 0 auto;
         @include mediaquery.sp {
             width: 100%;
@@ -442,7 +442,7 @@
         background: linear-gradient(15deg, rgba(217, 217, 217, 0.4) 0%, rgba(99, 205, 253, 0.4) 100%);
         position: absolute;
         left: 0;
-        top: calc(-1 * common.calcPc(60));
+        top: calc(-1 * common.calcPc(0));
         clip-path: polygon(0 common.calcPc(372), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(380)));
         z-index: -1;
         @include mediaquery.sp {
@@ -500,7 +500,7 @@
     &::before {
         content: "";
         width: 100%;
-        height: common.calcPc(2923);
+        height: calc(100% + common.calcPc(510));
         position: absolute;
         left: 0;
         top: calc(-1 * common.calcPc(80));
@@ -523,7 +523,7 @@
         }
     }
     p + h4 {
-        margin-top: common.calcPc(580);
+        margin-top: common.calcPc(950);
         @include mediaquery.sp {
             margin-top: common.calcResp(72);
         }
@@ -555,7 +555,7 @@
         content: "";
         position: absolute;
         left: 0;
-        top: common.calcPc(40);
+        top: common.calcPc(20);
         width: 100%;
         height: common.calcPc(1756);
         background: url("../images/front/ph_front05.webp") no-repeat center top/cover;

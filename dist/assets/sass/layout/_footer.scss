@@ -59,18 +59,6 @@
             @include mediaquery.sp {
                 justify-content: space-between;
             }
-            &::before {
-                content: "";
-                width: 1px;
-                height: common.calcPc(12);
-                background: var(--color-white);
-                position: absolute;
-                left: 0;
-                top: common.calcPc(10);
-                @include mediaquery.sp {
-                    content: none;
-                }
-            }
         }
         &__item {
             position: relative;
@@ -84,6 +72,20 @@
                 font-size: common.calcResp(14);
                 text-align: left;
                 margin-bottom: common.calcResp(14);
+            }
+            &:nth-child(1) {
+                &::before {
+                    content: "";
+                    width: 1px;
+                    height: common.calcPc(12);
+                    background: var(--color-white);
+                    position: absolute;
+                    left: 0;
+                    top: common.calcPc(10);
+                    @include mediaquery.sp {
+                        content: none;
+                    }
+                }
             }
             &::after {
                 content: "";

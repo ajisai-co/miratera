@@ -362,10 +362,10 @@ p, span, a {
 }
 
 .m-inner {
-	max-width: 1268px;
-	width: 100%;
+	// max-width: 1268px;
+	width: calcPc(1268);
 	margin: 0 auto;
-	padding: 0 calcPc(30);
+	// padding: 0 calcPc(30);
 	@include mediaquery.sp {
 		width: 100%;
 		padding: 0 calcResp(16);

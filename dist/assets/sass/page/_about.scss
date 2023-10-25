@@ -1,0 +1,360 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.l-under-about {
+    &__intro {
+        position: relative;
+        .sub {
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include mediaquery.sp {
+                position: relative;
+            }
+            img {
+                &:nth-child(1) {
+                    width: common.calcPc(565);
+                    @include mediaquery.sp {
+                        width: 80%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    right: calc(-1 * common.calcPc(149));
+                    bottom: calc(-1 * common.calcPc(128));
+                    width: common.calcPc(425);
+                    @include mediaquery.sp {
+                        right: calc(-1 * common.calcResp(0));
+                        bottom: calc(-1 * common.calcResp(60));
+                        width: common.calcResp(200);
+                    }
+                }
+            }
+        }
+        .main {
+            padding-top: common.calcPc(128);
+            @include mediaquery.sp {
+                padding-top: common.calcResp(70);
+            }
+            h3 {
+                @extend .m-txt-20;
+                @include fonts.Coco-Gothic;
+                color: var(--color-blue);
+                & + .brackets {
+                    margin-top: common.calcPc(24);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(24);
+                    }
+                }
+            }
+            p {
+                @extend .m-txt-16;
+                & + h3 {
+                    margin-top: common.calcPc(137);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(64);
+                    }
+                }
+            }
+            .brackets {
+                display: inline-block;
+                position: relative;
+                padding: common.calcPc(24) common.calcPc(31);
+                @include mediaquery.sp {
+                    padding: common.calcResp(16) common.calcResp(24);
+                }
+                &::before, &::after {
+                    content: "";
+                    position: absolute;
+                    width: common.calcPc(57);
+                    height: common.calcPc(24);
+                    @include mediaquery.sp {
+                        width: common.calcResp(57);
+                        height: common.calcResp(24);
+                    }
+                }
+                &::before {
+                    top: 0;
+                    left: 0;
+                    border-top: 1px solid var(--color-blue);
+                    border-left: 1px solid var(--color-blue);
+                }
+                &::after {
+                    right: 0;
+                    bottom: 0;
+                    border-right: 1px solid var(--color-blue);
+                    border-bottom: 1px solid var(--color-blue);
+                }
+                span {
+                    @extend .m-txt-31;
+                    &:nth-child(2) {
+                        padding-left: 2em;
+                        @include mediaquery.sp {
+                            padding-left: 1.5em;
+                        }
+                    }
+                    &:nth-child(3) {
+                        padding-left: 4em;
+                        @include mediaquery.sp {
+                            padding-left: 3em;
+                        }
+                    }
+                }
+                & + p {
+                    margin-top: common.calcPc(52);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(24);
+                    }
+                }
+            }
+        }
+        & + .m-box-grad01 {
+            margin-top: common.calcPc(120);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(120);
+            }
+        }
+    }
+    .m-box-grad01 {
+        @include mediaquery.sp {
+            margin: common.calcResp(40) auto;
+            width: calc( 100% - 40px );
+            padding: common.calcResp(24) common.calcResp(16);
+            &__txt{
+                margin-top: common.calcResp(24);
+                text-align: left;
+                line-height: 1.8;
+                span{
+                    text-align: left;
+                    font-size: common.calcResp(14);
+                    display: inline;
+                    line-height: 1.8;
+                }
+            }
+        }
+        & + .l-under-about__feature {
+            margin-top: common.calcPc(359);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(160);
+            }
+        }
+    }
+    &__feature {
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 140vh;
+            background: linear-gradient( rgba(3, 124, 178, 0.67) 0%, rgba(99, 205, 253, 0.66) 100%);
+            position: absolute;
+            left: 0;
+            top: calc( -1 * common.calcPc(300) );
+            z-index: -1;
+            clip-path: polygon(0 common.calcPc(406), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(385)));
+            @include mediaquery.sp {
+                height: calc(100% + common.calcResp(300));
+                top: calc(-1 * common.calcResp(120));
+            }
+        }
+        .head {
+            text-align: center;
+            @extend .m-txt-31;
+            span {
+                color: var(--color-white);
+            }
+            & + .column {
+                margin-top: common.calcPc(64);
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(40);
+                }
+            }
+        }
+        .column {
+            display: flex;
+            align-items: center;
+            background: var(--color-white);
+            padding: common.calcPc(43) common.calcPc(50) common.calcPc(43) common.calcPc(57);
+            border-radius: common.calcPc(3);
+            box-shadow: 0px 0px 25px rgba(3, 124, 178, 0.44);
+            @include mediaquery.sp{
+                display: block;
+                padding: common.calcResp(43) common.calcResp(20) common.calcResp(43) common.calcResp(20);
+            }
+            .head {
+                display: flex;
+                align-items: center;
+                width: common.calcPc(426);
+                padding-right: common.calcPc(50);
+                @include mediaquery.sp {
+                    width: 100%;
+                    padding: 0 0 common.calcResp(24);
+                    justify-content: center;
+                }
+                .img {
+                    width: common.calcPc(83);
+                    text-align: center;
+                    @include mediaquery.sp {
+                        width: common.calcResp(24);
+                    }
+                }
+                h4 {
+                    width: common.calcPc(260);
+                    margin-left: auto;
+                    text-align: center;
+                    @include mediaquery.sp {
+                        width: auto;
+                        margin: 0 0 0 common.calcResp(20);
+                    }
+                    span {
+                        @extend .m-txt-20;
+                        color: var(--color-blue);
+                    }
+                }
+            }
+            .body {
+                width: common.calcPc(665);
+                border-left: 1px solid var(--color-blue);
+                padding: common.calcPc(20) 0 common.calcPc(20) common.calcPc(57);
+                @include mediaquery.sp {
+                    width: 100%;
+                    padding: common.calcResp(20) 0 0;
+                    border-top: 1px solid var(--color-blue);
+                    border-left: none;
+                }
+                p {
+                    @extend .m-txt-16;
+                    span {
+                        line-height: 1.75;
+                    }
+                }
+            }
+            & + .column {
+                margin-top: common.calcPc(40);
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(40);
+                }
+            }
+        }
+        & + .l-under-about__person {
+            margin-top: common.calcPc(356);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(240);
+            }
+        }
+    }
+    &__person {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include mediaquery.sp {
+            display: block;
+        }
+        .sub {
+            order: 1;
+            @include mediaquery.sp {
+                margin: 0 0 common.calcResp(24);
+            }
+            img {
+                width: common.calcPc(555);
+                @include mediaquery.sp {
+                    width: 100%;
+                }
+            }
+        }
+        .main {
+            order: 0;
+            width: common.calcPc(571);
+            @include mediaquery.sp {
+                width: 100%;
+            }
+            .lead {
+                @extend .m-txt-22;
+                font-weight: 500;
+                color: var(--color-blue);
+                letter-spacing: .2em;
+                @include mediaquery.sp {
+                    margin-bottom: common.calcResp(10);
+                }
+            }
+            h3 {
+                display: flex;
+                align-items: center;
+                margin: 0 0 common.calcPc(56);
+                @include mediaquery.sp {
+                    margin: 0 0 common.calcResp(56);
+                    display: block;
+                }
+                .jp {
+                    letter-spacing: .2em;
+                    font-weight: 500;
+                    font-size: common.calcPc(37);
+                    color: var(--color-blue);
+                    @include mediaquery.sp {
+                        line-height: 1;
+                        font-size: common.calcResp(37);
+                        margin-bottom: common.calcResp(12);
+                    }
+                }
+                .en {
+                    color: var(--color-blue);
+                    font-size: common.calcPc(19);
+                    margin-left: common.calcPc(13);
+                    @include mediaquery.sp {
+                        font-size: common.calcResp(19);
+                        margin-left: 0;
+                        line-height: 1;
+                        padding-left: 4px;
+                    }
+                }
+            }
+            p {
+                & + .m-box-grad01 {
+                    margin-top: common.calcPc(28);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(28);
+                    }
+                }
+            }
+            .m-box-grad01 {
+                padding: common.calcPc(29) common.calcPc(64) common.calcPc(28);
+                @include mediaquery.sp {
+                    padding: common.calcResp(29) common.calcResp(20);
+                    margin: 0;
+                    width: 100%;
+                }
+                .head {
+                    margin-bottom: common.calcPc(16);
+                    @include mediaquery.sp {
+                        margin-bottom: common.calcResp(16);
+                    }
+                }
+                & + .btns {
+                    margin-top: common.calcPc(32);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(32);
+                    }
+                }
+            }
+            .btns {
+                a {
+                    text-align: center;
+                    width: common.calcPc(211);
+                    @include mediaquery.sp {
+                        width: common.calcResp(211);
+                    }
+                    & + a {
+                        margin-left: common.calcPc(16);
+                        @include mediaquery.sp {
+                            margin-left: common.calcResp(16);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

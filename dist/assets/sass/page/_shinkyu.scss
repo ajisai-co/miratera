@@ -1,0 +1,158 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.l-under-shinkyu {
+    .m-txt-31 {
+        text-align: center;
+        & + .l-under-shinkyu__list {
+            margin-top: common.calcPc(82);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(32);
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        @include mediaquery.sp {
+            align-items: center;
+        }
+        li {
+            a{
+                position: relative;
+                width: common.calcPc(192);
+                height: common.calcPc(192);
+                background: #fff;
+                filter: drop-shadow(0px 3px 13px rgba(3, 124, 178, 0.29));
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @include mediaquery.sp {
+                    width: common.calcResp(110);
+                    height: common.calcResp(110);
+                    margin: 0 auto;
+                }
+            }
+            img {
+                position: absolute;
+                top: common.calcPc(20);
+                width: common.calcPc(43);
+                @include mediaquery.sp {
+                    top: common.calcResp(12);
+                    width: common.calcResp(38);
+                }
+            }
+            p {
+                text-align: center;
+                span {
+                    font-size: common.calcPc(20);
+                    font-weight: bold;
+                    letter-spacing: .17em;
+                    color: var(--color-blue);
+                    line-height: 1.55;
+                    @include mediaquery.sp {
+                        font-size: common.calcResp(12);
+                    }
+                }
+            }
+            & + li {
+                margin-left: common.calcPc(64);
+                @include mediaquery.sp {
+                    margin: 0 auto;
+                }
+            }
+        }
+        & + .l-under-shinkyu__column {
+            margin-top: common.calcPc(86);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(80);
+            }
+        }
+    }
+    &__column {
+        display: flex;
+        @include mediaquery.sp {
+            display: block;
+        }
+        & + & {
+            margin-top: common.calcPc(115);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(64);
+            }
+        }
+        .head {
+            margin-right: common.calcPc(51);
+            @include mediaquery.sp {
+                margin: 0 0 common.calcResp(20);
+            }
+            img {
+                width: common.calcPc(52);
+                height: auto;
+                @include mediaquery.sp {
+                    width: common.calcResp(52);
+                }
+            }
+        }
+        .body {
+            h3 {
+                @extend .m-txt-20;
+                color: var(--color-blue);
+                font-weight: bold;
+                & + p {
+                    margin-top: common.calcPc(32);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(20);
+                    }
+                }
+            }
+            p {
+                @include mediaquery.sp {
+                    line-height: 1.7;
+                }
+                span {
+                    font-size: common.calcPc(16);
+                    color: var(--color-blue);
+                    font-weight: 500;
+                    letter-spacing: .1em;
+                    line-height: 2.5;
+                    @include mediaquery.sp {
+                        display: inline;
+                        line-height: 1.7;
+                        font-size: common.calcResp(14);
+                    }
+                }
+                & + p {
+                    margin-top: common.calcPc(32);
+                    @include mediaquery.sp {
+                        margin-top: common.calcResp(16);
+                    }
+                }
+            }
+        }
+        & + .m-box-grad01 {
+            margin-top: common.calcPc(101);
+            @include mediaquery.sp {
+                width: 100%;
+                margin: common.calcResp(101) 0 0;
+                padding: common.calcResp(30) common.calcResp(20);
+            }
+        }
+    }
+    .m-box-grad01{
+        @include mediaquery.sp {
+            .m-box-grad01__txt{
+                margin-top: common.calcResp(20);
+                text-align: left;
+                span{
+                    text-align: left;
+                    font-size: common.calcResp(14);
+                }
+            }
+        }
+    }
+}
