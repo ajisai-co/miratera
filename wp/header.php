@@ -49,7 +49,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/okyu/">お灸について</a></li>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/company/">会社情報</a></li>
 		</ul>
+		<div class="l-header__contact u-device-sp"><a href="<?php echo home_url();?>/contact-b/">お問い合わせ</a></div>
 	</nav>
 
-	<div class="l-header__contact"><a href="<?php echo home_url();?>/contact-b/">お問い合わせ</a></div>
+	<div class="l-header__contact u-device-pc"><a href="<?php echo home_url();?>/contact-b/">お問い合わせ</a></div>
 </header>

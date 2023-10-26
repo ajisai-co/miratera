@@ -24,7 +24,7 @@ if ( ! function_exists( 'ajsai_get_post_thumbnail' ) ) {
       }
     } else {
       preg_match( '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', get_the_content( $post_id ), $matches );
-      $thumbnail_url = ! empty( $matches[1] ) ? $matches[1] : get_theme_file_uri( '/assets/images/_common/no-thumbnail.jpg' );
+      $thumbnail_url = ! empty( $matches[1] ) ? $matches[1] : get_theme_file_uri( '/assets/images/_common/no-thumbnail.webp' );
       $thumbnail_alt = get_the_title( $post_id );
     }
 

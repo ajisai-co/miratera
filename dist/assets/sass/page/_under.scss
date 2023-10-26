@@ -8,6 +8,7 @@
     background: var(--color-blue);
     margin: 0 0 common.calcPc(140);
     @include mediaquery.sp {
+        padding-top: 58px;
         margin: 0 0 common.calcResp(64);
     }
     .m-breadcrumb {

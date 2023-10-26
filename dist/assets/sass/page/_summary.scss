@@ -7,7 +7,7 @@
 .l-summary {
     padding-bottom: common.calcPc(321);
     @include mediaquery.sp {
-        padding-bottom: common.calcResp(100);
+        padding: 58px 0 common.calcResp(100);
     }
     .m-breadcrumb {
         & + h2 {

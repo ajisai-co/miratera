@@ -57,6 +57,7 @@
                     line-height: 1.55;
                     @include mediaquery.sp {
                         font-size: common.calcResp(12);
+                        transform: translateY(6px);
                     }
                 }
             }
@@ -167,7 +168,7 @@
 	@include mediaquery.sp {
         display: block;
 		padding: common.calcResp(112) 30px common.calcResp(113);
-        margin-top: common.calcResp(321);
+        margin-top: common.calcResp(40);
 	}
 	.head {
 		position: relative;

@@ -66,6 +66,7 @@
                 position: relative;
                 padding: common.calcPc(24) common.calcPc(31);
                 @include mediaquery.sp {
+                    margin: 0 auto;
                     padding: common.calcResp(16) common.calcResp(24);
                 }
                 &::before, &::after {
@@ -190,6 +191,9 @@
                     img {
                         width: common.calcPc(56);
                         height: auto;
+                        @include mediaquery.sp {
+                            width: common.calcResp(56);
+                        }
                     }
                 }
             }
@@ -198,6 +202,9 @@
                     img {
                         width: common.calcPc(83);
                         height: auto;
+                        @include mediaquery.sp {
+                            width: common.calcResp(83);
+                        }
                     }
                 }
             }
@@ -206,6 +213,9 @@
                     img {
                         width: common.calcPc(70);
                         height: auto;
+                        @include mediaquery.sp {
+                            width: common.calcResp(70);
+                        }
                     }
                 }
             }
@@ -273,7 +283,7 @@
         & + .l-under-about__person {
             margin-top: common.calcPc(356);
             @include mediaquery.sp {
-                margin-top: common.calcResp(240);
+                margin-top: common.calcResp(200);
             }
         }
     }
@@ -287,12 +297,13 @@
         .sub {
             order: 1;
             @include mediaquery.sp {
+                text-align: center;
                 margin: 0 0 common.calcResp(24);
             }
             img {
                 width: common.calcPc(600);
                 @include mediaquery.sp {
-                    width: 100%;
+                    width: 80%;
                 }
             }
         }
@@ -354,7 +365,6 @@
                 padding: common.calcPc(29) common.calcPc(64) common.calcPc(28);
                 @include mediaquery.sp {
                     padding: common.calcResp(29) common.calcResp(20);
-                    margin: 0 0 common.calcResp(321);
                     width: 100%;
                 }
                 .head {

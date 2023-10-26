@@ -42,7 +42,7 @@
         &:nth-child(4) {
             padding: common.calcPc(76) common.calcPc(72) common.calcPc(107);
             @include mediaquery.sp {
-                padding: common.calcResp(40) common.calcResp(20) common.calcResp(80);
+                padding: common.calcResp(40) common.calcResp(30) common.calcResp(80) common.calcResp(20);
             }
         }
         &__head {
@@ -64,7 +64,7 @@
                 width: common.calcPc(105);
                 height: common.calcPc(220);
                 @include mediaquery.sp {
-                    width: common.calcResp(80);
+                    width: common.calcResp(60);
                     height: auto;
                 }
             }

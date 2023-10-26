@@ -11,7 +11,13 @@
     background: var(--color-blue);
     padding: common.calcPc(47) common.calcPc(44) common.calcPc(23) common.calcPc(100);
     @include mediaquery.sp {
-        padding: common.calcResp(20) common.calcResp(23);
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 58px;
+        width: 100%;
+        z-index: 20;
+        background: transparent;
     }
     &__logo {
         z-index: 20;
@@ -76,6 +82,7 @@
             width: 100%;
             background: #015579;
             z-index: 10;
+            padding: common.calcResp(80) common.calcResp(30);
         }
         &__list {
             display: flex;
@@ -84,7 +91,6 @@
             @include mediaquery.sp {
                 flex-direction: column;
                 align-items: flex-start;
-                padding: common.calcResp(120) common.calcResp(30);
             }
         }
         &__item {
@@ -109,8 +115,9 @@
                 font-weight: bold;
                 @include mediaquery.sp {
                     width: 100%;
-                    padding: common.calcResp(20) 0;
-                    font-size: common.calcResp(15);
+                    padding: common.calcResp(16) 0;
+                    border: none;
+                    font-size: common.calcResp(14);
                 }
             }
             &.-modifier {
@@ -155,13 +162,17 @@
                 width: 100%;
                 background: none;
                 position: relative;
+                opacity: 1;
+                visibility: visible;
+                padding-left: 1.5em;
             }
             .head {
                 color: var(--color-blue);
                 margin: 0 0 common.calcPc(20);
                 @include mediaquery.sp {
                     margin: 0 0 common.calcResp(20);
-                    color: var(--color-white)
+                    color: var(--color-white);
+                    display: none;
                 }
             }
             .column {
@@ -215,7 +226,11 @@
     &__contact {
         margin-left: common.calcPc(130);
         @include mediaquery.sp {
-            display: none;
+            width: 100%;
+            margin: 0;
+            &.u-device-pc {
+                display: none;
+            }
         }
         a {
             position: relative;
@@ -226,9 +241,14 @@
             line-height: 1;
             padding: common.calcPc(16) common.calcPc(46) common.calcPc(15) common.calcPc(36);
             @include mediaquery.sp {
+                border: none;
                 border-radius: common.calcResp(23);
                 font-size: common.calcResp(14);
-                padding: common.calcResp(16) common.calcResp(46) common.calcResp(15) common.calcResp(36);
+                padding: common.calcResp(16) 0;
+                font-size: common.calcResp(14);
+                border-bottom: 1px solid #fff;
+                border-radius: 0;
+                font-weight: bold;
             }
             &::after {
                 content: "";
@@ -241,11 +261,7 @@
                 top: common.calcPc(18);
                 right: common.calcPc(16);
                 @include mediaquery.sp {
-                    width: common.calcResp(7);
-                    height: common.calcResp(7);
-                    top: common.calcResp(16);
-                    right: common.calcResp(16);
-
+                    content: none;
                 }
             }
         }
