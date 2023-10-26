@@ -132,10 +132,15 @@
                     border-right: 1px solid #fff;
                     transform: rotate(135deg);
                 }
+                &:hover {
+                    .l-header__nav__inner {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
             }
         }
         &__inner {
-            display: none;
             background: #fff;
             position: absolute;
             left: 0;
@@ -150,10 +155,6 @@
                 width: 100%;
                 background: none;
                 position: relative;
-            }
-            &.-active {
-                opacity: 1;
-                visibility: visible;
             }
             .head {
                 color: var(--color-blue);

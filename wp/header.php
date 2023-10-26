@@ -31,8 +31,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/about/">みらいテラス鍼灸とは</a></li>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/feature/">鍼灸へのこだわり</a></li>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/shinkyu-media/">みらテラ鍼灸メディア</a></li>
-			<li class="l-header__nav__item -modifier js-menu"><a href="<?php echo home_url();?>/service/">サービス</a>
-				<div class="l-header__nav__inner js-menuTarget">
+			<li class="l-header__nav__item -modifier"><a href="<?php echo home_url();?>/service/">サービス</a>
+				<div class="l-header__nav__inner">
 					<div class="head">みらテラ福岡の提供するサービス一覧</div>
 					<div class="column">
 						<p>法人の方</p>
