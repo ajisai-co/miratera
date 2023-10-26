@@ -9,10 +9,14 @@ require_once(dirname(__FILE__)."/templates/analytics.php"); ?>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2family=?Lato:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2family=?Lato:wght@500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T93VQCPF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header role="banner" class="l-header">
 	<h1 class="l-header__logo"><a href="<?php echo home_url();?>/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/logo_small.webp" alt=""></a></h1>
 
@@ -27,7 +31,7 @@ require_once(dirname(__FILE__)."/templates/analytics.php"); ?>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/about/">みらいテラス鍼灸とは</a></li>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/feature/">鍼灸へのこだわり</a></li>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/shinkyu-media/">みらテラ鍼灸メディア</a></li>
-			<li class="l-header__nav__item -modifier js-menu">サービス
+			<li class="l-header__nav__item -modifier js-menu"><a href="<?php echo home_url();?>/service/">サービス</a>
 				<div class="l-header__nav__inner js-menuTarget">
 					<div class="head">みらテラ福岡の提供するサービス一覧</div>
 					<div class="column">

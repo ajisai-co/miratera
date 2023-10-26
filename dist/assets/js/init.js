@@ -131,21 +131,18 @@ $(function(){
 
 var innerMenu = function() {
 	    // ホバーした要素を選択
-		var hoverElement = $('.js-menu');
-
+		var hoverElement = document.getElementsByClassName('.js-menu');
 		// フェードインする要素を選択
-		var fadeInElement = $('.js-menuTarget');
-	
+		var fadeInElement = document.getElementsByClassName('.js-menuTarget');
 		// hoverElementにマウスが乗った時のイベント
 		hoverElement.mouseenter(function() {
 			// fadeInElementをフェードインさせる
-			fadeInElement.fadeIn();
+			fadeInElement.addClass('-active');
 		});
-	
 		// hoverElementからマウスが離れた時のイベント
 		hoverElement.mouseleave(function() {
 			// fadeInElementをフェードアウトさせる
-			fadeInElement.fadeOut();
+			fadeInElement.delay(1000).removeClass('-active');
 		});
 }
 

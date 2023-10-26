@@ -120,6 +120,7 @@
                     font-size: 4.1rem;
                     color: var(--color-blue);
                     @include fonts.Lato;
+                    font-weight: 600;
                     line-height: 1;
                     @include mediaquery.sp {
                         font-size: 3rem;

@@ -1,0 +1,88 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.m-faq {
+    &__list {
+        list-style: none;
+		counter-reset: number;
+        li {
+			position: relative;
+			list-style: none;
+            background: #fff;
+            border-radius: common.calcPc(15);
+            padding: common.calcPc(27) common.calcPc(41) common.calcPc(24) common.calcPc(42);
+            @include mediaquery.sp {
+                border-radius: common.calcResp(15);
+                padding: common.calcResp(27) common.calcResp(20);
+            }
+            &::before {
+				counter-increment: number;
+				content: "Q" counter(number);
+				position: absolute;
+				width: common.calcPc(51);
+				height: common.calcPc(51);
+				left: calc(-1 * common.calcPc(25));
+				top: common.calcPc(20);
+				background: var(--color-blue);
+				border: 1px solid #fff;
+				border-radius: 50%;
+				@include fonts.Montserrat;
+				font-weight: 500;
+				color: var(--color-white);
+				font-size: common.calcPc(24);
+				letter-spacing: .1em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include mediaquery.sp {
+					width: common.calcResp(38);
+					height: common.calcResp(38);
+					font-size: common.calcResp(16);
+					left: common.calcResp(15);
+					top: common.calcResp(22);
+				}
+			}
+			&.-modifier {
+				&::before {
+					font-size: common.calcPc(18);
+					@include mediaquery.sp {
+						font-size: common.calcResp(14);
+					}
+				}
+			}
+            & + li {
+                margin-top: common.calcPc(21);
+                @include mediaquery.sp {
+                    margin-top: common.calcResp(21);
+                }
+            }
+            h4, p, span {
+                color: var(--color-blue);
+				line-height: 1.64;
+            }
+            h4 {
+				font-size: common.calcPc(22);
+				font-weight: bold;
+				letter-spacing: .17em;
+				line-height: 1.68;
+                margin: 0 0 common.calcPc(14);
+                @include mediaquery.sp {
+					font-size: common.calcResp(16);
+                    margin: 0 0 common.calcResp(14);
+					padding-left: common.calcResp(40);
+                }
+            }
+            p {
+                @extend .m-txt-14;
+            }
+			strong {
+				span {
+					font-weight: bold;
+				}
+			}
+        }
+    }
+}

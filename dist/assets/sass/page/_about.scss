@@ -149,7 +149,7 @@
         &::before {
             content: "";
             width: 100%;
-            height: 160vh;
+            height: 170%;
             background: linear-gradient( rgba(3, 124, 178, 0.67) 0%, rgba(99, 205, 253, 0.66) 100%);
             position: absolute;
             left: 0;
@@ -184,6 +184,30 @@
             @include mediaquery.sp{
                 display: block;
                 padding: common.calcResp(43) common.calcResp(20) common.calcResp(43) common.calcResp(20);
+            }
+            &:nth-child(2) {
+                .head {
+                    img {
+                        width: common.calcPc(56);
+                        height: auto;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .head {
+                    img {
+                        width: common.calcPc(83);
+                        height: auto;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .head {
+                    img {
+                        width: common.calcPc(70);
+                        height: auto;
+                    }
+                }
             }
             .head {
                 display: flex;
@@ -231,6 +255,12 @@
                     span {
                         line-height: 1.75;
                     }
+                    & + p {
+                        margin-top: common.calcPc(20);
+                        @include mediaquery.sp {
+                            margin-top: common.calcResp(20);
+                        }
+                    }
                 }
             }
             & + .column {
@@ -260,7 +290,7 @@
                 margin: 0 0 common.calcResp(24);
             }
             img {
-                width: common.calcPc(555);
+                width: common.calcPc(600);
                 @include mediaquery.sp {
                     width: 100%;
                 }
@@ -268,7 +298,7 @@
         }
         .main {
             order: 0;
-            width: common.calcPc(571);
+            width: common.calcPc(580);
             @include mediaquery.sp {
                 width: 100%;
             }
@@ -322,7 +352,6 @@
             }
             .m-box-grad01 {
                 padding: common.calcPc(29) common.calcPc(64) common.calcPc(28);
-                margin: 0 0 common.calcPc(321);
                 @include mediaquery.sp {
                     padding: common.calcResp(29) common.calcResp(20);
                     margin: 0 0 common.calcResp(321);

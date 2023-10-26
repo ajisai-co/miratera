@@ -61,7 +61,7 @@ get_header();
                             </ul>
                         </li>
                 </ul>
-                <div class="m-btn-tran"><a href="">鍼・お灸のご予約はこちら</a></div>
+                <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-c">鍼・お灸のご予約はこちら</a></div>
             </div>
         </div>
         <h3>ご利用の流れ</h3>
@@ -106,15 +106,13 @@ get_header();
         </div>
         <div class="l-under-person__column -modifier">
             <h3><span>みんなで創ろうみらいの健康</span><span>「治療ギフト」の取り組み</span></h3>
-            <div class="l-under-person__column__body">
-                <div class="main">
-                        <p>「みらいの健康を創ることを目的とした、0歳から15歳までの子どもたちを対象とした取り組みです。</p>
-                        <p>患者様は通常通り治療を受け、その治療費を「治療ギフトポイント」としてポイント化し、当院で保管しています。治療ギフトポイントは、0歳から15歳の子どもたちが施術を受ける際に利用できます。</p>
-                        <p>普段皆さんが受ける施術が、子どもたちへの施術に役立っています。鍼灸施術を通じて、私たちは『子育て世代の力になりたい』、そして『皆さんの施術を未来の健康に繋げたい』という思いを込めて、この取り組みを開始しました。」</p>
-                        <p><span>～子ども達の施術で多い症状～</span><span>・ぜんそく・便秘・かんの虫・アトピー性皮膚炎・夜尿症・スポーツ疾患</span><span>などがあります。</span><span>施術には「刺さない子ども向け専用の鍼」を使用します。</span><span>不安、不明な点はお気軽にご相談ください。</span></p>
-                </div>
-                <div class="sub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_person02.webp" alt="" width="" height="" loading="lazy"></div>
+            <div class="main">
+                    <p>「みらいの健康を創ることを目的とした、0歳から15歳までの子どもたちを対象とした取り組みです。</p>
+                    <p>患者様は通常通り治療を受け、その治療費を「治療ギフトポイント」としてポイント化し、当院で保管しています。治療ギフトポイントは、0歳から15歳の子どもたちが施術を受ける際に利用できます。</p>
+                    <p>普段皆さんが受ける施術が、子どもたちへの施術に役立っています。鍼灸施術を通じて、私たちは『子育て世代の力になりたい』、そして『皆さんの施術を未来の健康に繋げたい』という思いを込めて、この取り組みを開始しました。」</p>
+                    <p><span>～子ども達の施術で多い症状～</span><span>・ぜんそく・便秘・かんの虫・アトピー性皮膚炎・夜尿症・スポーツ疾患</span><span>などがあります。</span><span>施術には「刺さない子ども向け専用の鍼」を使用します。</span><span>不安、不明な点はお気軽にご相談ください。</span></p>
             </div>
+            <div class="sub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_person02.webp" alt="" width="" height="" loading="lazy"></div>
         </div>
         <div class="m-treatment m-inner">
             <h3 class="m-treatment__head">鍼・お灸治療での対応症状一覧</h3>

@@ -11,8 +11,17 @@
         margin: 0 0 common.calcResp(64);
     }
     .m-breadcrumb {
+        @include mediaquery.sp {
+            padding: 10px 0;
+        }
         a, li {
             color: var(--color-white);
+        }
+        li {
+            &::after {
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
+            }
         }
     }
     h2 {
@@ -116,6 +125,12 @@
             @include mediaquery.sp {
                 margin-top: common.calcResp(136);
             }
+        }
+    }
+    & + .m-box-grad02 {
+        margin-top: common.calcPc(136);
+        @include mediaquery.sp {
+            margin-top: common.calcResp(136);
         }
     }
 }

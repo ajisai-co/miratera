@@ -90,7 +90,6 @@
         &__item {
             color: #fff;
             position: relative;
-            border-left: 1px solid #fff;
             @include mediaquery.sp {
                 border-top: 1px solid #fff;
                 border-left: none;
@@ -100,6 +99,7 @@
                 }
             }
             a {
+                border-left: 1px solid #fff;
                 color: #fff;
                 padding: 0 common.calcPc(22);
                 display: block;
@@ -114,14 +114,9 @@
                 }
             }
             &.-modifier {
-                position: relative;
-                color: #fff;
-                padding: 0 common.calcPc(32) 0 common.calcPc(22);
-                display: block;
-                font-size: common.calcPc(15);
-                letter-spacing: .1em;
-                line-height: 1;
-                font-weight: bold;
+                a {
+                    padding: 0 common.calcPc(32) 0 common.calcPc(22);
+                }
                 @include mediaquery.sp {
                     padding: common.calcResp(20) 0;
                     font-size: common.calcResp(15);
@@ -146,12 +141,19 @@
             left: 0;
             top: common.calcPc(40);
             z-index: 10;
-            width: common.calcPc(347);
+            width: common.calcPc(360);
             padding: common.calcPc(24) common.calcPc(32);
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s;
             @include mediaquery.sp {
                 width: 100%;
                 background: none;
                 position: relative;
+            }
+            &.-active {
+                opacity: 1;
+                visibility: visible;
             }
             .head {
                 color: var(--color-blue);

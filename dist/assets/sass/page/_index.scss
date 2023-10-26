@@ -157,7 +157,12 @@
 
 .p-front-hero {
     position: relative;
+    width: 100vw;
+    height: 100vh;
     &__bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         background: var(--color-blue);
     }
     &__txt {
@@ -458,7 +463,7 @@
         padding: common.calcResp(52) 30px common.calcResp(113);
     }
     &__list {
-        margin: common.calcPc(106) 0 0;
+        margin: common.calcPc(106) auto 0;
         li {
             
             & + li {

@@ -54,6 +54,7 @@
                         array(
                             'post_type' => 'post',
                             'category_name' => 'business',
+                            'posts_per_page' => '4',
                         )
                     );
                     if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
@@ -85,6 +86,7 @@
                         array(
                             'post_type' => 'post',
                             'category_name' => 'commit',
+                            'posts_per_page' => '4',
                         )
                     );
                     if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
@@ -114,6 +116,7 @@
                     array(
                         'post_type' => 'post',
                         'category_name' => 'person',
+                        'posts_per_page' => '4',
                     )
                 );
                 if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
@@ -149,7 +152,7 @@
             </a></li>
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </ul>
-        <div class="btn"><a href="<?php echo home_url();?>/news">NEWS一覧</a></div>
+        <div class="btn"><a href="<?php echo home_url();?>/information">NEWS一覧</a></div>
     </section>
     <section class="p-front-contact">
         <div class="m-inner">

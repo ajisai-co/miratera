@@ -20,7 +20,7 @@
         }
         &__item {
             img {
-                width: common.calcPc(572);
+                width: common.calcPc(600);
                 @include mediaquery.sp {
                     width: 100%;
                 }
