@@ -101,175 +101,22 @@ get_header();
             </ul>
         </div>
         <div class="m-column01">
-            <h3 class="m-column01__head">鍼灸師がお灸治療に使う施術道具</h3>
-            <ul class="m-list01">
-                <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu06.webp" alt=""></div>
-                        <h4 class="m-list01__head">モグサ</h4>
-                        <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。
-                            鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
-                </li>
-                <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu07.webp" alt=""></div>
-                        <h4 class="m-list01__head">タオル</h4>
-                        <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。
-                            鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
-                </li>
-                <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu08.webp" alt=""></div>
-                        <h4 class="m-list01__head">ベッド</h4>
-                        <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。
-                            鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
-                </li>
-                <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu09.webp" alt=""></div>
-                        <h4 class="m-list01__head">ガーゼ</h4>
-                        <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。
-                            鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
-                </li>
-            </ul>
-        </div>
-        <div class="m-column01">
             <h3 class="m-column01__head">お灸治療時に患者様にご用意・ご配慮いただきたいもの</h3>
             <ul class="m-list01">
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
-                        <h4 class="m-list01__head">肩、腰、膝を出しやすい服</h4>
-                        <p class="m-list01__txt">施術着もありますが、ご自身でお持ちいただく場合は肩や腰、膝が出しやすいゆったりとした服装が望ましいです。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <h4 class="m-list01__head">肩、腰、膝を出しやすい服</h4>
+                    <p class="m-list01__txt">施術着もありますが、ご自身でお持ちいただく場合は肩や腰、膝が出しやすいゆったりとした服装が望ましいです。</p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
-                        <h4 class="m-list01__head">前後に激しい運動はNG</h4>
-                        <p class="m-list01__txt">施術でお身体が活性化されますので、施術前後の激しい運動は控えていただいております。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <h4 class="m-list01__head">前後に激しい運動はNG</h4>
+                    <p class="m-list01__txt">施術でお身体が活性化されますので、施術前後の激しい運動は控えていただいております。</p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
-                        <h4 class="m-list01__head">施術後の入浴</h4>
-                        <p class="m-list01__txt">施術後から一時間以上あけての入浴は問題ありません。<br>施術した日は、長時間の入浴や岩盤浴は極力控えてください。</p>
-                </li>
-            </ul>
-        </div>
-        <div class="m-column01">
-            <h3 class="m-column01__head">お灸の販売</h3>
-            <p class="m-column01__txt">福岡みらいテラス鍼灸では、ご自宅でもできるお灸の販売も行っています。</p>
-            <ul class="m-list01">
-                <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu11.webp" alt=""></div>
-                        <h4 class="m-list01__head">市販されているお灸</h4>
-                        <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。<br>鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="l-under-price">
-        <div class="m-inner">
-            <h3 class="l-under-price__head">鍼治療について</h3>
-            <ul class="m-pricelist">
-                <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">全身治療</h4>
-                        <ul class="m-pricelist__inner">
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                        </ul>
-                </li>
-                <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">全身治療</h4>
-                        <ul class="m-pricelist__inner">
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <h4 class="m-list01__head">施術後の入浴</h4>
+                    <p class="m-list01__txt">施術後から一時間以上あけての入浴は問題ありません。<br>施術した日は、長時間の入浴や岩盤浴は極力控えてください。</p>
                 </li>
             </ul>
         </div>
