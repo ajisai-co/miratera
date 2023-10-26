@@ -6,6 +6,7 @@
 @use "module/utility";
 @use "module/breadcrumb";
 @use "module/pagination";
+@use "module/list";
 
 // layout
 @use "layout/common";
@@ -14,11 +15,15 @@
 @use "layout/sidebar";
 
 // page
-@use "page/index";
-@use "page/under";
-@use "page/summary";
-@use "page/contact";
-@use "page/welfare";
 @use "page/about";
-@use "page/shinkyu";
+@use "page/business";
+@use "page/contact";
+@use "page/feature";
+@use "page/index";
+@use "page/person";
+@use "page/service";
+@use "page/summary";
+@use "page/under";
+@use "page/welfare";
+
 

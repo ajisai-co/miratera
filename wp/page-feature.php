@@ -2,7 +2,7 @@
 // ヘッダーを取得
 get_header();
 ?>
-<main role="main" class="l-common l-under">
+<main role="main" class="l-common l-under -feature">
     <div class="l-under-head">
         <div class="m-inner">
             <?php breadcrumb();?>
@@ -12,11 +12,11 @@ get_header();
             </h2>
         </div>
     </div>
-    <section class="l-under-shinkyu">
+    <section class="l-under-feature">
         <div class="m-inner">
             <div class="m-label02"><p>みらテラができるお手伝いできる3つのこと</p></div>
             <h3 class="m-txt-31"><span>鍼灸の技術を活かし、安定した企業運営をサポート</span></h3>
-            <ul class="l-under-shinkyu__list">
+            <ul class="l-under-feature__list">
                 <li><a href="#point01">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point01.svg" alt="POINT1" width="" height="" loading="lazy">
                         <p><span>コストの</span><span>削減</span></p>
@@ -30,7 +30,7 @@ get_header();
                         <p><span>「健康経営」</span><span>で企業イメージ</span><span>の向上</span></p>
                 </a></li>
             </ul>
-            <div class="l-under-shinkyu__column" id="point01">
+            <div class="l-under-feature__column" id="point01">
                 <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point01.svg" alt="POINT1" width="" height="" loading="lazy"></div>
                 <div class="body">
                         <h3>コストの削減</h3>
@@ -38,7 +38,7 @@ get_header();
                         <p><span>福岡みらいテラス鍼灸は、鍼灸の専門知識を活かし、働く人々の健康リスクを軽減し、体調不良による休職や</span><span>離職のリスクを低減するお手伝いをいたします。</span><span>私たちは、経験豊かで信頼できる人材が、元気に長く活躍してほしいという想いを、お客様と一緒に実現してい</span><span>きます。</span></p>
                 </div>
             </div>
-            <div class="l-under-shinkyu__column" id="point02">
+            <div class="l-under-feature__column" id="point02">
                 <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point02.svg" alt="POINT2" width="" height="" loading="lazy"></div>
                 <div class="body">
                         <h3>オフィスの活性化と生産性の向上</h3>
@@ -46,7 +46,7 @@ get_header();
                         <p><span>働く人々の健康を守ることにより、オフィスの活性化や生産性の向上など、健康な企業運営を支援します。</span></p>
                 </div>
             </div>
-            <div class="l-under-shinkyu__column" id="point03">
+            <div class="l-under-feature__column" id="point03">
                 <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy"></div>
                 <div class="body">
                         <h3>「健康経営」で企業イメージの向上</h3>

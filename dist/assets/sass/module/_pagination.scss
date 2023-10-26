@@ -13,6 +13,10 @@
 	display: flex;
     align-items: center;
     justify-content: center;
+	margin: common.calcPc(80) auto 0;
+	@include mediaquery.sp {
+		margin-top: common.calcResp(80);
+	}
 	&__prev,
 	&__next{
 		a{
@@ -21,8 +25,10 @@
 	        justify-content: center;
 	        width: 40px;
 			height: 40px;
-			border: 1px solid #333;
+			border: 1px solid var(--color-blue);
 	        box-sizing: border-box;
+			border-radius: 50%;
+			color: var(--color-blue);
 		}
 	}
 	&__body{
@@ -32,14 +38,20 @@
 			display: flex;
 	        align-items: center;
             justify-content: center;
+			color: var(--color-blue);
 		}
 		li{
 			width: 40px;
 			height: 40px;
 			list-style: none;
 			margin: 0 5px;
-			border: 1px solid #333;
+			border: 1px solid var(--color-blue);
 	        box-sizing: border-box;
+			border-radius: 50%;
+			&.current {
+				background: var(--color-blue);
+				color: #fff;
+			}
 		}
 		a{
 			width: 100%;
