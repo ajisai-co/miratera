@@ -46,27 +46,27 @@ get_header();
         </div>
         <h3>鍼治療について</h3>
         <div class="m-column01">
-            <h3 class="m-column01__head">鍼灸師が鍼治療に使う施術道具</h3>
+            <h3 class="m-column01__head">鍼治療の種類</h3>
             <ul class="m-list01">
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div>
-                        <h4 class="m-list01__head">鍼</h4>
-                        <p class="m-list01__txt">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div>
+                    <h4 class="m-list01__head">置鍼（ちしん）</h4>
+                    <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div>
-                        <h4 class="m-list01__head">タオル</h4>
-                        <p class="m-list01__txt">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div>
+                    <h4 class="m-list01__head">散鍼（さんしん）</h4>
+                    <p class="m-list01__txt">刺す鍼ではなく、皮膚を鍼で軽くたたく手法です。体表の血行を促進させ、自律神経に作用し施術後はスッキリします。</p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div>
-                        <h4 class="m-list01__head">ベッド</h4>
-                        <p class="m-list01__txt">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div>
+                    <h4 class="m-list01__head">パイオネクス</h4>
+                    <p class="m-list01__txt">円皮鍼（えんぴしん）やシール鍼とも呼ばれ、筋肉のこりの部分に貼っておくタイプの鍼です。長さは0.6mmですので、痛みはありません。施術後の効果を持続させる働きがあります。</p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div>
-                        <h4 class="m-list01__head">ガーゼ</h4>
-                        <p class="m-list01__txt">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div>
+                    <h4 class="m-list01__head">小児はり</h4>
+                    <p class="m-list01__txt">小児用の刺さない鍼を使用します。身体に刺すことはなく、専用の鍼をあてたり、体表をさすったりします。自律神経系に作用し、かんの虫や夜尿症、便秘などに効果が期待されます。</p>
                 </li>
             </ul>
         </div>
@@ -74,14 +74,19 @@ get_header();
             <h3 class="m-column01__head">鍼治療時に患者様にご用意・ご配慮いただきたいもの</h3>
             <ul class="m-list01">
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
-                        <h4 class="m-list01__head">肩の出し易い服</h4>
-                        <p class="m-list01__txt">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <h4 class="m-list01__head">肩の出し易い服</h4>
+                    <p class="m-list01__txt">施術着もありますが、ご自身でお持ちいただく場合は肩や腰、膝が出しやすいゆったりとした服装が望ましいです。</p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
-                        <h4 class="m-list01__head">前後に激しい運動はNG</h4>
-                        <p class="m-list01__txt">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <h4 class="m-list01__head">前後に激しい運動はNG</h4>
+                    <p class="m-list01__txt">施術でお身体が活性化されますので、施術前後の激しい運動は控えていただいております。</p>
+                </li>
+                <li>
+                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <h4 class="m-list01__head">施術後の入浴</h4>
+                    <p class="m-list01__txt">施術後から一時間以上あけての入浴は問題ありません。施術した日は、長時間の入浴や岩盤浴は極力控えてください。</p>
                 </li>
             </ul>
         </div>
@@ -89,137 +94,20 @@ get_header();
             <h3 class="m-column01__head">鍼治療の流れ</h3>
             <ul class="m-list02">
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                    <h4 class="m-list02__head">手指・施術部の消毒</h4>
+                    <p class="m-list02__txt">鍼を施す前に、施術者の手指、施術する部位の消毒を行います。</p>
                 </li>
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                    <h4 class="m-list02__head">滅菌保存の鍼を使用</h4>
+                    <p class="m-list02__txt">鍼は1本1本滅菌保存され使い捨てです。使用した鍼を他の人に使うことはありません。</p>
                 </li>
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow07.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                    <h4 class="m-list02__head">鍼を施します</h4>
+                    <p class="m-list02__txt">鍼をして10分ほど置いたり、刺した後すぐに抜いたり、症状によって手法を変えます。</p>
                 </li>
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow04.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="l-under-price">
-        <div class="m-inner">
-            <h3 class="l-under-price__head">鍼治療について</h3>
-            <ul class="m-pricelist">
-                <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">全身治療</h4>
-                        <ul class="m-pricelist__inner">
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                        </ul>
-                </li>
-                <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">全身治療</h4>
-                        <ul class="m-pricelist__inner">
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>メニュー名が入ります。</h5>
-                                <div class="column">
-                                    <div class="lbl">料金</div>
-                                    <div class="price">¥3,800<span>(税込)</span></div>
-                                    <div class="time">60分</div>
-                                </div>
-                            </li>
-                        </ul>
+                    <h4 class="m-list02__head">抜鍼後の消毒</h4>
+                    <p class="m-list02__txt">鍼を抜いた後は、施術部位の消毒を行います。</p>
                 </li>
             </ul>
         </div>
