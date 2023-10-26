@@ -169,6 +169,9 @@
 	&__txt {
 		@extend .m-txt-16;
 	}
+	&.-three {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .m-list02 {

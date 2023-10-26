@@ -130,7 +130,7 @@ get_header();
                             <li><img src="https://placehold.jp/137x49.png" alt="" width="" height="" loading="lazy"></li>
                         </ul>
                 </div>
-                <ul class="m-list01">
+                <ul class="m-list01 -three">
                         <li>
                             <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div>
                             <h4 class="m-list01__head">知熱（ちねつ）灸</h4>

@@ -123,7 +123,7 @@
 .l-under-price {
     position: relative;
     padding: common.calcPc(240) 0 0;
-    margin: 0 0 common.calcPc(150);
+    margin: 0 0 common.calcPc(280);
     @include mediaquery.sp {
         padding: common.calcResp(160) 0 0;
         margin: 0 0 common.calcResp(150);
@@ -131,13 +131,13 @@
     &::before {
         content: "";
         width: 100%;
-        height: calc(100% + common.calcPc(560));
+        height: calc(100% + common.calcPc(520));
         background: var(--color-grad01);
         position: absolute;
         left: 0;
-        top: calc(-1 * common.calcPc(349));
+        top: calc(-1 * common.calcPc(180));
         z-index: -1;
-        clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 0% 82%);
+        clip-path: polygon(0% common.calcPc(380), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(380)));
         @include mediaquery.sp {
             height: calc(100% + common.calcResp(100));
             top: calc(-1 * common.calcResp(0));
