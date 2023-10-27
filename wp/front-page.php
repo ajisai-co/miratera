@@ -44,8 +44,8 @@
                 <p><span>会社の福利厚生として、福岡みらいテラス鍼灸をご利用いただけます。</span><span>簡単な条件をクリアすれば、福利厚生費として経費計上することができ、</span><span>節税しながら社員の健康を守ることができます。</span></p>
                 <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_front03.webp" alt="" width="" height="" loading="lazy"></div>
                 <div class="p-front-support__btn">
-                        <div class="btn"><a href="<?php echo home_url();?>/business">法人向け 訪問鍼灸</a></div>
-                        <div class="btn"><a href="<?php echo home_url();?>/welfare">鍼灸の福利厚生導入支援</a></div>
+                        <div class="btn"><a href="<?php echo home_url();?>/service/business">法人向け 訪問鍼灸</a></div>
+                        <div class="btn"><a href="<?php echo home_url();?>/service/welfare">鍼灸の福利厚生導入支援</a></div>
                 </div>
             </div>
             <ul class="m-list">
@@ -79,7 +79,7 @@
             <p><span>世間から鍼灸にもたれているイメージを1歩超えて、福岡みらいテラス鍼灸のこだわりをご紹介。</span><span>痛みが取れるだけではない価値を提供するために日々邁進しております。</span></p>
             <h4>丁寧なカウンセリングと、先進の技術、確かな施術。</h4>
             <p><span>院長の日野がカウンセリングから施術まで一貫して行い、根本の原因にアプローチしていきます。</span><span>「鍼灸は初めて」という方がほとんどですが、皆さま笑顔で帰られますのでご安心ください。</span></p>
-            <div class="btn"><a href="<?php echo home_url();?>/shinkyu">詳細を見る</a></div>
+            <div class="btn"><a href="<?php echo home_url();?>/feature">詳細を見る</a></div>
             <ul class="m-list">
                 <?php
                     $args = new WP_Query(
@@ -109,6 +109,7 @@
             <div class="m-label02"><p>SERVICE for Person</p></div>
             <h4><span class="u-device-sp">JR「古賀」駅そば、</span><span class="u-device-sp">お気軽にご来院ください。</span></h4>
             <p><span>「辛い、痛いを、この街からひとつずつ無くしたい」という想いでお客様と向き合っています。</span><span>一人ひとりの健康づくりを通して、この街を活気ある元気な街にしたいと願っています。</span></p>
+            <div class="btn"><a href="<?php echo home_url();?>/service/customer">詳細を見る</a></div>
         </div>
         <ul class="m-list m-inner">
             <?php
@@ -164,7 +165,7 @@
                 <div class="p-front-contact__item">
                         <div class="head"><span>福岡みらいテラス鍼灸</span><span>（訪問鍼灸）</span></div>
                         <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を</p>
-                        <div class="btns"><a href="<?php echo home_url();?>/">お問い合わせ</a></div>
+                        <div class="btns"><a href="<?php echo home_url();?>/contact-b">お問い合わせ</a></div>
                 </div>
                 <div class="p-front-contact__item">
                         <div class="head"><span>アットホームはりきゅうひの</span><span>（店舗鍼灸）</span></div>

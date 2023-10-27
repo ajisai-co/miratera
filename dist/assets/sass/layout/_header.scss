@@ -5,18 +5,17 @@
 @use "../mixin/csshack";
 
 .l-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     background: var(--color-blue);
     padding: common.calcPc(47) common.calcPc(44) common.calcPc(23) common.calcPc(100);
+    z-index: 20;
     @include mediaquery.sp {
-        position: fixed;
-        left: 0;
-        top: 0;
         height: 58px;
-        width: 100%;
-        z-index: 20;
         background: transparent;
     }
     &__logo {
