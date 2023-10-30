@@ -40,7 +40,8 @@
 				<li class="l-footer__nav__item"><a href="<?php echo home_url();?>/about/">みらいテラス鍼灸とは</a></li>
 				<li class="l-footer__nav__item"><a href="<?php echo home_url();?>/feature/">鍼灸へのこだわり</a></li>
 				<li class="l-footer__nav__item"><a href="<?php echo home_url();?>/shinkyu-media/">みらテラ鍼灸メディア</a></li>
-				<li class="l-footer__nav__item -modifier">サービス
+				<li class="l-footer__nav__item -modifier">
+					<a href="<?php echo home_url();?>/service/">サービス</a>
 					<ul class="l-footer__nav__inner">
 						<li><a href="<?php echo home_url();?>/service/business/">法人向け 訪問鍼灸</a></li>
 						<li><a href="<?php echo home_url();?>/service/welfare/">鍼灸の福利厚生導入支援</a></li>

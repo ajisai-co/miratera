@@ -11,20 +11,20 @@ get_header();
             <div class="p-contact__box">
                 <p class="p-contact__box__head">お問い合わせ・ご相談できること</p>
                 <ul>
-                        <li>・訪問診療について詳しく知りたい</li>
-                        <li>・詳しい料金体験を知りたい</li>
-                        <li>・一度対面してお話ししたい</li>
-                        <li>・福利厚生の導入について相談したい</li>
+                    <li>・訪問診療について詳しく知りたい</li>
+                    <li>・詳しい料金体系を知りたい</li>
+                    <li>・一度対面してお話ししたい</li>
+                    <li>・福利厚生の導入について相談したい</li>
                 </ul>
             </div>
             <div class="p-contact__tel">
                 <p class="head">お電話からも承っておりますので<br class="u-device-sp">ご連絡ください</p>
                 <div class="tel">
-                        <p class="tel__head">TEL</p>
-                        <div class="tel__body">
-                            <a href="tel:092-942-5521">092-942-5521</a>
-                            <p>火曜・日曜定休 9:00〜19:00</p>
-                        </div>
+                    <p class="tel__head">TEL</p>
+                    <div class="tel__body">
+                        <a href="tel:092-942-5521">092-942-5521</a>
+                        <p>火曜・日曜定休 9:00〜19:00</p>
+                    </div>
                 </div>
             </div>
         </div>

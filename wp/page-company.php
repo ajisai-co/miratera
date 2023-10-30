@@ -12,39 +12,34 @@ get_header();
             <h3>会社概要</h3>
             <div class="l-summary-company__column">
                 <div class="head">商号</div>
-                <div class="body">株式会社 ◯◯◯◯◯◯◯◯</div>
+                <div class="body">福岡みらいテラス鍼灸</div>
             </div>
             <div class="l-summary-company__column">
                 <div class="head">代表</div>
-                <div class="body">代表者肩書き◯◯◯◯　代表者名◯◯ ◯◯</div>
+                <div class="body">院長　日野 智之</div>
             </div>
             <div class="l-summary-company__column">
                 <div class="head">事業内容</div>
-                <div class="body">説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</div>
+                <div class="body">
+                    <p>「法人向け訪問鍼灸」<br>オフィスに訪問し、定期的な鍼灸施術を提供</p>
+                    <p>「店舗型鍼灸院：アットホームはりきゅうひの」<br>個人様向けに、店舗型鍼灸院にて鍼灸施術を提供</p>
+                </div>
             </div>
             <div class="l-summary-company__column">
                 <div class="head">設立</div>
-                <div class="body">0000年00月00日</div>
+                <div class="body">2023年11月</div>
             </div>
             <div class="l-summary-company__column">
                 <div class="head">所在地</div>
-                <div class="body">〒000-0000 住所テキストテキストテキストテキストテキストテキストテキスト</div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">アクセス</div>
-                <div class="body">テキストテキストテキストテキストテキストテキストテキスト</div>
+                <div class="body">〒81103101 福岡県古賀市天神1-1-20-102</div>
             </div>
             <div class="l-summary-company__column">
                 <div class="head">TEL</div>
-                <div class="body">0000-0000-0000（代表）</div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">FAX</div>
-                <div class="body">0000-0000-0000（代表）</div>
+                <div class="body">092-942-5521</div>
             </div>
             <div class="l-summary-company__column">
                 <div class="head">E-mail</div>
-                <div class="body">sample@mailaddress.com</div>
+                <div class="body">athomeharikyuhino@gmail.com</div>
             </div>
         </div>
     </section>

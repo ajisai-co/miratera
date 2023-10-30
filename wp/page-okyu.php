@@ -71,32 +71,34 @@ get_header();
                 </li>
             </ul>
         </div>
+        <?php /*
         <div class="m-column01">
             <h3 class="m-column01__head">お灸治療について</h3>
             <p class="m-column01__txt">お灸治療のやり方・心配事・メンタルヘルス</p>
         </div>
+        */?>
         <div class="m-column01">
             <h3 class="m-column01__head">お灸治療の流れ</h3>
             <ul class="m-list02">
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
-                        <h4 class="m-list02__head">様々なお灸を使用</h4>
-                        <p class="m-list02__txt">症状に合わせてモグサの種類を変えて施します。</p>
+                    <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow04.svg" alt=""></div>
+                    <h4 class="m-list02__head">お灸の説明</h4>
+                    <p class="m-list02__txt">お灸をする前に、症状の確認とそれに適切なお灸の説明をします。</p>
                 </li>
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
-                        <h4 class="m-list02__head">やけどリスクの低いお灸</h4>
-                        <p class="m-list02__txt">皮膚上に専用のシールを貼ったり、綿花を置いたりして、やけどの無いお灸を提供します。</p>
+                    <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
+                    <h4 class="m-list02__head">様々なお灸を使用</h4>
+                    <p class="m-list02__txt">症状に合わせてモグサの種類を変えて施します。</p>
                 </li>
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow07.svg" alt=""></div>
-                        <h4 class="m-list02__head">心地よい温かさ</h4>
-                        <p class="m-list02__txt">施灸箇所の温度管理を行い、熱さを確認しながら施しますので、心地よい温かさのお灸です。</p>
+                    <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
+                    <h4 class="m-list02__head">やけどリスクの低いお灸</h4>
+                    <p class="m-list02__txt">皮膚上に専用のシールを貼ったり、綿花を置いたりして、やけどの無いお灸を提供します。</p>
                 </li>
                 <li class="m-list02__item">
-                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow04.svg" alt=""></div>
-                        <h4 class="m-list02__head">お灸の説明</h4>
-                        <p class="m-list02__txt">お灸をする前に、症状の確認とそれに適切なお灸の説明をします。</p>
+                    <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow07.svg" alt=""></div>
+                    <h4 class="m-list02__head">心地よい温かさ</h4>
+                    <p class="m-list02__txt">施灸箇所の温度管理を行い、熱さを確認しながら施しますので、心地よい温かさのお灸です。</p>
                 </li>
             </ul>
         </div>

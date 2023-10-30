@@ -6,25 +6,25 @@ get_header();
     <?php breadcrumb();?>
     <section class="p-contact">
         <div class="p-contact__sub">
-            <h2 class="p-contact__head"><span>訪問診療・福利厚生導入に関する</span><span>お問い合わせ・ご相談</span></h2>
-            <p class="p-contact__lead">訪問鍼灸や、福利厚生の導入に興味を持っていただきありがとうございます。<br>ご利用についてはフォームよりお問い合わせください。</p>
+            <h2 class="p-contact__head">ご予約に関するお問い合わせ</h2>
+            <p class="p-contact__lead">ご予約はお電話、またはメールフォームよりお願いいたします。</p>
             <div class="p-contact__box">
                 <p class="p-contact__box__head">お問い合わせ・ご相談できること</p>
                 <ul>
-                        <li>・訪問診療について詳しく知りたい</li>
-                        <li>・詳しい料金体験を知りたい</li>
-                        <li>・一度対面してお話ししたい</li>
-                        <li>・福利厚生の導入について相談したい</li>
+                    <li>・ご予約をとりたい</li>
+                    <li>・ご予約空き状況を確認したい</li>
+                    <li>・症状が鍼灸適応か知りたい</li>
+                    <li>・詳しい料金体系を知りたい</li>
                 </ul>
             </div>
             <div class="p-contact__tel">
                 <p class="head">お電話からも承っておりますので<br class="u-device-sp">ご連絡ください</p>
                 <div class="tel">
-                        <p class="tel__head">TEL</p>
-                        <div class="tel__body">
-                            <a href="tel:092-942-5521">092-942-5521</a>
-                            <p>火曜・日曜定休 9:00〜19:00</p>
-                        </div>
+                    <p class="tel__head">TEL</p>
+                    <div class="tel__body">
+                        <a href="tel:092-942-5521">092-942-5521</a>
+                        <p>火曜・日曜定休 9:00〜19:00</p>
+                    </div>
                 </div>
             </div>
         </div>

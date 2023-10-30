@@ -20,6 +20,14 @@ body {
     color: setting.$textColor;
 }
 
+a{
+	transition: .4s;
+	&:hover{
+		opacity: 0.7;
+		cursor: pointer;
+	}
+}
+
 @include mediaquery.sp {
 	
 }

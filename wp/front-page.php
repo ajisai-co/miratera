@@ -179,7 +179,7 @@
                     </div>
                     <div class="btns">
                         <a href="<?php echo home_url();?>/">LINE</a>
-                        <a href="<?php echo home_url();?>/">Instagram</a>
+                        <a href="https://www.instagram.com/athomeharikyu_hino/" target="_blank">instagram</a>
                     </div>
                 </div>
             </div>
