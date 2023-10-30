@@ -122,3 +122,12 @@ if( $_GET['author'] || preg_match('#/author/.+#', $_SERVER['REQUEST_URI']) ){
 }
 }
 add_action('init', 'disable_author_archive');
+
+//カスタムタクソノミーをチェックボックスで選択できるようにする
+function change_term_to_checkbox() {
+    $args = get_taxonomy('faq_cat');//★カスタムタクソノミー名
+    $args -> hierarchical = true;//Gutenberg用
+    $args -> meta_box_cb = 'post_categories_meta_box';//Classicエディタ用
+    register_taxonomy( 'faq_cat', 'faq', $args);//★カスタムタクソノミー名、カスタム投稿タイプ名
+  }
+  add_action( 'init', 'change_term_to_checkbox', 999 );

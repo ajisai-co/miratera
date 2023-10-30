@@ -176,33 +176,37 @@ get_header();
                     <li>・何か入ります</li>
                 </ul>
             </div>
+            <?php 
+            $args = new WP_Query(
+                array(
+                    'post_type' => 'faq',
+                    'posts_per_page' => '-1',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'faq_cat',
+                            'field' => 'slug',
+                            'terms' => 'business',
+                        )
+                    ),
+                )
+            );
+            if ( $args->have_posts() ) :
+            ?>
             <div class="m-box-grad01">
                 <div class="m-label01"><p>よくあるご質問</p></div>
                 <h3 class="m-box-grad01__head">よくご質問いただく内容をご紹介します</h3>
                 <ul class="l-under-business__faq">
                     <?php
-                        $args = new WP_Query(
-                            array(
-                                'post_type' => 'faq',
-                                'posts_per_page' => '-1',
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'faq_cat',
-                                        'field' => 'slug',
-                                        'terms' => 'business',
-                                    )
-                                ),
-                            )
-                        );
-                        if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
+                         while ( $args->have_posts() ) : $args->the_post();
                     ?>
                     <li>
                         <h4 class="head"><?php the_title(); ?></h4>
                         <div class="txt"><?php the_content(); ?></div>
                     </li>
-                    <?php endwhile; endif; wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
                 </ul>
             </div>
+            <?php  endif; wp_reset_postdata();?>
         </div>
     </section>
 </main>

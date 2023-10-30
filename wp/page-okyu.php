@@ -121,35 +121,39 @@ get_header();
             </ul>
         </div>
     </section>
+    <?php 
+    $args = new WP_Query(
+        array(
+            'post_type' => 'faq',
+            'posts_per_page' => '-1',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'faq_cat',
+                    'field' => 'slug',
+                    'terms' => 'okyu',
+                )
+            ),
+        )
+    );
+    if ( $args->have_posts() ) : 
+    ?>
     <section class="m-box-grad02 m-inner">
         <div class="m-label01"><p>よくあるご質問</p></div>
         <h3>よくご質問いただく内容をご紹介します</h3>
         <div class="m-faq">
             <ol class="m-faq__list">
                 <?php
-                    $args = new WP_Query(
-                        array(
-                            'post_type' => 'faq',
-                            'posts_per_page' => '-1',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'faq_cat',
-                                    'field' => 'slug',
-                                    'terms' => 'okyu',
-                                )
-                            ),
-                        )
-                    );
-                    if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
+                    while ( $args->have_posts() ) : $args->the_post();
                 ?>
                 <li>
                     <h4><?php the_title(); ?></h4>
                     <p><?php the_content(); ?></p>
                 </li>
-                <?php endwhile; endif; wp_reset_postdata(); ?>
+                <?php endwhile;  ?>
             </ol>
         </div>
     </section>
+    <?php endif; wp_reset_postdata();?>
     <div class="m-link m-inner">
         <div class="m-link__head">
             <h3>鍼治療を提供中<br class="u-device-sp">のサービス<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="387" height="36" viewBox="0 0 387 36"><defs><clipPath><rect width="387" height="36" transform="translate(458 3356)" fill="#fff" stroke="#707070" stroke-width="1"/></clipPath></defs><g transform="translate(-458 -3356)" clip-path="url(#clip-path)"><path d="M-5050.5,60.943l3.358-5.928A2,2,0,0,1-5045.4,54H-4899a25.835,25.835,0,0,0,10.12-2.042,25.917,25.917,0,0,0,8.266-5.573,25.916,25.916,0,0,0,5.573-8.265A25.834,25.834,0,0,0-4873,28a25.83,25.83,0,0,0-2.042-10.119,25.916,25.916,0,0,0-5.573-8.265,25.921,25.921,0,0,0-8.265-5.573A25.839,25.839,0,0,0-4899,2h-304a25.836,25.836,0,0,0-10.12,2.042,25.917,25.917,0,0,0-8.266,5.573,25.922,25.922,0,0,0-5.573,8.265A25.83,25.83,0,0,0-5229,28a25.834,25.834,0,0,0,2.042,10.12,25.923,25.923,0,0,0,5.573,8.265,25.917,25.917,0,0,0,8.266,5.573A25.836,25.836,0,0,0-5203,54h147.4a2,2,0,0,1,1.74,1.014l3.36,5.929m0,4.057-5.1-9H-5203a28,28,0,0,1-28-28,28,28,0,0,1,28-28h304a28,28,0,0,1,28,28,28,28,0,0,1-28,28h-146.4Z" transform="translate(5702 3324)" fill="#037cb2"/></g></svg></h3>

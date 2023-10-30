@@ -864,6 +864,10 @@ p, span, a {
 
 
 .m-link {
+	margin-top: calcPc(149);
+	@include mediaquery.sp {
+		margin-top: calcResp(70);
+	}
 	&__head {
 		text-align: center;
 		margin: 0 0 calcPc(74);
