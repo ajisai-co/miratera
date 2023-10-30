@@ -61,7 +61,7 @@ get_header();
                             </ul>
                         </li>
                 </ul>
-                <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-c">鍼・お灸のご予約はこちら</a></div>
+                <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-c/">鍼・お灸のご予約はこちら</a></div>
             </div>
         </div>
         <h3>ご利用の流れ</h3>
