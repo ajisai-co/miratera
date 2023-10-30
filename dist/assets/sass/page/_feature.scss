@@ -19,8 +19,12 @@
         justify-content: center;
         @include mediaquery.sp {
             align-items: center;
+            flex-wrap: wrap;
         }
         li {
+            @include mediaquery.sp {
+                margin: 0 auto;
+            }
             a{
                 position: relative;
                 width: common.calcPc(192);
@@ -33,8 +37,8 @@
                 align-items: center;
                 justify-content: center;
                 @include mediaquery.sp {
-                    width: common.calcResp(110);
-                    height: common.calcResp(110);
+                    width: common.calcResp(130);
+                    height: common.calcResp(130);
                     margin: 0 auto;
                 }
             }
@@ -71,7 +75,7 @@
         & + .l-under-feature__column {
             margin-top: common.calcPc(86);
             @include mediaquery.sp {
-                margin-top: common.calcResp(80);
+                margin-top: common.calcResp(45);
             }
         }
     }

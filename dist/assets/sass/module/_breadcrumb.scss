@@ -23,9 +23,12 @@
 		margin: 0 44px 0 0;
 		color: var(--color-blue);
 		font-weight: bold;
+		
 		@include mediaquery.sp {
-			font-size: common.calcResp(16);
-			margin-right: common.calcResp(20);
+			font-size: common.calcResp(12);
+			margin-right: common.calcResp(15);
+		}
+		@media (max-width: (600px)) {
 		}
 		&:after{
 			content: "";
@@ -39,10 +42,10 @@
 			border-right: 1px solid var(--color-blue);
 			margin: auto;
 			@include mediaquery.sp {
-				top: common.calcResp(6);
-				right: calc(-1 * common.calcResp(11));
-				width: common.calcResp(6);
-				height: common.calcResp(6);
+				top: common.calcResp(3);
+				right: calc(-1 * common.calcResp(7));
+				width: common.calcResp(5);
+				height: common.calcResp(5);
 			}
 		}
 		&:last-child{
@@ -54,6 +57,11 @@
 	a{
 		display: inline-block;
 		color: var(--color-blue);
+		line-height: 1.3;
+		font-size: common.calcPc(16);
+		@include mediaquery.sp {
+			font-size: common.calcResp(12);
+		}
 	}
 }
 @include mediaquery.sp {

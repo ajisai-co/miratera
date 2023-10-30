@@ -156,7 +156,9 @@
                     height: 2px;
                     background: var(--color-white);
                     @include mediaquery.sp {
-                        left: -6px;
+                        left: common.calcResp(-6);
+                        width: common.calcResp(2);
+                        height: common.calcResp(2);
                     }
                 }
             }

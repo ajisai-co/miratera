@@ -25,7 +25,7 @@
             <h3><span>みらいテラス</span><span>鍼灸とは</span></h3>
             <div class="m-label02"><p>ABOUT US</p></div>
             <h4><span class="u-device-sp">健康な人づくりから、</span><span class="u-device-sp">元気な街づくりを。</span></h4>
-            <p><span>私たちは鍼灸の技術を生かし、働く人々の健康な日々をサポートし、</span><span>企業の安定的な運営を支え、成長に必要不可欠な要素として貢献しています。</span><span>これを通じて、より良い社会の創造に貢献する使命を担っています。</span></p>
+            <p><span>私たちは鍼灸の技術を活かし、働く人々の健康な日々をサポートし、</span><span>企業の安定的な運営を支え、成長に必要不可欠な要素として貢献しています。</span><span>これを通じて、より良い社会の創造に貢献する使命を担っています。</span></p>
             <div class="btn"><a href="<?php echo home_url();?>/about">詳細を見る</a></div>
         </div>
     </section>
@@ -34,7 +34,7 @@
             <h3><span>企業向け</span><span>鍼灸サービス</span></h3>
             <div class="m-label02"><p>SERVICE for Business</p></div>
             <h4><span class="u-device-sp">オフィスに訪問し、</span><span class="u-device-sp">定期的な鍼灸治療を提供。</span></h4>
-            <p><span>鍼灸は目・肩・腰の不調、メンタル不調や慢性的な疲労など働く人々をとりまく健康リスクに対して</span><span>効果を発揮し、うつ病や体調不良による休職や離職リスクを未然に低下させます。</span></p>
+            <p><span>鍼灸は目・肩・腰の不調、メンタル不調や慢性的な疲労など働く人々をとりまく健康リスクに対して</span><span>効果を発揮し、うつ病や体調不良による休職や離職リスクの未然低下が期待できます。</span></p>
         </div>
     </section>
     <section class="p-front-support">

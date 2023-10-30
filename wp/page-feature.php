@@ -14,7 +14,7 @@ get_header();
     </div>
     <section class="l-under-feature">
         <div class="m-inner">
-            <div class="m-label02"><p>みらテラができるお手伝いできる3つのこと</p></div>
+            <div class="m-label02"><p>みらテラがお手伝いできる3つのこと</p></div>
             <h3 class="m-txt-31"><span>鍼灸の技術を活かし、安定した企業運営をサポート</span></h3>
             <ul class="l-under-feature__list">
                 <li><a href="#point01">

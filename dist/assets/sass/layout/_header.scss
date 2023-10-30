@@ -15,15 +15,21 @@
     padding: common.calcPc(47) common.calcPc(44) common.calcPc(23) common.calcPc(100);
     z-index: 20;
     @include mediaquery.sp {
-        height: 58px;
+        // height: 58px;
         background: transparent;
     }
     &__logo {
         z-index: 20;
+        line-height: 1;
+        a{
+            display: inline-block;
+            line-height: 1;
+        }
         img {
             width: common.calcPc(71);
             height: auto;
             @include mediaquery.sp {
+                max-width: 56px;
                 width: common.calcResp(56);
             }
         }
