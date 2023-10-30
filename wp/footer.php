@@ -1,6 +1,6 @@
 
 
-<?php if( !is_front_page() && !is_page('contact-b') && !is_page('contact-c') ): ?>
+<?php if( !is_front_page() && !is_page('contact-b') && !is_page('contact-c') && !is_page('customer') ): ?>
 <section class="m-contact-under">
     <div class="m-inner">
         <h3 class="head">CONTACT</h3>

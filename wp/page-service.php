@@ -13,7 +13,7 @@ get_header();
         </div>
     </div>
     <section class="l-under-service m-inner">
-        <div class="m-label02"><p>みらテラ提供するサービス一覧です</p></div>
+        <div class="m-label02"><p>みらテラが提供するサービス一覧です</p></div>
         <h3 class="m-txt-31">鍼灸サービス</h3>
         <div class="l-under-service__column">
             <div class="head"><span>法人向け</span><span>訪問鍼灸</span></div>

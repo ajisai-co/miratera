@@ -34,37 +34,38 @@ get_header();
             </div>
             <div class="m-box-grad01">
                 <div class="m-label01"><p>よくあるお悩み</p></div>
-                <h3 class="m-box-grad01__head"><span>〇〇〇〇の改善は〇〇〇〇を〇〇〇〇する</span><span>〇〇〇〇の検討が不可欠です</span></h3>
+                <h3 class="m-box-grad01__head"><span>鍼灸の福利厚生導入は</span><span>社員の健康と、より良い職場環境につながります</span></h3>
                 <ul class="m-box-grad01__list">
                         <li>
                             <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_check.svg" alt="" width="" height="" loading="lazy"></div>
                             <div class="body">
                                 <h4 class="head">POINT 01</h4>
-                                <p class="txt"><span>パソコン作業で目・肩・背中がこっている、</span><span>頭痛・眼精疲労がつらい</span></p>
+                                <p class="txt">社員様の健康サポート</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_check.svg" alt="" width="" height="" loading="lazy"></div>
                             <div class="body">
                                 <h4 class="head">POINT 02</h4>
-                                <p class="txt"><span>デスクワークで腰がだるい・重い・痛い、足がむくむ</span></p>
+                                <p class="txt">職場の生産性向上</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_check.svg" alt="" width="" height="" loading="lazy"></div>
                             <div class="body">
                                 <h4 class="head">POINT 03</h4>
-                                <p class="txt"><span>ストレス・慢性的な疲労がたまっている</span><span>運動不足</span></p>
+                                <p class="txt">安定経営を「健康」からサポート</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_check.svg" alt="" width="" height="" loading="lazy"></div>
                             <div class="body">
                                 <h4 class="head">POINT 04</h4>
-                                <p class="txt"><span>自律神経症状（睡眠の質が良くない、便秘がちなど）</span><span>仕事や生活が忙しくてお身体のケアをする時間がない</span></p>
+                                <p class="txt">鍼灸の福利厚生サポート</p>
                             </div>
                         </li>
                 </ul>
+                <?php /*
                 <div class="m-box-grad01__column -reverse">
                         <div class="sub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_welfare_point01.webp" alt="" width="" height="" loading="lazy"></div>
                         <div class="main">
@@ -98,6 +99,7 @@ get_header();
                         </div>
                 </div>
             </div>
+            */?>
             <div class="m-box-grad01">
                 <div class="m-label01"><p>信頼の理由</p></div>
                 <h3 class="m-box-grad01__head"><span>導入企業数・業界シェア共に実績が豊富です</span></h3>

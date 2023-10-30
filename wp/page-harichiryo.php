@@ -15,11 +15,11 @@ get_header();
     <section class="l-under-intro m-inner">
         <div class="l-under-intro__sub -pc"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_harichiryo01.webp" alt="" width="" height="" loading="lazy"></div>
         <div class="l-under-intro__main">
-            <h3>コピーが入ります。</h3>
+            <h3>一人ひとりに合わせた優しい鍼治療</h3>
             <div class="l-under-intro__sub -sp"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_harichiryo01.webp" alt=""></div>
-            <p>お灸はヨモギの葉を乾燥させて精製した「艾（もぐさ）」を使います。これを米粒やその半分くらいの大きさにして皮膚上で燃焼させ、ツボに温熱刺激を与える施術方法です。</p>
-            <p>昔は「直接灸」といって艾を皮膚上に直接のせて焼ききっていたので、「熱い」「やけどする」「跡が残る」というイメージがあるかと思いますが、現在はやけどさせないように、「間接灸」といって皮膚上に専用のシールを貼りその上にお灸をしたり、台座の上に艾をのせて施す「台座灸」などを使用して身体への負担が軽くなるよう、心地良い温かさのお灸をしています。</p>
-            <p>お身体の状態に応じ、熱さの程度をお聞きしながら一人ひとりに合わせた温感を調節して施していきます。</p>
+            <p>鍼治療は、鍼による物理的刺激を与えることで、人が本来持っている体を正常に保つ反応や自己治癒力を活性化することで、様々な効果が得られる治療法です。<br>運動器系、神経系の疾患以外にも、内分泌系（ホルモン）、消火器・循環器系にもその効果が認められ、WHO（世界保健機構）においても適応症状であると認められています。</p>
+            <p>当院では直径0.14〜0.18mmの髪の毛程度の、極めて細いステンレス製の鍼を使用しています。<br>鍼は滅菌された使い捨ての鍼を使用し、他人に使用した鍼は使いません。また、器具・手指の消毒など、感染症や安全面には法律で定められた管理を行っています。</p>
+            <p>　鍼治療には、専用の「刺さない鍼」や子ども向けの「小児はり」など様々な方法があり、一人ひとりに合わせて施術を行います。 </p>
         </div>
     </section>
     <section class="l-under-section m-inner">
@@ -155,9 +155,9 @@ get_header();
                 <span class="jp">福利厚生導入支援</span>
                 <span class="en">WELFARE</span>
             </a></li>
-            <li><a href="<?php echo home_url();?>/service/person/">
+            <li><a href="<?php echo home_url();?>/service/customer/">
                 <span class="jp">店舗型鍼灸院</span>
-                <span class="jp">アットホーム鍼灸ひの</span>
+                <span class="jp">アットホーム<br>はりきゅうひの</span>
                 <span class="en">for PERSON</span>
             </a></li>
         </ul>

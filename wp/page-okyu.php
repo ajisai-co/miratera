@@ -80,23 +80,23 @@ get_header();
             <ul class="m-list02">
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">様々なお灸を使用</h4>
+                        <p class="m-list02__txt">症状に合わせてモグサの種類を変えて施します。</p>
                 </li>
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">やけどリスクの低いお灸</h4>
+                        <p class="m-list02__txt">皮膚上に専用のシールを貼ったり、綿花を置いたりして、やけどの無いお灸を提供します。</p>
                 </li>
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow07.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">心地よい温かさ</h4>
+                        <p class="m-list02__txt">施灸箇所の温度管理を行い、熱さを確認しながら施しますので、心地よい温かさのお灸です。</p>
                 </li>
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow04.svg" alt=""></div>
-                        <h4 class="m-list02__head">ダミー</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">お灸の説明</h4>
+                        <p class="m-list02__txt">お灸をする前に、症状の確認とそれに適切なお灸の説明をします。</p>
                 </li>
             </ul>
         </div>
@@ -165,7 +165,7 @@ get_header();
             </a></li>
             <li><a href="<?php echo home_url();?>/service/customer/">
                 <span class="jp">店舗型鍼灸院</span>
-                <span class="jp">アットホーム鍼灸ひの</span>
+                <span class="jp">アットホーム<br>はりきゅうひの</span>
                 <span class="en">for PERSON</span>
             </a></li>
         </ul>

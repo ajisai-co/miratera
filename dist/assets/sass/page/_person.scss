@@ -40,8 +40,10 @@
             grid-template-columns: 1fr;
         }
         &.-modifier {
+            margin: common.calcPc(180) 0 common.calcPc(50);
             @include mediaquery.sp {
                 padding: 0 30px;
+                margin: common.calcResp(100) 0 common.calcResp(50);
             }
             &::before {
                 content: "";

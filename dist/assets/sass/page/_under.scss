@@ -58,6 +58,10 @@
         }
         h3 {
             color: var(--color-blue);
+            margin-bottom: common.calcPc(48);
+            @include mediaquery.sp {
+                margin-bottom: common.calcResp(48);
+            }
             & + p {
                 margin-top: common.calcPc(48);
                 @include mediaquery.sp {

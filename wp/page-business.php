@@ -14,7 +14,7 @@ get_header();
     </div>
     <section class="l-under-business">
         <div class="m-inner">
-            <div class="m-label02"><p>ここにサブコピーが入ります。これはダミーです。</p></div>
+            <div class="m-label02"><p>法人の皆様へ 訪問鍼灸とは</p></div>
             <h3 class="m-txt-31">社員の健康管理が売り上げにつながる大切な時代に</h3>
             <p class="m-txt-16"><span>腰痛や肩こりといったオフィスワークに見られるよくある症状。</span><span>これらを解決するだけでもお仕事でのパフォーマンスの向上が期待できます。</span><span>さらには、外部の人間とお話しする機会が生まれ、</span><span>緊張感を持たずに会話でき心の健康の維持にも効果があります。</span></p>
             <div class="m-box-grad01">
@@ -141,22 +141,22 @@ get_header();
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
                         <h4 class="m-list02__head">お問い合わせ</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。サービスについてはお客様に合わせた内容を都度ご提案しております。</span></p>
                 </li>
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
-                        <h4 class="m-list02__head">ヒアリング</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">カウンセリング</h4>
+                        <p class="m-list02__txt">対面にてカウンセリングを行います。代表者様のサービス導入への想いや、施術場所の環境、社員様の人数・勤務形態も同時に確認させていただき、体調チェックシートを使って、施術提案のための情報をいただきます。</p>
                 </li>
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow07.svg" alt=""></div>
-                        <h4 class="m-list02__head">契約</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">施術のご提案・動画閲覧</h4>
+                        <p class="m-list02__txt">提供させていただく施術内容とスケジュールについてご提案いたします。併せて、体験施術の日程や、説明用の動画を提供いたしますので</p>
                 </li>
                 <li class="m-list02__item">
                         <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow04.svg" alt=""></div>
-                        <h4 class="m-list02__head">診療</h4>
-                        <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                        <h4 class="m-list02__head">ご契約・ご利用開始</h4>
+                        <p class="m-list02__txt">書面にてご契約が完了次第、ご利用開始となります。ご契約は1年ごとに更新する形にしております。</p>
                 </li>
             </ul>
             <div class="m-column01">
