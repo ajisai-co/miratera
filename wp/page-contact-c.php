@@ -2,7 +2,7 @@
 // ヘッダーを取得
 get_header();
 ?>
-<main role="main" class="l-common">
+<main role="main" class="l-common l-summary -contact">
     <?php breadcrumb();?>
     <section class="p-contact">
         <div class="p-contact__sub">

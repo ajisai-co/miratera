@@ -14,7 +14,7 @@ get_header();
     </div>
     <section class="l-under-intro m-inner">
         <div class="l-under-intro__sub -pc"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_harichiryo01.webp" alt="" width="" height="" loading="lazy"></div>
-        <div class="l-under-intro__main">
+        <div class="l-under-intro__main -harichiryo">
             <h3>一人ひとりに合わせた優しい鍼治療</h3>
             <div class="l-under-intro__sub -sp"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_harichiryo01.webp" alt=""></div>
             <p>鍼治療は、鍼による物理的刺激を与えることで、人が本来持っている体を正常に保つ反応や自己治癒力を活性化することで、様々な効果が得られる治療法です。<br>運動器系、神経系の疾患以外に、内分泌系（ホルモン）、消化器・循環器系にもその効果が認められ、WHO（世界保健機構）においても適応症状であると認められています。</p>
@@ -50,42 +50,42 @@ get_header();
             <h3 class="m-column01__head">鍼治療の種類</h3>
             <ul class="m-list01">
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">置鍼（ちしん）</h4>
                     <p class="m-list01__txt">鍼を体内に刺入し、一定時間キープする手法です。鎮痛・血行促進の作用があり、筋肉のこり改善に効果があります。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">散鍼（さんしん）</h4>
                     <p class="m-list01__txt">刺す鍼ではなく、皮膚を鍼で軽くたたく手法です。体表の血行を促進させ、自律神経に作用し施術後はスッキリします。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">パイオネクス</h4>
                     <p class="m-list01__txt">円皮鍼（えんぴしん）やシール鍼とも呼ばれ、筋肉のこりの部分に貼っておくタイプの鍼です。長さは0.6mmですので、痛みはありません。施術後の効果を持続させる働きがあります。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">小児はり</h4>
                     <p class="m-list01__txt">小児用の刺さない鍼を使用します。身体に刺すことはなく、専用の鍼をあてたり、体表をさすったりします。自律神経系に作用し、かんの虫や夜尿症、便秘などに効果が期待されます。</p>
                 </li>
             </ul>
         </div>
-        <div class="m-column01">
-            <h3 class="m-column01__head">鍼治療時に患者様にご用意・ご配慮いただきたいもの</h3>
+        <div class="m-column01 -modifier">
+            <h3 class="m-column01__head"><span class="sp">お灸治療時に患者様にご用意・</span><span class="sp">ご配慮いただきたいもの</span></h3>
             <ul class="m-list01">
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">肩の出し易い服</h4>
                     <p class="m-list01__txt">施術着もありますが、ご自身でお持ちいただく場合は肩や腰、膝が出しやすいゆったりとした服装が望ましいです。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">前後に激しい運動はNG</h4>
                     <p class="m-list01__txt">施術でお身体が活性化されますので、施術前後の激しい運動は控えていただいております。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">施術後の入浴</h4>
                     <p class="m-list01__txt">施術後から一時間以上あけての入浴は問題ありません。施術した日は、長時間の入浴や岩盤浴は極力控えてください。</p>
                 </li>

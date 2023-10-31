@@ -14,7 +14,7 @@ get_header();
     </div>
     <section class="l-under-intro m-inner">
         <div class="l-under-intro__sub -pc"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu01.webp" alt=""></div>
-        <div class="l-under-intro__main">
+        <div class="l-under-intro__main -okyu">
             <h3>心地の良い温かさのお灸</h3>
             <div class="l-under-intro__sub -sp"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu01.webp" alt=""></div>
             <p>お灸はヨモギの葉を乾燥させて精製した「艾（もぐさ）」を使います。これを米粒やその半分くらいの大きさにして皮膚上で燃焼させ、ツボに温熱刺激を与える施術方法です。</p>
@@ -50,22 +50,22 @@ get_header();
             <p class="m-column01__txt"><span>市販されているお灸もありますが、福岡みらいテラス鍼灸では症状や治療箇所に合わせてお灸用のモグサを変えています。</span><span>お灸の施術に使うモグサは以下のような種類があります。</span></p>
             <ul class="m-list01">
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div>
+                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div> */ ?>
                         <h4 class="m-list01__head">知熱（ちねつ）灸</h4>
                         <p class="m-list01__txt"><span>米粒大やその半分くらいのもぐさを皮膚の上にのせ、線香で火をつける施術方法で、8割程燃えたところで取り除きます。</span><span>一瞬「チクッ」とする感覚がありますが、皮膚上に専用のシールを貼りその上にお灸をするので、めったにやけどすることはありません。</span><span>ツボに温熱刺激を与えるのですが、体表の余分な熱を発散させ、鎮痛・血行促進の作用があります。また自律神経系や内臓機能にも作用します。</span></p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div>
+                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div> */ ?>
                         <h4 class="m-list01__head">台座灸</h4>
                         <p class="m-list01__txt"><span>台座の上に筒状にしたもぐさをのせて施す方法です。</span><span>皮膚ともぐさの間に少し隙間があるので、マイルドな温かさのお灸です。</span><span>「せんねん灸」とよばれる台座灸は市販もされており、簡単に使えるのでセルフお灸としても人気です。</span><span>血行促進、冷え性に効果が期待できます。</span></p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div>
+                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div> */ ?>
                         <h4 class="m-list01__head">綿花灸</h4>
                         <p class="m-list01__txt"><span>人肌ほどの温かさの綿花の上にもぐさをのせ燃焼させる施術方法です。</span><span>お灸をしている箇所を専用の温度計で測り、皮膚温が40～42度になるまで温めますので、ほんわかとした心地の良いお灸です。</span><span>血行が促進され、疲労回復・鎮痛・筋肉のこりの解消に効果的です。</span></p>
                 </li>
                 <li>
-                        <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div>
+                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div> */ ?>
                         <h4 class="m-list01__head">灸頭鍼（きゅうとうしん）</h4>
                         <p class="m-list01__txt"><span>鍼の柄の部分にもぐさを取り付けて燃焼させる、温熱療法です。</span><span>ふんわりとしたマイルドな温かさで、鍼とお灸の作用を兼ね揃えた効果的な施術方法です。</span><span>血行促進・冷え性・筋肉のこりの解消に効果的です。</span></p>
                 </li>
@@ -102,21 +102,21 @@ get_header();
                 </li>
             </ul>
         </div>
-        <div class="m-column01">
-            <h3 class="m-column01__head">お灸治療時に患者様にご用意・ご配慮いただきたいもの</h3>
+        <div class="m-column01 -modifier">
+            <h3 class="m-column01__head"><span class="sp">お灸治療時に患者様にご用意・</span><span class="sp">ご配慮いただきたいもの</span></h3>
             <ul class="m-list01">
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">肩、腰、膝を出しやすい服</h4>
                     <p class="m-list01__txt">施術着もありますが、ご自身でお持ちいただく場合は肩や腰、膝が出しやすいゆったりとした服装が望ましいです。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">前後に激しい運動はNG</h4>
                     <p class="m-list01__txt">施術でお身体が活性化されますので、施術前後の激しい運動は控えていただいております。</p>
                 </li>
                 <li>
-                    <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu10.webp" alt=""></div> */ ?>
                     <h4 class="m-list01__head">施術後の入浴</h4>
                     <p class="m-list01__txt">施術後から一時間以上あけての入浴は問題ありません。<br>施術した日は、長時間の入浴や岩盤浴は極力控えてください。</p>
                 </li>

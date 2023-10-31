@@ -538,6 +538,11 @@ p, span, a {
 			margin-top: calcResp(64);
 		}
 	}
+	&.-modifier {
+		@include mediaquery.sp {
+			padding-top: calcResp(64);
+		}
+	}
 	&__head {
 		@extend .m-txt-18;
 		position: absolute;
@@ -551,6 +556,15 @@ p, span, a {
 		@include mediaquery.sp {
 			top: calc(-1 * calcResp(12));
 			word-break: keep-all;
+		}
+		span {
+			@extend .m-txt-18;
+			display: inline;
+			color: var(--color-blue);
+			font-weight: bold;
+			@include mediaquery.sp {
+				display: block;
+			}
 		}
 	}
 	&__txt {

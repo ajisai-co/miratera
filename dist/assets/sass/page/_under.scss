@@ -7,7 +7,7 @@
 .l-under-head {
     background: var(--color-blue);
     margin: 0 0 common.calcPc(140);
-    padding-top: common.calcPc(64);
+    padding-top: common.calcPc(120);
     @include mediaquery.sp {
         padding-top: 58px;
         margin: 0 0 common.calcResp(64);
@@ -47,14 +47,22 @@
     padding: common.calcPc(132) 0 common.calcPc(160);
     margin: 0 auto common.calcPc(180);
     @include mediaquery.sp {
-        padding: common.calcResp(60) common.calcResp(16);
+        padding: common.calcResp(60) common.calcResp(30);
         margin: 0;
     }
     &__main {
         order: 0;
-        width: common.calcPc(742);
-        @include mediaquery.sp {
-            width: 100%;
+        &.-harichiryo {
+            width: common.calcPc(608);
+            @include mediaquery.sp {
+                width: 100%;
+            }
+        }
+        &.-okyu {
+            width: common.calcPc(742);
+            @include mediaquery.sp {
+                width: 100%;
+            }
         }
         h3 {
             color: var(--color-blue);
@@ -86,7 +94,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: common.calcPc(555);
+        width: common.calcPc(565);
         z-index: -1;
         &.-sp{
             display: none;

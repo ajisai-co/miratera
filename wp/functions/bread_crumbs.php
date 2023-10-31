@@ -11,7 +11,7 @@ function breadcrumb( $args = array() ){
         'id' => "breadcrumb",
         'class' => "clearfix",
         'home' => "トップ",
-        'news' => "みらテラ鍼灸メディア",
+        'news' => "みらてら鍼灸メディア",
         // 'information' => "お知らせ一覧"
         'search' => "で検索した結果",
         'tag' => "タグ",
@@ -26,7 +26,7 @@ function breadcrumb( $args = array() ){
         }
         if( !is_home() && !is_admin() ){
             $str.= '<div class="m-breadcrumb"><ol>';
-            $str.= '<li><a href="'. get_option('home') .'">'. $news .'</a></li>';
+            $str.= '<li><a href="'. get_option('home') .'">'. $home .'</a></li>';
             $my_taxonomy = get_query_var( 'taxonomy' );
             $cpt = get_query_var( 'post_type' );
 

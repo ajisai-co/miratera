@@ -17,7 +17,7 @@ get_header();
             <div class="m-label02"><p>時代に合った福利厚生をご提案</p></div>
             <h3 class="m-txt-31"><span>福岡みらいテラス鍼灸は企業を健康にすることで</span><span>働く人々や家族、子供たちの未来を明るくします</span></h3>
             <p class="m-txt-16"><span>〝企業が健康なら日本は元気だ〟を合言葉に、貴社のオフィスに訪問し、鍼施術で健康な人づくりをお届けします。</span><span>日本を支える企業が健康であるためには、まず働く人々が健康である必要があります。</span><span>この健康は、働く人々の家族、そして子供たちの未来も明るく照らします。</span><span>わたしたちは、このような価値を提供していきます。</span></p>
-            <div class="m-box-grad01">
+            <div class="m-box-grad01 -welfare">
                 <div class="m-label01"><p>よくあるお悩み</p></div>
                 <h3 class="m-box-grad01__head"><span>こんなことでお悩みではありませんか？</span></h3>
                 <ul class="p-welfare-list">
@@ -101,6 +101,7 @@ get_header();
             </div>
             */?>
             <div class="m-box-grad01">
+                <?php /*
                 <div class="m-label01"><p>信頼の理由</p></div>
                 <h3 class="m-box-grad01__head"><span>導入企業数・業界シェア共に実績が豊富です</span></h3>
                 <div class="m-works">
@@ -132,24 +133,26 @@ get_header();
                             <li><img src="https://placehold.jp/137x49.png" alt="" width="" height="" loading="lazy"></li>
                         </ul>
                 </div>
+                */ ?>
                 <ul class="m-list01 -three">
                         <li>
-                            <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div>
+                            <?php /* <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div> */ ?>
                             <h4 class="m-list01__head">知熱（ちねつ）灸</h4>
                             <p class="m-list01__txt"><span>米粒大やその半分くらいのもぐさを皮膚の上にのせ、線香で火をつける施術方法で、8割程燃えたところで取り除きます。</span><span>一瞬「チクッ」とする感覚がありますが、皮膚上に専用のシールを貼りその上にお灸をするので、めったにやけどすることはありません。</span><span>ツボに温熱刺激を与えるのですが、体表の余分な熱を発散させ、鎮痛・血行促進の作用があります。また自律神経系や内臓機能にも作用します。</span></p>
                         </li>
                         <li>
-                            <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div>
+                            <?php /* <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div> */ ?>
                             <h4 class="m-list01__head">台座灸</h4>
                             <p class="m-list01__txt"><span>台座の上に筒状にしたもぐさをのせて施す方法です。</span><span>皮膚ともぐさの間に少し隙間があるので、マイルドな温かさのお灸です。</span><span>「せんねん灸」とよばれる台座灸は市販もされており、簡単に使えるのでセルフお灸としても人気です。</span><span>血行促進、冷え性に効果が期待できます。</span></p>
                         </li>
                         <li>
-                            <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div>
+                            <?php /* <div class="m-list01__thumb"><img src="https://placehold.jp/295x200.png" alt=""></div> */ ?>
                             <h4 class="m-list01__head">綿花灸</h4>
                             <p class="m-list01__txt"><span>人肌ほどの温かさの綿花の上にもぐさをのせ燃焼させる施術方法です。</span><span>お灸をしている箇所を専用の温度計で測り、皮膚温が40～42度になるまで温めますので、ほんわかとした心地の良いお灸です。</span><span>血行が促進され、疲労回復・鎮痛・筋肉のこりの解消に効果的です。</span></p>
                         </li>
                 </ul>
             </div>
+            <?php /*
             <div class="m-box-grad01">
                 <div class="m-label01"><p>お客様の声</p></div>
                 <h3 class="m-box-grad01__head"><span>「効率が上がった」「楽になった」等の声が寄せられています</span></h3>
@@ -186,6 +189,7 @@ get_header();
                         </div>
                 </div>
             </div>
+            */ ?>
         </div>
     </section>
 

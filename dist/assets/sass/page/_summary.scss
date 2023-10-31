@@ -6,8 +6,16 @@
 
 .l-summary {
     padding-bottom: common.calcPc(321);
+    width: common.calcPc(1268);
+    margin: 0 auto;
     @include mediaquery.sp {
-        padding: 58px 0 common.calcResp(100);
+        width: 100%;
+        padding: 64px 24px common.calcResp(100);
+    }
+    &.-contact {
+        width: auto;
+        max-width: 1288px;
+        padding-bottom: 170px;
     }
     .m-breadcrumb {
         & + h2 {
@@ -154,7 +162,7 @@
         border-bottom: 1px solid var(--color-blue);
         @include mediaquery.sp {
             display: block;
-            padding: common.calcResp(20) common.calcResp(10);
+            padding: common.calcResp(12) common.calcResp(10);
         }
         &:first-of-type{
             border-top: 1px solid var(--color-blue);

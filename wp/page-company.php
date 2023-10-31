@@ -3,58 +3,52 @@
 get_header();
 ?>
 <main role="main" class="l-common l-summary">
-    <div class="m-inner">
-        <?php breadcrumb();?>
-        <h2>会社情報</h2>
-    </div>
+    <?php breadcrumb();?>
+    <h2>会社情報</h2>
     <section class="l-summary-company">
-        <div class="m-inner">
-            <h3>会社概要</h3>
-            <div class="l-summary-company__column">
-                <div class="head">商号</div>
-                <div class="body">福岡みらいテラス鍼灸</div>
+        <h3>会社概要</h3>
+        <div class="l-summary-company__column">
+            <div class="head">商号</div>
+            <div class="body">福岡みらいテラス鍼灸</div>
+        </div>
+        <div class="l-summary-company__column">
+            <div class="head">代表</div>
+            <div class="body">院長　日野 智之</div>
+        </div>
+        <div class="l-summary-company__column">
+            <div class="head">事業内容</div>
+            <div class="body">
+                <p>「法人向け訪問鍼灸」<br>オフィスに訪問し、定期的な鍼灸施術を提供</p>
+                <p>「店舗型鍼灸院：アットホームはりきゅうひの」<br>個人様向けに、店舗型鍼灸院にて鍼灸施術を提供</p>
             </div>
-            <div class="l-summary-company__column">
-                <div class="head">代表</div>
-                <div class="body">院長　日野 智之</div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">事業内容</div>
-                <div class="body">
-                    <p>「法人向け訪問鍼灸」<br>オフィスに訪問し、定期的な鍼灸施術を提供</p>
-                    <p>「店舗型鍼灸院：アットホームはりきゅうひの」<br>個人様向けに、店舗型鍼灸院にて鍼灸施術を提供</p>
-                </div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">設立</div>
-                <div class="body">2023年11月</div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">所在地</div>
-                <div class="body">〒81103101 福岡県古賀市天神1-1-20-102</div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">TEL</div>
-                <div class="body">092-942-5521</div>
-            </div>
-            <div class="l-summary-company__column">
-                <div class="head">E-mail</div>
-                <div class="body">athomeharikyuhino@gmail.com</div>
-            </div>
+        </div>
+        <div class="l-summary-company__column">
+            <div class="head">設立</div>
+            <div class="body">2023年11月</div>
+        </div>
+        <div class="l-summary-company__column">
+            <div class="head">所在地</div>
+            <div class="body">〒81103101 福岡県古賀市天神1-1-20-102</div>
+        </div>
+        <div class="l-summary-company__column">
+            <div class="head">TEL</div>
+            <div class="body">092-942-5521</div>
+        </div>
+        <div class="l-summary-company__column">
+            <div class="head">E-mail</div>
+            <div class="body">athomeharikyuhino@gmail.com</div>
         </div>
     </section>
     <section class="l-summary-company">
-        <div class="m-inner">
-            <h2>ミッション・ビジョン</h2>
-            <h3>ミッション（社会的使命）</h3>
-            <div class="company-grad-box01">笑顔の人づくり元気な街づくり</div>
-            <p>働く人、経営者、家族・・・すべての人に健康を通して笑顔を提供したいと考えています。笑顔であふれた街には活気があり、それは街の経済面にも活力をもたらしてくれます。すべての人が笑顔になる価値を提供し、元気な街につなげていくことが、私たち福岡みらいテラス鍼灸のミッションです。</p>
-            <h3 class="-mt">ビジョン（企業理念）</h3>
-            <div class="company-grad-box01">鍼灸のちからで働く人の健康を支え企業の成長を支える</div>
-            <p>人生の大半を職場で過ごしている人が大多数です。そのような人々の大切な時間を、悔いなく過ごしてもらいたい。<br>鍼灸施術を通して、企業様の成長に不可欠である働く人の健康を第一に支え、共に歩んでいきたいと考えています。</p>
-        </div>
+        <h2>ミッション・ビジョン</h2>
+        <h3>ミッション（社会的使命）</h3>
+        <div class="company-grad-box01">笑顔の人づくり元気な街づくり</div>
+        <p>働く人、経営者、家族・・・すべての人に健康を通して笑顔を提供したいと考えています。笑顔であふれた街には活気があり、それは街の経済面にも活力をもたらしてくれます。すべての人が笑顔になる価値を提供し、元気な街につなげていくことが、私たち福岡みらいテラス鍼灸のミッションです。</p>
+        <h3 class="-mt">ビジョン（企業理念）</h3>
+        <div class="company-grad-box01">鍼灸のちからで働く人の健康を支え企業の成長を支える</div>
+        <p>人生の大半を職場で過ごしている人が大多数です。そのような人々の大切な時間を、悔いなく過ごしてもらいたい。<br>鍼灸施術を通して、企業様の成長に不可欠である働く人の健康を第一に支え、共に歩んでいきたいと考えています。</p>
     </section>
-    <section class="l-summary-company__intro m-inner">
+    <section class="l-summary-company__intro">
         <div class="sub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_company.webp" alt="" width="" height="" loading="lazy"></div>
         <div class="main">
             <p class="lead">福岡みらいテラス鍼灸 代表</p>

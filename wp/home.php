@@ -7,7 +7,7 @@ get_header();
         <div class="m-inner">
             <?php breadcrumb();?>
             <h2 class="-under">
-                <span class="en">SHINKYU</span>
+                <span class="en">SHINKYU-MEDHIA</span>
                 <span class="jp">みらテラ鍼灸メディア</span>
             </h2>
         </div>
