@@ -50,24 +50,24 @@ get_header();
             <p class="m-column01__txt"><span>市販されているお灸もありますが、福岡みらいテラス鍼灸では症状や治療箇所に合わせてお灸用のモグサを変えています。</span><span>お灸の施術に使うモグサは以下のような種類があります。</span></p>
             <ul class="m-list01">
                 <li>
-                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div> */ ?>
-                        <h4 class="m-list01__head">知熱（ちねつ）灸</h4>
-                        <p class="m-list01__txt"><span>米粒大やその半分くらいのもぐさを皮膚の上にのせ、線香で火をつける施術方法で、8割程燃えたところで取り除きます。</span><span>一瞬「チクッ」とする感覚がありますが、皮膚上に専用のシールを貼りその上にお灸をするので、めったにやけどすることはありません。</span><span>ツボに温熱刺激を与えるのですが、体表の余分な熱を発散させ、鎮痛・血行促進の作用があります。また自律神経系や内臓機能にも作用します。</span></p>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div> */ ?>
+                    <h4 class="m-list01__head">知熱（ちねつ）灸</h4>
+                    <p class="m-list01__txt"><span>米粒大やその半分くらいのもぐさを皮膚の上にのせ、線香で火をつける施術方法で、8割程燃えたところで取り除きます。</span><span>ツボに温熱刺激を与えるのですが、体表の余分な熱を発散させ、鎮痛・血行促進の作用があります。また自律神経系や内臓機能にも作用します。</span></p>
                 </li>
                 <li>
-                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div> */ ?>
-                        <h4 class="m-list01__head">台座灸</h4>
-                        <p class="m-list01__txt"><span>台座の上に筒状にしたもぐさをのせて施す方法です。</span><span>皮膚ともぐさの間に少し隙間があるので、マイルドな温かさのお灸です。</span><span>「せんねん灸」とよばれる台座灸は市販もされており、簡単に使えるのでセルフお灸としても人気です。</span><span>血行促進、冷え性に効果が期待できます。</span></p>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu03.webp" alt=""></div> */ ?>
+                    <h4 class="m-list01__head">台座灸</h4>
+                    <p class="m-list01__txt">「せんねん灸」とよばれる台座灸は市販もされており、簡単に使えるのでセルフお灸としても人気です。血行促進、冷え性に効果が期待できます。</p>
                 </li>
                 <li>
-                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div> */ ?>
-                        <h4 class="m-list01__head">綿花灸</h4>
-                        <p class="m-list01__txt"><span>人肌ほどの温かさの綿花の上にもぐさをのせ燃焼させる施術方法です。</span><span>お灸をしている箇所を専用の温度計で測り、皮膚温が40～42度になるまで温めますので、ほんわかとした心地の良いお灸です。</span><span>血行が促進され、疲労回復・鎮痛・筋肉のこりの解消に効果的です。</span></p>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu04.webp" alt=""></div> */ ?>
+                    <h4 class="m-list01__head">綿花灸</h4>
+                    <p class="m-list01__txt">人肌ほどの温かさの綿花の上にもぐさをのせ燃焼させる施術方法です。お灸をしている箇所を専用の温度計で測り、皮膚温が40～42度になるまで温めますので、ほんわかとした心地の良いお灸です。血行が促進され、疲労回復・鎮痛・筋肉のこりの解消に効果的です。</p>
                 </li>
                 <li>
-                        <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div> */ ?>
-                        <h4 class="m-list01__head">灸頭鍼（きゅうとうしん）</h4>
-                        <p class="m-list01__txt"><span>鍼の柄の部分にもぐさを取り付けて燃焼させる、温熱療法です。</span><span>ふんわりとしたマイルドな温かさで、鍼とお灸の作用を兼ね揃えた効果的な施術方法です。</span><span>血行促進・冷え性・筋肉のこりの解消に効果的です。</span></p>
+                    <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu05.webp" alt=""></div> */ ?>
+                    <h4 class="m-list01__head">灸頭鍼（きゅうとうしん）</h4>
+                    <p class="m-list01__txt">鍼の柄の部分にもぐさを取り付けて燃焼させる、温熱療法です。ふんわりとしたマイルドな温かさで、鍼とお灸の作用を兼ね揃えた効果的な施術方法です。血行促進・冷え性・筋肉のこりの解消に効果的です。</p>
                 </li>
             </ul>
         </div>
