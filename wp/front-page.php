@@ -139,28 +139,30 @@
         </ul>
         */ ?>
     </section>
+    <?php 
+    $args = new WP_Query(
+        array(
+            'post_type' => 'information',
+            'posts_per_page' => '5',
+        )
+    );
+    if ( $args->have_posts() ) :
+    ?>
     <section class="p-front-info m-inner">
         <h3><span>お知らせ</span></h3>
         <div class="m-label02"><p>NEWS</p></div>
         <ul class="p-front-info__list">
-            <?php
-                $args = new WP_Query(
-                    array(
-                        'post_type' => 'information',
-                        'posts_per_page' => '5',
-                    )
-                );
-                if ( $args->have_posts() ) : while ( $args->have_posts() ) : $args->the_post();
-            ?>
+            <?php while ( $args->have_posts() ) : $args->the_post(); ?>
             <li><a href="<?php the_permalink(); ?>">
                 <time datetime="<?php the_time('Y/m/d'); ?>"><?php the_time('Y/m/d'); ?></time>
                 <h4><?php the_title(); ?></h4>
                 <div class="more">MORE</div>
             </a></li>
-            <?php endwhile; endif; wp_reset_postdata(); ?>
+            <?php endwhile; ?>
         </ul>
         <div class="btn"><a href="<?php echo home_url();?>/information/">NEWS一覧</a></div>
     </section>
+    <?php endif; wp_reset_postdata();?>
     <section class="p-front-contact">
         <div class="m-inner">
             <h3 class="p-front-contact__head">
@@ -184,7 +186,7 @@
                         </div>
                     </div>
                     <div class="btns">
-                        <a href="<?php echo home_url();?>/">LINE</a>
+                        <a href="https://lin.ee/sS3hw6u" target="_blank">LINE</a>
                         <a href="https://www.instagram.com/athomeharikyu_hino/" target="_blank">instagram</a>
                     </div>
                 </div>

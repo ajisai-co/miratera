@@ -57,15 +57,17 @@ get_header();
             <div class="m-company-grad-box02">
                 <div class="m-txt-16">所属</div>
                 <ul>
-                        <li class="m-txt-14">(公社)日本鍼灸師会　地域ケア推進委員</li>
-                        <li class="m-txt-14">(公社)福岡県鍼灸マッサージ師会　理事　広報普及部長</li>
-                        <li class="m-txt-14">宗像糟屋鍼灸マッサージ師会　副会長　学術部長</li>
+                    <li class="m-txt-14">(公社)日本鍼灸師会　地域ケア推進委員</li>
+                    <li class="m-txt-14">(公社)福岡県鍼灸マッサージ師会　理事　広報普及部長</li>
+                    <li class="m-txt-14">宗像糟屋鍼灸マッサージ師会　副会長　学術部長</li>
                 </ul>
             </div>
+            <?php /*
             <div class="btns">
                 <a class="m-btn-blue" href="" target="_blank">X（旧Twitter）</a>
                 <a class="m-btn-blue" href="" target="_blank">Facebook</a>
             </div>
+            */?>
         </div>
     </section>
 </main>

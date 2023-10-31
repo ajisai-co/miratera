@@ -37,10 +37,10 @@ function breadcrumb( $args = array() ){
             $now_post_type = get_post_type();
             $str.='<li><a href="' . get_post_type_archive_link( $now_post_type ). '">'. get_post_type_object( $cpt )->label .'</a></li>';
             if( $my_tax -> parent != 0 ) {
-              $ancestors = array_reverse( get_ancestors( $my_tax -> term_id, $my_tax->taxonomy ) );
+            $ancestors = array_reverse( get_ancestors( $my_tax -> term_id, $my_tax->taxonomy ) );
 
-              foreach( $ancestors as $ancestor ){
-                  $str.='<li><a href="'. get_term_link( $ancestor, $my_tax->taxonomy ) .'">'. get_term( $ancestor, $my_tax->taxonomy )->name .'</a></li>';
+            foreach( $ancestors as $ancestor ){
+                $str.='<li><a href="'. get_term_link( $ancestor, $my_tax->taxonomy ) .'">'. get_term( $ancestor, $my_tax->taxonomy )->name .'</a></li>';
             }
         }
             $str.='<li>'. $my_tax -> name . '</li>';
@@ -66,7 +66,7 @@ function breadcrumb( $args = array() ){
             $taxes = get_object_taxonomies( $cpt );
             if( !empty($taxes) ){
                 $mytax = $taxes[0];
-                 $now_post_type = get_post_type();
+                $now_post_type = get_post_type();
                 $str.='<li><a href="' . get_post_type_archive_link( $now_post_type ). '">'. get_post_type_object( $cpt )->label .'</a></li>';
                 $taxes = get_the_terms( $post->ID, $mytax );
                 $tax = get_youngest_tax( $taxes, $mytax );
@@ -95,7 +95,7 @@ function breadcrumb( $args = array() ){
                 }
             }
 
-            $str.='<li><a href="'.home_url().'/slug/">一覧</a></li>';
+            $str.='<li><a href="'.get_post_type_archive_link( 'post' ).'">みらテラ鍼灸メディア</a></li>';
             $str.='<li><a href="'. get_category_link( $cat -> term_id ). '">'. $cat-> cat_name . '</a></li>';
             $str.='<li>'.mb_strimwidth(get_the_title($post->ID), 0 , 80, '…', 'UTF-8').'</li>';
         }
