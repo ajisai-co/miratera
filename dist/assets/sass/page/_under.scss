@@ -7,7 +7,7 @@
 .l-under-head {
     background: var(--color-blue);
     margin: 0 0 common.calcPc(140);
-    padding-top: common.calcPc(160);
+    padding-top: common.calcPc(120);
     @include mediaquery.sp {
         padding-top: 80px;
         margin: 0 0 common.calcResp(64);

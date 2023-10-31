@@ -5,7 +5,7 @@
 @use "../mixin/csshack";
 
 .l-summary {
-    padding: common.calcPc(160) 0 common.calcPc(321);
+    padding: common.calcPc(120) 0 common.calcPc(321);
     width: common.calcPc(1268);
     margin: 0 auto;
     @include mediaquery.sp {
