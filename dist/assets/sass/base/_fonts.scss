@@ -26,6 +26,7 @@
 	font-family: 'CocoGothic';
 	src: url("../fonts/CocoGothic_trial.ttf") format("truetype");
 	src: url("../fonts/CocoGothic-Bold_trial.ttf") format("truetype");
+	font-display: swap
 }
 @mixin Coco-Gothic {
 	font-family: 'CocoGothic', sans-serif;
@@ -34,6 +35,7 @@
 	font-family: 'dni-alternate';
 	src: url("../fonts/din-regularalternate.otf") format("opentype");
 	src: url("../fonts/din-alternate-bold.ttf") format("truetype");
+	font-display: swap
 }
 @mixin Montserrat {
 	font-family: 'Montserrat', sans-serif;

@@ -14,11 +14,13 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 0 0 common.calcPc(160);
+        margin: 0 0 common.calcPc(80);
+        // margin: 0 0 common.calcPc(160);
         @include mediaquery.sp {
             margin: 0 0 common.calcResp(50);
         }
         &__item {
+            
             img {
                 width: common.calcPc(600);
                 @include mediaquery.sp {
@@ -30,6 +32,13 @@
                     margin-top: common.calcResp(15);
                 }
             }
+            a{
+                font-size: common.calcPc(18);
+                color: #fff;
+                @include mediaquery.sp {
+                    font-size: common.calcResp(15);
+                }
+            }
         }
     }
     &__logo {
@@ -37,6 +46,9 @@
         margin: 0 0 common.calcPc(56);
         @include mediaquery.sp {
             margin: 0 0 common.calcResp(32);
+        }
+        a{
+            display: inline-block;
         }
         img {
             width: common.calcPc(476);

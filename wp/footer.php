@@ -34,7 +34,10 @@
 			<?php /*
 			<div class="l-footer__link__item"><a href="<?php echo home_url();?>/shinkyu-media/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/ph_banner01.webp" alt="鍼灸メディア みらテラメソッド MIRATERA METHOD"></a></div>
 			*/?>
-			<div class="l-footer__link__item"><a target="_blank" href="https://fukuokahariq-pref.org/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/ph_banner02.webp" alt="公益社団法人 福岡県鍼灸マッサージ師会"></a></div>
+			<div class="l-footer__link__item"><a target="_blank" href="https://fukuokahariq-pref.org/">
+				・公益社団法人 福岡県鍼灸マッサージ師会
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/ph_banner02.webp" alt="公益社団法人 福岡県鍼灸マッサージ師会"> -->
+			</a></div>
 		</div>
 		<div class="l-footer__logo"><a href="<?php echo home_url();?>/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/logo_footer.webp" alt="福岡みらいテラス鍼灸 Fukuoka Mirai Terrace Harikyu"></a></div>
 		<div class="l-footer__nav">
