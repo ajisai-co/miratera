@@ -7,9 +7,9 @@
 .l-under-head {
     background: var(--color-blue);
     margin: 0 0 common.calcPc(140);
-    padding-top: common.calcPc(120);
+    padding-top: common.calcPc(160);
     @include mediaquery.sp {
-        padding-top: 58px;
+        padding-top: 80px;
         margin: 0 0 common.calcResp(64);
     }
     .m-breadcrumb {

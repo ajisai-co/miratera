@@ -92,7 +92,7 @@
 	}
 	&__list {
 		margin: 0 auto;
-		padding: 0 common.calcPc(160);
+		padding: 0 common.calcPc(150);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: common.calcPc(36) common.calcPc(80);
