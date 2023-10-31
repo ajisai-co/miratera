@@ -154,7 +154,7 @@
             background: linear-gradient( rgba(3, 124, 178, 0.67) 0%, rgba(99, 205, 253, 0.66) 100%);
             position: absolute;
             left: 0;
-            top: calc( -1 * common.calcPc(300) );
+            top: calc( -1 * common.calcPc(370));
             z-index: -1;
             clip-path: polygon(0 common.calcPc(406), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(385)));
             @include mediaquery.sp {

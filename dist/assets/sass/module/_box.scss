@@ -92,13 +92,15 @@
 	}
 	&__list {
 		margin: 0 auto;
+		padding: 0 common.calcPc(160);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: common.calcPc(36) 0;
+		gap: common.calcPc(36) common.calcPc(80);
 		@include mediaquery.sp {
 			grid-template-columns: repeat(1, 1fr);
 			width: 100%;
 			gap: common.calcResp(36) 0;
+			padding: 0;
 		}
 		li {
 			display: flex;
@@ -150,6 +152,12 @@
 				margin-top: common.calcResp(40);
 			}
 		}
+		// & + .m-box-grad01 {
+		// 	margin-top: common.calcPc(64);
+		// 	@include mediaquery.sp {
+		// 		margin-top: common.calcResp(40);
+		// 	}
+		// }
 	}
 	&__column {
 		margin: 0 auto;

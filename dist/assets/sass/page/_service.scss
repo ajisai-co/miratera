@@ -22,16 +22,17 @@
         & + & {
             margin-top: common.calcPc(45);
             @include mediaquery.sp {
-                margin-top: common.calcResp(100);
+                margin-top: common.calcResp(120);
             }
         }
         .head {
             position: absolute;
-            top: 0;
+            top: 50%;
             left: 0;
+            transform: translate(-5%, -50%);
             border-radius: 50%;
-            width: common.calcPc(273);
-            height: common.calcPc(273);
+            width: common.calcPc(300);
+            height: common.calcPc(300);
             background: #fff;
             filter: drop-shadow(0px 0px 19px rgba(133, 199, 229, 0.55));
             display: flex;

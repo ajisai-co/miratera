@@ -23,7 +23,7 @@
             height: calc(100% + common.calcPc(660));
             position: absolute;
             left: 0;
-            top: calc(-1 * common.calcPc(356));
+            top: calc(-1 * common.calcPc(440));
             z-index: -1;
             opacity: .4;
             clip-path: polygon(0 common.calcPc(239), 100% 0, 100% 100%, 0 calc(100% - common.calcPc(239)));
@@ -32,7 +32,7 @@
     &__column {
         position: relative;
         display: grid;
-        grid-template-columns: common.calcPc(654) common.calcPc(457);
+        grid-template-columns: common.calcPc(660) common.calcPc(457);
         justify-content: center;
         gap: common.calcPc(53) common.calcPc(116);
         @include mediaquery.sp {
@@ -40,6 +40,7 @@
             grid-template-columns: 1fr;
         }
         &.-modifier {
+            grid-template-columns: common.calcPc(635) common.calcPc(457);
             margin: common.calcPc(180) 0 common.calcPc(50);
             @include mediaquery.sp {
                 padding: 0 30px;
@@ -49,7 +50,7 @@
                 content: "";
                 background: common.grad01(15);
                 width: 100%;
-                height: calc(100% + common.calcPc(289));
+                height: calc(100% + common.calcPc(320));
                 position: absolute;
                 left: 0;
                 top: calc(-1 * common.calcPc(289));

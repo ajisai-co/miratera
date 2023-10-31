@@ -17,7 +17,7 @@ get_header();
             <div class="m-label02"><p>時代に合った福利厚生をご提案</p></div>
             <h3 class="m-txt-31"><span>福岡みらいテラス鍼灸は企業を健康にすることで</span><span>働く人々や家族、子供たちの未来を明るくします</span></h3>
             <p class="m-txt-16"><span>〝企業が健康なら日本は元気だ〟を合言葉に、貴社のオフィスに訪問し、鍼施術で健康な人づくりをお届けします。</span><span>日本を支える企業が健康であるためには、まず働く人々が健康である必要があります。</span><span>この健康は、働く人々の家族、そして子供たちの未来も明るく照らします。</span><span>わたしたちは、このような価値を提供していきます。</span></p>
-            <div class="m-box-grad01 -welfare">
+            <div class="m-box-grad01">
                 <div class="m-label01"><p>よくあるお悩み</p></div>
                 <h3 class="m-box-grad01__head"><span>こんなことでお悩みではありませんか？</span></h3>
                 <ul class="p-welfare-list">

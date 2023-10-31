@@ -24,6 +24,9 @@
         li {
             @include mediaquery.sp {
                 margin: 0 auto;
+                &:nth-child(3) {
+                    margin-top: common.calcResp(24);
+                }
             }
             a{
                 position: relative;

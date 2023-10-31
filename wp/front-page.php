@@ -48,6 +48,7 @@
                         <div class="btn"><a href="<?php echo home_url();?>/service/welfare/">鍼灸の福利厚生導入支援</a></div>
                 </div>
             </div>
+            <?php /*
             <ul class="m-list">
                 <?php
                     $args = new WP_Query(
@@ -69,6 +70,7 @@
                 </li>
                 <?php endwhile; endif; wp_reset_postdata(); ?>
             </ul>
+            */ ?>
         </div>
     </section>
     <section class="p-front-commit">
@@ -80,6 +82,7 @@
             <h4>丁寧なカウンセリングと、先進の技術、確かな施術。</h4>
             <p><span>院長の日野がカウンセリングから施術まで一貫して行い、根本の原因にアプローチしていきます。</span><span>「鍼灸は初めて」という方がほとんどですが、皆さま笑顔で帰られますのでご安心ください。</span></p>
             <div class="btn"><a href="<?php echo home_url();?>/feature/">詳細を見る</a></div>
+            <?php /*
             <ul class="m-list">
                 <?php
                     $args = new WP_Query(
@@ -101,6 +104,7 @@
                 </li>
                 <?php endwhile; endif; wp_reset_postdata(); ?>
             </ul>
+            */ ?>
         </div>
     </section>
     <section class="p-front-person">
@@ -111,6 +115,7 @@
             <p><span>「辛い、痛いを、この街からひとつずつ無くしたい」という想いでお客様と向き合っています。</span><span>一人ひとりの健康づくりを通して、この街を活気ある元気な街にしたいと願っています。</span></p>
             <div class="btn"><a href="<?php echo home_url();?>/service/customer/">詳細を見る</a></div>
         </div>
+        <?php /*
         <ul class="m-list m-inner">
             <?php
                 $args = new WP_Query(
@@ -132,6 +137,7 @@
             </li>
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </ul>
+        */ ?>
     </section>
     <section class="p-front-info m-inner">
         <h3><span>お知らせ</span></h3>

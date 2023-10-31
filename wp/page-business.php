@@ -159,6 +159,7 @@ get_header();
                     <p class="m-list02__txt">書面にてご契約が完了次第、ご利用開始となります。ご契約は1年ごとに更新する形にしております。</p>
                 </li>
             </ul>
+            <?php /*
             <div class="m-column01">
                 <h3 class="m-column01__head">事前にご準備いただく必要があるもの</h3>
                 <ul class="m-list03">
@@ -176,6 +177,7 @@ get_header();
                     <li>・何か入ります</li>
                 </ul>
             </div>
+            */ ?>
             <?php 
             $args = new WP_Query(
                 array(
