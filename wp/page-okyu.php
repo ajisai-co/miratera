@@ -43,11 +43,11 @@ get_header();
         </div>
         <div class="m-box-grad01">
             <h3 class="m-box-grad01__head">お灸のやけどについて</h3>
-            <p class="m-box-grad01__txt"><span>当院のお灸はやけどリスクの低い「間接灸」と「台座灸」の治療方法を採用しています。</span><span>その日の体調やお肌の状態によってやけどをしてしまう可能性がありますが、体調や肌の状態に合わせて注意深く施術します。熱さを感じた場合は、遠慮せずにお知らせいただくようお願いしております。</span><span>私たちは心地よい温かさのお灸を提供し、安心して施術を受けていただけます。</span></p>
+            <p class="m-box-grad01__txt"><span>当院のお灸はやけどリスクの低い「間接灸」と「台座灸」の治療方法を採用しています。</span><span>その日の体調やお肌の状態によってやけどをしてしまう可能性がありますが、体調や肌の状態に合わせて注意深く施術します。熱さを感じた場合は、遠慮せずにお知らせいただくようお願いしております。</span><span>心地よい温かさのお灸を提供し、安心して施術を受けていただけます。</span></p>
         </div>
         <div class="m-column01">
             <h3 class="m-column01__head">お灸の種類について</h3>
-            <p class="m-column01__txt"><span>市販されているお灸もありますが、福岡みらいテラス鍼灸では症状や治療箇所に合わせてお灸用のモグサを変えています。</span><span>お灸の施術に使うモグサは以下のような種類があります。</span></p>
+            <p class="m-column01__txt"><span>市販されているお灸もありますが、福岡みらいテラス鍼灸では症状や施術箇所に合わせてお灸用のモグサを変えています。</span><span>お灸の施術に使うモグサは以下のような種類があります。</span></p>
             <ul class="m-list01">
                 <li>
                     <?php /* <div class="m-list01__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_okyu02.webp" alt=""></div> */ ?>

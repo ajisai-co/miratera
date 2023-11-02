@@ -58,7 +58,7 @@ get_header();
                 <h3 class="l-under-price__head">施術サービス</h3>
                 <p class="l-under-price__lead"><span>企業様向けにサービスを柔軟にカスタマイズして施術可能です。お気軽にご相談ください。</span><span>事前にヒアリングも行えますので、症状にあった施術も提案いたします。</span></p>
                 <ul class="m-treatment__list -white">
-                    <li>鍼治療</li>
+                    <li>鍼施術</li>
                     <li>ストレッチポール ストレッチ</li>
                     <li>マッスルスーツ体幹エクササイズ</li>
                 </ul>
@@ -131,7 +131,7 @@ get_header();
                 <div class="m-pricelist__caption">
                     <p><span>・交通費込みの料金になります。　　<br class="u-device-sp">・施術場所の確保をお願いしております。（施術ベッド（折りたたみ式 185cm×70cm）を使用します。）</span><span>・施術ベッドを使用しない場合も対応しますのでご相談ください。　　<br class="u-device-sp">・施術用のお洋服、タオル、リネン類はこちらでご用意いたします。</span></p>
                 </div>
-                <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-b">企業向け訪問診療のご相談はこちら</a></div>
+                <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-b">企業向け訪問鍼灸のご相談はこちら</a></div>
             </div>
         </div>
         <div class="m-inner">
@@ -151,7 +151,7 @@ get_header();
                 <li class="m-list02__item">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow07.svg" alt=""></div>
                     <h4 class="m-list02__head">施術のご提案・動画閲覧</h4>
-                    <p class="m-list02__txt">提供させていただく施術内容とスケジュールについてご提案いたします。併せて、体験施術の日程や、説明用の動画を提供いたしますので</p>
+                    <p class="m-list02__txt">提供させていただく施術内容とスケジュールについてご提案いたします。併せて、体験施術の日程や、説明用の動画を提供いたします。</p>
                 </li>
                 <li class="m-list02__item">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow04.svg" alt=""></div>

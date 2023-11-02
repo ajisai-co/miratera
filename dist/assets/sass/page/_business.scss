@@ -57,6 +57,40 @@
                 margin-top: common.calcResp(106);
             }
         }
+        li {
+            &:nth-child(1) {
+                img {
+                    width: common.calcPc(55);
+                    @include mediaquery.sp {
+                        width: common.calcResp(55);
+                    }
+                }
+            }
+            &:nth-child(2) {
+                img {
+                    width: common.calcPc(33);
+                    @include mediaquery.sp {
+                        width: common.calcResp(33);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    width: common.calcPc(78);
+                    @include mediaquery.sp {
+                        width: common.calcResp(78);
+                    }
+                }
+            }
+            &:nth-child(4) {
+                img {
+                    width: common.calcPc(44);
+                    @include mediaquery.sp {
+                        width: common.calcResp(44);
+                    }
+                }
+            }
+        }
     }
     &__faq {
         list-style: none;

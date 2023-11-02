@@ -33,7 +33,7 @@ get_header();
                 <div class="m-box-grad01__illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/illust_welfare01.webp" alt="" width="" height="" loading="lazy"></div>
             </div>
             <div class="m-box-grad01">
-                <div class="m-label01"><p>よくあるお悩み</p></div>
+                <div class="m-label01"><p>4つのサポートを提供</p></div>
                 <h3 class="m-box-grad01__head"><span>鍼灸の福利厚生導入は</span><span>社員の健康と、より良い職場環境につながります</span></h3>
                 <ul class="m-box-grad01__list">
                         <li>
