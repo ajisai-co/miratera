@@ -136,7 +136,9 @@ get_header();
         </div>
         <div class="m-inner">
             <h3 class="m-txt-31">ご利用の流れ</h3>
+            <?php /*
             <p class="m-txt-16"><span>ステップに分けて理解できるような作図</span></p>
+            */?>
             <ul class="m-list02">
                 <li class="m-list02__item">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>

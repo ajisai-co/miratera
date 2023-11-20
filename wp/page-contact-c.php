@@ -17,6 +17,7 @@ get_header();
                     <li>・詳しい料金体系を知りたい</li>
                 </ul>
             </div>
+            <?php /*
             <div class="p-contact__tel">
                 <p class="head">お電話からも承っておりますので<br class="u-device-sp">ご連絡ください</p>
                 <div class="tel">
@@ -27,6 +28,7 @@ get_header();
                     </div>
                 </div>
             </div>
+            */ ?>
         </div>
         <div class="p-contact__main p-contact-form">
             <?php

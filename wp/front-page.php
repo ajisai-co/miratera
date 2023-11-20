@@ -178,6 +178,7 @@
                 <div class="p-front-contact__item">
                     <div class="head"><span>アットホームはりきゅうひの</span><span>（店舗鍼灸）</span></div>
                     <p>優しい鍼（はり）と心地よいお灸を心掛け、コミュニケーションを大切にする施術をモットーにしております。腰痛や肩痛から自律神経症状、がん治療の緩和ケアなど、さまざまな不調やお悩みに寄り添いながら鍼灸施術を行っています。訪れる皆さんが少しでも笑顔になり、ほっと安心できる鍼灸院であることを願い、日々施術に取り組んでいます。</p>
+                    <?php /*
                     <div class="tel">
                         <div class="tel__head">TEL</div>
                         <div class="tel__body">
@@ -185,6 +186,7 @@
                             <p>火曜・日曜定休 9:00〜19:00</p>
                         </div>
                     </div>
+                    */?>
                     <div class="btns">
                         <a href="https://lin.ee/sS3hw6u" target="_blank">LINE</a>
                         <a href="https://www.instagram.com/athomeharikyu_hino/" target="_blank">instagram</a>

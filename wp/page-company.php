@@ -30,10 +30,12 @@ get_header();
             <div class="head">所在地</div>
             <div class="body">〒81103101 福岡県古賀市天神1-1-20-102</div>
         </div>
+        <?php /*
         <div class="l-summary-company__column">
             <div class="head">TEL</div>
             <div class="body">092-942-5521</div>
         </div>
+        */ ?>
         <div class="l-summary-company__column">
             <div class="head">E-mail</div>
             <div class="body">athomeharikyuhino@gmail.com</div>

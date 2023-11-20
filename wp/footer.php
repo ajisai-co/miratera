@@ -17,6 +17,7 @@
             </svg>
             <span>メールでご相談</span>
         </a></div>
+		<?php /*
         <div class="tel">
             <p class="tel__head">TEL</p>
             <div class="tel__body">
@@ -24,6 +25,7 @@
                 <p>火曜・日曜定休 9:00〜19:00</p>
             </div>
         </div>
+		*/?>
     </div>
 </section>
 <?php endif;?>
