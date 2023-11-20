@@ -7,7 +7,7 @@ get_header();
     <section class="p-contact">
         <div class="p-contact__sub">
             <h2 class="p-contact__head">ご予約に関するお問い合わせ</h2>
-            <p class="p-contact__lead">ご予約はお電話、またはメールフォームよりお願いいたします。</p>
+            <p class="p-contact__lead">ご予約は<?php /*お電話、または*/ ?>メールフォームよりお願いいたします。</p>
             <div class="p-contact__box">
                 <p class="p-contact__box__head">お問い合わせ・ご相談できること</p>
                 <ul>

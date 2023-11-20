@@ -5,7 +5,7 @@
     <div class="m-inner">
         <h3 class="head">CONTACT</h3>
         <p class="large">法人向け 訪問診療や福利厚生導入についてのご相談</p>
-        <p class="small">お電話、またはメールフォームよりお願いいたします。</p>
+        <p class="small"><?php /*お電話、または*/ ?>メールフォームよりお願いいたします。</p>
         <div class="mail"><a href="<?php echo home_url();?>/contact-b/">
             <svg xmlns="http://www.w3.org/2000/svg" width="20.534" height="15.439" viewBox="0 0 20.534 15.439">
                 <g transform="translate(0 -63.519)">

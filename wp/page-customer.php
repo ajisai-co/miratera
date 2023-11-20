@@ -69,7 +69,7 @@ get_header();
             <li class="m-list02__item">
                 <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
                 <h4 class="m-list02__head">ご予約</h4>
-                <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
+                <p class="m-list02__txt"><span><?php /*お電話、または*/ ?>WEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。</span></p>
             </li>
             <li class="m-list02__item">
                 <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
@@ -201,7 +201,7 @@ get_header();
     <div class="m-inner">
         <h3 class="head">CONTACT</h3>
         <p class="large">アットホームはりきゅうひの</p>
-        <p class="small">ご予約はお電話、またはメールフォームよりお願いいたします。</p>
+        <p class="small">ご予約は<?php /*お電話、または*/ ?>メールフォームよりお願いいたします。</p>
         <div class="mail"><a href="<?php echo home_url();?>/contact-c/">
             <svg xmlns="http://www.w3.org/2000/svg" width="20.534" height="15.439" viewBox="0 0 20.534 15.439">
                 <g transform="translate(0 -63.519)">

@@ -143,7 +143,7 @@ get_header();
                 <li class="m-list02__item">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow05.svg" alt=""></div>
                     <h4 class="m-list02__head">お問い合わせ</h4>
-                    <p class="m-list02__txt"><span>お電話またはWEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。サービスについてはお客様に合わせた内容を都度ご提案しております。</span></p>
+                    <p class="m-list02__txt"><span><?php /*お電話、または*/ ?>WEB予約から承っております。</span><span>ご不明なことなどありましたらお気軽にお問い合わせください。サービスについてはお客様に合わせた内容を都度ご提案しております。</span></p>
                 </li>
                 <li class="m-list02__item">
                     <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_flow06.svg" alt=""></div>
