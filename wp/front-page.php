@@ -4,11 +4,15 @@
     <section class="p-front-hero">
         <div class="p-front-hero__bg">
             <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_hero_pc.webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_hero_sp.webp" alt="" width="" height="" loading="lazy">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_hero_pc.webp" media="(min-width: 769px)" width="" height="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_hero_sp.webp" alt="" width="" height="" loading="eager">
             </picture>
             <div class="p-front-hero__txt">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/txt_front.svg" alt="" width="" height="" loading="lazy">
+                <picture>
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front/txt_front_black.svg" media="(min-width: 769px)" width="" height="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/txt_front.svg" alt="良い1日を" width="" height="" loading="eager">
+                </picture>
+                <p>福岡みらいテラス鍼灸は、<span>鍼灸のちからで働く人の健康を支え</span><span>企業の成長を支えます</span></p>
             </div>
         </div>
     </section>

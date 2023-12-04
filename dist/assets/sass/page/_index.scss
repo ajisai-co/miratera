@@ -167,14 +167,33 @@
     }
     &__txt {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: common.calcPc(1143);
-        height: auto;
+        left: 7.9%;
+        top: 48%;
+        transform: translateY(-50%);
+        picture{
+            display: block;
+            max-width: 583px;
+            transform: rotate(-15deg);
+            margin: 0 0 85px;
+        }
+        p{
+            font-size: common.calcPc(26);
+            letter-spacing: .19em;
+            line-height: 2;
+            color: #000;
+            text-shadow: 0 3px 6px #826D66;
+            span{
+                font-size: common.calcPc(26);
+                letter-spacing: .19em;
+                line-height: 2;
+                color: #000;
+                text-shadow: 0 3px 6px #826D66;
+            }
+        }
         @include mediaquery.sp {
             width: 90%;
         }
+
     }
 }
 

@@ -114,14 +114,14 @@ function my_wp_kses_allowed_html( $tags, $context ) {
  * サイトurl/?author=1でアクセスした際にユーザー名が表示されるのを防ぐ
  * セキュリティ対策の1つ。ただ、投稿者の一覧ページを作る際はこちらをコメントアウトする必要がある。
  */
-add_filter( 'author_rewrite_rules', '__return_empty_array' );
-function disable_author_archive() {
-if( $_GET['author'] || preg_match('#/author/.+#', $_SERVER['REQUEST_URI']) ){
-    wp_redirect( home_url( '/404.php' ) );
-    exit;
-}
-}
-add_action('init', 'disable_author_archive');
+// add_filter( 'author_rewrite_rules', '__return_empty_array' );
+// function disable_author_archive() {
+// if( $_GET['author'] || preg_match('#/author/.+#', $_SERVER['REQUEST_URI']) ){
+//     wp_redirect( home_url( '/404.php' ) );
+//     exit;
+// }
+// }
+// add_action('init', 'disable_author_archive');
 
 //カスタムタクソノミーをチェックボックスで選択できるようにする
 function change_term_to_checkbox() {

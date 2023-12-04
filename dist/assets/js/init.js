@@ -58,3 +58,12 @@ var nav = function(){
 		$('.js-navTarget').fadeToggle(400);
 	});
 }
+
+window.addEventListener('scroll', (event) => {
+    var scroll_y = window.scrollY;
+    if( 150 <= scroll_y ){
+        $('.l-header').addClass('-fixed');
+    }else{
+        $('.l-header').removeClass('-fixed');
+    }
+});
