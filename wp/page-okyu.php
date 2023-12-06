@@ -162,7 +162,7 @@ get_header();
         </div>
         <ul class="m-link__list">
             <li><a href="<?php echo home_url();?>/service/business/">
-                <span class="jp">法人向け訪問診療</span>
+                <span class="jp">企業向け訪問診療</span>
                 <span class="en">for BUSINESS</span>
             </a></li>
             <li><a href="<?php echo home_url();?>/service/welfare/">

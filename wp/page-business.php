@@ -8,13 +8,13 @@ get_header();
             <?php breadcrumb();?>
             <h2 class="-under">
                 <span class="en">for BUSINESS</span>
-                <span class="jp">法人向け 訪問鍼灸とは</span>
+                <span class="jp">企業向け 訪問鍼灸とは</span>
             </h2>
         </div>
     </div>
     <section class="l-under-business">
         <div class="m-inner">
-            <div class="m-label02"><p>法人の皆様へ 訪問鍼灸とは</p></div>
+            <div class="m-label02"><p>企業の皆様へ 訪問鍼灸とは</p></div>
             <h3 class="m-txt-31">社員の健康管理が売り上げにつながる大切な時代に</h3>
             <p class="m-txt-16"><span>腰痛や肩こりといったオフィスワークに見られるよくある症状。</span><span>これらを解決するだけでもお仕事でのパフォーマンスの向上が期待できます。</span><span>さらには、外部の人間とお話しする機会が生まれ、</span><span>緊張感を持たずに会話でき心の健康の維持にも効果があります。</span></p>
             <div class="m-box-grad01">

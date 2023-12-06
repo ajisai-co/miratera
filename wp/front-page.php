@@ -25,10 +25,10 @@
             <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_front01.webp" alt="" width="" height="" loading="lazy"></div>
         </div>
         <div class="main">
-            <h3><span>みらいテラス</span><span>鍼灸とは</span></h3>
+            <h3><span>福岡みらいテラス</span><span>鍼灸とは</span></h3>
             <div class="m-label02"><p>ABOUT US</p></div>
             <h4><span class="u-device-sp">健康な人づくりから、</span><span class="u-device-sp">元気な街づくりを。</span></h4>
-            <p><span>私たちは鍼灸の技術を活かし、働く人々の健康な日々をサポートし、</span><span>企業の安定的な運営を支え、成長に必要不可欠な要素として貢献しています。</span><span>これを通じて、より良い社会の創造に貢献する使命を担っています。</span></p>
+            <p><span>私たちは鍼灸の技術を活かし、働く人々の健康な日々をサポートし、</span><span>企業の安定的な運営を支え、成長に必要不可欠な要素として貢献しています。</span><span>これを通じて、福岡からより良い社会の創造に貢献する使命を担っています。</span></p>
             <div class="btn"><a href="<?php echo home_url();?>/about/">詳細を見る</a></div>
         </div>
     </section>
@@ -37,7 +37,8 @@
             <h3><span>企業向け</span><span>鍼灸サービス</span></h3>
             <div class="m-label02"><p>SERVICE for Business</p></div>
             <h4><span class="u-device-sp">オフィスに訪問し、</span><span class="u-device-sp">定期的な鍼灸治療を提供。</span></h4>
-            <p><span>鍼灸は目・肩・腰の不調、メンタル不調や慢性的な疲労など働く人々をとりまく健康リスクに対して</span><span>効果を発揮し、うつ病や体調不良による休職や離職リスクの未然低下が期待できます。</span></p>
+            <p><span>丁寧にヒアリングを行い、鍼施術・ストレッチ・体幹エクササイズを組み合わせて提供しています。</span><span>企業様の「かかりつけ鍼灸師」として、社員様の健康維持をサポートします。</span></p>
+            <div class="btn"><a href="<?php echo home_url();?>/service/business/">企業向けサービスを見る</a></div>
         </div>
     </section>
     <section class="p-front-support">
@@ -47,7 +48,7 @@
                 <p><span>会社の福利厚生として、福岡みらいテラス鍼灸をご利用いただけます。</span><span>簡単な条件をクリアすれば、福利厚生費として経費計上することができ、</span><span>節税しながら社員の健康を守ることができます。</span></p>
                 <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/ph_front03.webp" alt="" width="" height="" loading="lazy"></div>
                 <div class="p-front-support__btn">
-                        <div class="btn"><a href="<?php echo home_url();?>/service/business/">法人向け 訪問鍼灸</a></div>
+                        <div class="btn"><a href="<?php echo home_url();?>/service/business/">企業向け 訪問鍼灸</a></div>
                         <div class="btn"><a href="<?php echo home_url();?>/service/welfare/">鍼灸の福利厚生導入支援</a></div>
                 </div>
             </div>
@@ -116,7 +117,7 @@
             <div class="m-label02"><p>SERVICE for Person</p></div>
             <h4><span class="u-device-sp">JR「古賀」駅そば、</span><span class="u-device-sp">お気軽にご来院ください。</span></h4>
             <p><span>「辛い、痛いを、この街からひとつずつ無くしたい」という想いでお客様と向き合っています。</span><span>一人ひとりの健康づくりを通して、この街を活気ある元気な街にしたいと願っています。</span></p>
-            <div class="btn"><a href="<?php echo home_url();?>/service/customer/">詳細を見る</a></div>
+            <div class="btn"><a href="<?php echo home_url();?>/service/customer/">詳しく見る</a></div>
         </div>
         <?php /*
         <ul class="m-list m-inner">
@@ -163,7 +164,7 @@
             </a></li>
             <?php endwhile; ?>
         </ul>
-        <div class="btn"><a href="<?php echo home_url();?>/information/">NEWS一覧</a></div>
+        <div class="btn"><a href="<?php echo home_url();?>/information/">お知らせ一覧</a></div>
     </section>
     <?php endif; wp_reset_postdata();?>
     <section class="p-front-contact">

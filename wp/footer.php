@@ -4,7 +4,7 @@
 <section class="m-contact-under">
     <div class="m-inner">
         <h3 class="head">CONTACT</h3>
-        <p class="large">法人向け 訪問診療や福利厚生導入についてのご相談</p>
+        <p class="large">企業向け 訪問診療や福利厚生導入についてのご相談</p>
         <p class="small"><?php /*お電話、または*/ ?>メールフォームよりお願いいたします。</p>
         <div class="mail"><a href="<?php echo home_url();?>/contact-b/">
             <svg xmlns="http://www.w3.org/2000/svg" width="20.534" height="15.439" viewBox="0 0 20.534 15.439">
@@ -37,8 +37,8 @@
 			<div class="l-footer__link__item"><a href="<?php echo home_url();?>/shinkyu-media/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/ph_banner01.webp" alt="鍼灸メディア みらテラメソッド MIRATERA METHOD"></a></div>
 			*/?>
 			<div class="l-footer__link__item"><a target="_blank" href="https://fukuokahariq-pref.org/">
-				・公益社団法人 福岡県鍼灸マッサージ師会
-				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/ph_banner02.webp" alt="公益社団法人 福岡県鍼灸マッサージ師会"> -->
+				・公益社団企業 福岡県鍼灸マッサージ師会
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/ph_banner02.webp" alt="公益社団企業 福岡県鍼灸マッサージ師会"> -->
 			</a></div>
 		</div>
 		<div class="l-footer__logo"><a href="<?php echo home_url();?>/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/logo_footer.webp" alt="福岡みらいテラス鍼灸 Fukuoka Mirai Terrace Harikyu"></a></div>
@@ -52,7 +52,7 @@
 				<li class="l-footer__nav__item -modifier">
 					<a href="<?php echo home_url();?>/service/">サービス</a>
 					<ul class="l-footer__nav__inner">
-						<li><a href="<?php echo home_url();?>/service/business/">法人向け 訪問鍼灸</a></li>
+						<li><a href="<?php echo home_url();?>/service/business/">企業向け 訪問鍼灸</a></li>
 						<li><a href="<?php echo home_url();?>/service/welfare/">鍼灸の福利厚生導入支援</a></li>
 						<li><a href="<?php echo home_url();?>/service/customer/">アットホームはりきゅうひの</a></li>
 					</ul>

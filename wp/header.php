@@ -37,8 +37,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="l-header__nav__inner">
 					<div class="head">みらテラ福岡の提供するサービス一覧</div>
 					<div class="column">
-						<p>法人の方</p>
-						<a href="<?php echo home_url();?>/service/business/">法人向け 訪問鍼灸</a>
+						<p>企業の方</p>
+						<a href="<?php echo home_url();?>/service/business/">企業向け 訪問鍼灸</a>
 						<a href="<?php echo home_url();?>/service/welfare/">鍼灸の福利厚生導入支援</a>
 					</div>
 					<div class="column">

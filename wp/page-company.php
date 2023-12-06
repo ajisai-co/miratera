@@ -18,7 +18,7 @@ get_header();
         <div class="l-summary-company__column">
             <div class="head">事業内容</div>
             <div class="body">
-                <p>「法人向け訪問鍼灸」<br>オフィスに訪問し、定期的な鍼灸施術を提供</p>
+                <p>「企業向け訪問鍼灸」<br>オフィスに訪問し、定期的な鍼灸施術を提供</p>
                 <p>「店舗型鍼灸院：アットホームはりきゅうひの」<br>個人様向けに、店舗型鍼灸院にて鍼灸施術を提供</p>
             </div>
         </div>

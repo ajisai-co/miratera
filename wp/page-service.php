@@ -16,7 +16,7 @@ get_header();
         <div class="m-label02"><p>みらテラが提供するサービス一覧です</p></div>
         <h3 class="m-txt-31">鍼灸サービス</h3>
         <div class="l-under-service__column">
-            <div class="head"><span>法人向け</span><span>訪問鍼灸</span></div>
+            <div class="head"><span>企業向け</span><span>訪問鍼灸</span></div>
             <div class="body">
                 <p><span>オフィスに訪問し、定期的な鍼灸施術を提供いたします。</span><span>鍼灸は目・肩・腰の不調の予防、改善に効果が期待できます。</span><span>会話を交えながらの鍼灸施術を通じて、心身ともにリフレッシュでき、モチベーション向上やオフィス活性化を図ることが可能です。</span><span>また、施術に加え健康相談も行っており、「かかりつけ鍼灸師」として大切な社員様の健康維持の継続を目指しています。</span></p>
                 <div class="btn"><a class="m-btn-blue" href="<?php echo home_url();?>/service/business/">詳細を見る</a></div>

@@ -529,18 +529,17 @@
                 padding: common.calcPc(13) 0;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
                 @include mediaquery.sp {
                     display: flex;
                     flex-wrap: wrap;
                 }
             }
             time {
-                font-size: common.calcPc(14);
+                font-size: 1.4rem;
                 letter-spacing: .17em;
                 font-weight: bold;
                 color: var(--color-blue);
-                padding: 0 common.calcPc(30);
+                padding: 0 30px;
                 @include mediaquery.sp {
                     padding: 0;
                     font-size: common.calcResp(12);
@@ -549,11 +548,11 @@
                 }
             }
             h4 {
-                font-size: common.calcPc(14);
+                font-size: 1.4rem;
                 letter-spacing: .17em;
                 font-weight: 500;
                 color: var(--color-blue);
-                padding: common.calcPc(4) common.calcPc(10);
+                padding: 4px 30px;
                 border-left: 1px solid var(--color-blue);
                 margin-right: auto;
                 width: 75%;
@@ -569,7 +568,7 @@
                 position: relative;
                 @include fonts.Coco-Gothic;
                 color: var(--color-blue);
-                font-size: common.calcPc(10);
+                font-size: 1rem;
                 letter-spacing: .18em;
                 padding-right: common.calcPc(32);
                 @include mediaquery.sp {
@@ -579,10 +578,10 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    right: common.calcPc(13);
-                    top: common.calcPc(10);
-                    width: common.calcPc(5);
-                    height: common.calcPc(5);
+                    right: 1.1rem;
+                    top: 1rem;
+                    width: .5rem;
+                    height: .5rem;
                     border-top: 1px solid var(--color-blue);
                     border-right: 1px solid var(--color-blue);
                     transform: rotate(45deg);
