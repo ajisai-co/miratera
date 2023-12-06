@@ -159,22 +159,35 @@
 .p-front-hero {
     position: relative;
     width: 100%;
+    @include mediaquery.sp {
+        height: 70vh;
+        overflow: hidden;
+    }
     &__bg {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        background: var(--color-blue);
+        
     }
     &__txt {
         position: absolute;
         left: 7.9%;
         top: 48%;
         transform: translateY(-50%);
+        @include mediaquery.sp {
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: auto;
+            transform: translateY(0);
+            bottom: 10%;
+        }
         picture{
             display: block;
             max-width: 583px;
             transform: rotate(-15deg);
             margin: 0 0 85px;
+            @include mediaquery.sp {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
         }
         p{
             font-size: common.calcPc(26);
@@ -182,12 +195,18 @@
             line-height: 2;
             color: #000;
             text-shadow: 0 3px 6px #826D66;
+            @include mediaquery.sp {
+                font-size: common.calcResp(18);
+            }
             span{
                 font-size: common.calcPc(26);
                 letter-spacing: .19em;
                 line-height: 2;
                 color: #000;
                 text-shadow: 0 3px 6px #826D66;
+                @include mediaquery.sp {
+                    font-size: common.calcResp(18);
+                }
             }
         }
         @include mediaquery.sp {

@@ -19,16 +19,7 @@
         // height: 58px;
         background: transparent;
     }
-    &.-fixed{
-        background: var(--color-blue);
-        .l-header__nav__item{
-            color: #fff;
-            a{
-                color: #fff;
-                border-left: 1px solid #fff;
-            }
-        }
-    }
+    
     &__logo {
         z-index: 20;
         line-height: 1;
@@ -111,25 +102,29 @@
             }
         }
         &__item {
-            color: #333;
+            color: #fff;
             position: relative;
+            border-left: 1px solid #fff;
+            line-height: 1;
+            &:last-child{
+                border-right: 1px solid #fff;
+            }
             @include mediaquery.sp {
-                border-top: 1px solid #333;
+                border-top: 1px solid #fff;
                 border-left: none;
                 width: 100%;
                 &:last-child {
-                    border-bottom: 1px solid #333;
+                    border-bottom: 1px solid #fff;
                 }
             }
             a {
-                border-left: 1px solid #333;
-                color: #333;
+                color: #fff;
                 padding: 0 common.calcPc(22);
                 font-size: common.calcPc(18);
                 letter-spacing: .1em;
-                line-height: 1;
                 font-weight: bold;
                 display: inline;
+                line-height: 1;
                 @include mediaquery.sp {
                     width: 100%;
                     padding: common.calcResp(16) 0;
@@ -148,12 +143,12 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    top: common.calcPc(2);
+                    top: common.calcPc(4);
                     right: common.calcPc(16);
                     width: common.calcPc(6);
                     height: common.calcPc(6);
-                    border-top: 1px solid #333;
-                    border-right: 1px solid #333;
+                    border-top: 1px solid #fff;
+                    border-right: 1px solid #fff;
                     transform: rotate(135deg);
                 }
                 &:hover {
@@ -251,8 +246,8 @@
         }
         a {
             position: relative;
-            color: #333;
-            border: 1px solid #333;
+            color: #fff;
+            border: 1px solid #fff;
             border-radius: common.calcPc(23);
             font-size: common.calcPc(14);
             line-height: 1;
@@ -263,7 +258,7 @@
                 font-size: common.calcResp(14);
                 padding: common.calcResp(16) 0;
                 font-size: common.calcResp(14);
-                border-bottom: 1px solid #333;
+                border-bottom: 1px solid #fff;
                 border-radius: 0;
                 font-weight: bold;
             }
@@ -271,8 +266,8 @@
                 content: "";
                 width: common.calcPc(7);
                 height: common.calcPc(7);
-                border-top: 1px solid #333;
-                border-right: 1px solid #333;
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
                 transform: rotate(45deg);
                 position: absolute;
                 top: common.calcPc(18);
@@ -280,6 +275,52 @@
                 @include mediaquery.sp {
                     content: none;
                 }
+            }
+        }
+    }
+    &.-front{
+        background: none;
+        .l-header__nav__item{
+            color: #333;
+            border-left: 1px solid #333;
+            &:last-child{
+                border-right: 1px solid #333;
+            }
+            & > a{
+                color:#333;
+            }
+        }
+        .l-header__nav__item.-modifier:after{
+            border-color: #333;
+        }
+        .l-header__contact a{
+            color: #333;
+            border-color: #333;
+            &:after{
+                border-color: #333;
+            }
+        }
+    }
+    &.-fixed{
+        background: var(--color-blue);
+        .l-header__nav__item{
+            color: #fff;
+            border-left: 1px solid #fff;
+            &:last-child{
+                border-right: 1px solid #fff;
+            }
+            & > a{
+                color:#fff;
+            }
+        }
+        .l-header__nav__item.-modifier:after{
+            border-color: #fff;
+        }
+        .l-header__contact a{
+            color: #fff;
+            border-color: #fff;
+            &:after{
+                border-color: #fff;
             }
         }
     }
