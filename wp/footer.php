@@ -3,7 +3,8 @@
 <?php if( !is_front_page() && !is_page('contact-b') && !is_page('contact-c') && !is_page('customer') ): ?>
 <section class="m-contact-under">
     <div class="m-inner">
-        <h3 class="head">CONTACT</h3>
+        <h3 class="head-en">CONTACT</h3>
+		<h3 class="head-jp">福岡みらいテラス鍼灸へのお問い合わせ</h3>
         <p class="large">企業向け 訪問診療や福利厚生導入についてのご相談</p>
         <p class="small"><?php /*お電話、または*/ ?>メールフォームよりお願いいたします。</p>
         <div class="mail"><a href="<?php echo home_url();?>/contact-b/">

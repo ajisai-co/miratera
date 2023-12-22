@@ -84,8 +84,9 @@
             <h4>いたくない鍼、あつくない灸。</h4>
             <p><span>世間から鍼灸にもたれているイメージを1歩超えて、福岡みらいテラス鍼灸のこだわりをご紹介。</span><span>痛みが取れるだけではない価値を提供するために日々邁進しております。</span></p>
             <h4>丁寧なカウンセリングと、先進の技術、確かな施術。</h4>
+            <div class="btn"><a href="<?php echo home_url();?>/about/#feature">詳しく見る</a></div>
             <p><span>院長の日野がカウンセリングから施術まで一貫して行い、根本の原因にアプローチしていきます。</span><span>「鍼灸は初めて」という方がほとんどですが、皆さま笑顔で帰られますのでご安心ください。</span></p>
-            <div class="btn"><a href="<?php echo home_url();?>/feature/">詳細を見る</a></div>
+            <div class="btn"><a href="<?php echo home_url();?>/feature/">鍼灸へのこだわりを読む</a></div>
             <?php /*
             <ul class="m-list">
                 <?php

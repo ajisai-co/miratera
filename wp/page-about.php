@@ -39,7 +39,7 @@ get_header();
                 <p class="m-box-grad01__txt"><span>福岡みらいテラス鍼灸の施術は、これらの循環に良い影響を与え、バランスを維持することを目指しています。</span><span>未病の段階から体調を整え、心身共に多くの症状が発生しにくい状態をサポートします。</span><span>働く人々の健康が保たれることで、オフィス環境が活気づき、生産性が向上することにつながります。</span></p>
                 <p class="m-box-grad01__txt"><span>企業の健康は、個人の心身の健康と同様に、社会の「血流」である</span><span>経済活動をバランスよく循環させている状態だと考えています。</span><span>福岡みらいテラス鍼灸は、企業とそこで働く人々が、</span><span>社会と未来に向けて前向きで活力ある存在であるための健康とまちづくりを目指しています。</span></p>
             </div>
-            <div class="l-under-about__feature">
+            <div class="l-under-about__feature" id="feature">
                 <div class="m-inner">
                         <h3 class="head"><span>福岡みらいテラス鍼灸の考える、</span><span>鍼灸の大きな3つの性質</span></h3>
                         <div class="column">
