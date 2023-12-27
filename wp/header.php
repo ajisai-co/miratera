@@ -28,7 +28,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<nav class="l-header__nav js-navTarget">
 		<ul class="l-header__nav__list">
-			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/about/">みらいテラス鍼灸とは</a></li>
+			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/about/">福岡みらいテラス鍼灸とは</a></li>
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/feature/">鍼灸へのこだわり</a></li>
 			<?php /*
 			<li class="l-header__nav__item"><a href="<?php echo home_url();?>/shinkyu-media/">みらテラ鍼灸メディア</a></li>

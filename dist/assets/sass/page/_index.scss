@@ -453,12 +453,6 @@
             color: var(--color-white);
         }
     }
-    p + h4 {
-        margin-top: common.calcPc(640);
-        @include mediaquery.sp {
-            margin-top: common.calcResp(72);
-        }
-    }
     .btn {
         a {
             border: 1px solid #fff;
@@ -472,6 +466,12 @@
             margin-top: common.calcPc(390);
             @include mediaquery.sp {
                 margin-top: common.calcResp(83);
+            }
+        }
+        & + h4 {
+            margin-top: common.calcPc(640);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(72);
             }
         }
     }

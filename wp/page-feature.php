@@ -19,40 +19,61 @@ get_header();
             <ul class="l-under-feature__list">
                 <li><a href="#point01">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point01.svg" alt="POINT1" width="" height="" loading="lazy">
-                        <p><span>コストの</span><span>削減</span></p>
+                        <p><span>一人ひとりの</span><span>状態に合わせた</span><span>施術</span></p>
                 </a></li>
                 <li><a href="#point02">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point02.svg" alt="POINT2" width="" height="" loading="lazy">
-                        <p><span>オフィスの</span><span>活性化と</span><span>生産性の向上</span></p>
+                        <p><span>人を診る</span><span>施術</span></p>
                 </a></li>
                 <li><a href="#point03">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy">
-                        <p><span>「健康経営」</span><span>で企業イメージ</span><span>の向上</span></p>
+                        <p><span>事故治癒力を</span><span>高める施術</span></p>
+                </a></li>
+                <li><a href="#point04">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy">
+                        <p><span>仕事中でも</span><span>安心で</span><span>効果的な施術</span></p>
+                </a></li>
+                <li><a href="#point05">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy">
+                        <p><span>クライアント</span><span>様への</span><span>施術コンセプト</span><span>を設定</span></p>
                 </a></li>
             </ul>
             <div class="l-under-feature__column" id="point01">
                 <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point01.svg" alt="POINT1" width="" height="" loading="lazy"></div>
                 <div class="body">
-                        <h3>コストの削減</h3>
-                        <p><span>企業にとって人材採用は大きなコストがかかります。</span><span>1人当たりの採用コストはおおよそ60～80万円と言われており、有効求人倍率の上昇も予想されている現代に</span><span>おいて、採用にかかる負担が増しています。</span></p>
-                        <p><span>福岡みらいテラス鍼灸は、鍼灸の専門知識を活かし、働く人々の健康リスクを軽減し、体調不良による休職や</span><span>離職のリスクを低減するお手伝いをいたします。</span><span>私たちは、経験豊かで信頼できる人材が、元気に長く活躍してほしいという想いを、お客様と一緒に実現してい</span><span>きます。</span></p>
+                        <h3>一人ひとりの状態に合わせた施術</h3>
+                        <p><span>福岡みらいテラス鍼灸では、「対話」を大切にし、一人ひとりの状態に合わせた「オーダーメイド施術」を提供しています。</span><span>同じ症状でも原因は人それぞれ異なります。</span></p>
+                        <p><span>例えば、頭痛を訴える方でも、肩や背中のこり がひどくなると症状が出たり、一方で気候の変 化で症状が出たりします。女性は生理などが症 状に影響を与えることもあります。</span><span>頭痛の施術を行うとともに、その他の症状や、その方を取り巻く周囲の環境についても詳しくお伺いします。</span><span>鍼灸は「対話」をしながら施術を提供できるの で、その人の性格や心身の状態を理解し、なぜ その症状が現れているのか診察することが可能 です。</span><span>一人ひとりに合わせて提供しますので、お身体にとって優しく、より自然に近い施術です。</span></p>
                 </div>
             </div>
             <div class="l-under-feature__column" id="point02">
                 <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point02.svg" alt="POINT2" width="" height="" loading="lazy"></div>
                 <div class="body">
-                        <h3>オフィスの活性化と生産性の向上</h3>
-                        <p><span>働く人々の疲労蓄積や体調不良は、本来の能力を発揮できなくなり、仕事の質が低下し、欠勤が続くなど、企業</span><span>運営の妨げになります。鍼灸は目、肩、腰の不調、メンタル不調、慢性的な疲労など、心身の予防に効果的</span><span>な方法です。</span></p>
-                        <p><span>働く人々の健康を守ることにより、オフィスの活性化や生産性の向上など、健康な企業運営を支援します。</span></p>
+                        <h3>人を診る施術</h3>
+                        <p><span>鍼灸は、症状が出ているところだけでなく、そ の症状を引き起こしている原因にもアプローチ できる施術です。</span><span>福岡みらいテラス鍼灸では、お身体に直接触れ て施術をさせていただく「手当て」を重んじて おり、より詳しく丁寧に、お身体の状態を把握 します。</span><span>また、心身のバランスを調整する施術を主として行っており、心身一体を捉えています。</span><span>症状とともに季節や生活環境、仕事環境などが 心身に影響を与えることを包括的に理解し、 個々の状況に合わせた施術を提供しています。</span></p>
                 </div>
             </div>
             <div class="l-under-feature__column" id="point03">
                 <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy"></div>
                 <div class="body">
-                        <h3>「健康経営」で企業イメージの向上</h3>
-                        <p><span>多くの企業が推進している「健康経営」。</span><span>「健康経営」は今や企業様の成長に必要不可欠であり、安定した企業運営を支える取り組みです。</span><span>経済産業省では、働く人々の健康管理を経営戦略の1つと考え、企業全体で健康保持・増進のための取り組みを推進しています。</span></p>
-                        <p><span>働く人々の健康を保護することは、社内の活性化や生産性向上だけでなく、</span><span>国民の生活の質向上や医療費の削減など、社会全体に貢献する要素となります。</span></p>
-                        <p><span>「病気になったときのための対策」ではなく「より良く生きるための仕組み」が必要な時代。</span><span>福岡みらいテラス鍼灸は、世の中の流れに合った仕組みを企業様とともに創っていきます。</span></p>
+                        <h3>自己治癒力を高める施術</h3>
+                        <p><span>鍼灸は、心身のバランスを回復させる役割を果たす際に「自己治癒力」を活性化させる作用があります。</span><span>また、鍼灸を受けていくと、心身のバランスを安定させ維持させる力(ホメオスタシス)が向上されます。</span><span>これらが安定した「免疫力」につながり、痛みなどの症状のほか、不調の「予防」にも効果を発揮します。</span></p>
+                        <p><span>福岡みらいテラス鍼灸は、病気になりにくい身体を創ることで、健康・美容・美しい姿勢をみなさんとともに目指していきたいと考えています。</span></p>
+                </div>
+            </div>
+            <div class="l-under-feature__column" id="point04">
+                <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy"></div>
+                <div class="body">
+                        <h3>仕事中でも安心で効果的な施術</h3>
+                        <p><span>お仕事中でも安心して施術を受けていただくため、お身体に負担の少ない「散鍼」という鍼施術を採用。</span><span>経験豊富な鍼灸師が個々のニーズに合わせたケアを提案し、効果的な施術で仕事中のストレス、疲労を和らげます。</span><span>施術後はお身体がスッキリし、働く人の健康促進と、仕事への集中力向上が期待できます。</span></p>
+                        <p><span>福岡みらいテラス鍼灸は、病気になりにくい身体を創ることで、健康・美容・美しい姿勢をみなさんとともに目指していきたいと考えています。</span></p>
+                </div>
+            </div>
+            <div class="l-under-feature__column" id="point05">
+                <div class="head"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/ph_point03.svg" alt="POINT3" width="" height="" loading="lazy"></div>
+                <div class="body">
+                        <h3>クライアント様への施術コンセプトを設定</h3>
+                        <p><span>福岡みらいテラス鍼灸は、クライアントである企業様へ施術コンセプトを設定しています。</span><span>健康のために施術を提供するだけでなく、企業様の想いを理解し、より良い仕事環境創り、安定経営のために一緒に進めていきたいと考えています。</span><span>そして、働く人の健康サポートとともに、お仕事に対して一緒に喜び合える関係性を大切にしたい。という想いを込めて取り組んでいます。</span></p>
                 </div>
             </div>
             <div class="m-box-grad01">
