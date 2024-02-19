@@ -195,6 +195,12 @@
                 margin-top: common.calcResp(20);
             }
         }
+        & + .m-pricelist__caption {
+            margin-top: common.calcPc(20);
+            @include mediaquery.sp {
+                margin-top: common.calcResp(20);
+            }
+        }
     }
     &__lead {
         @extend .m-txt-16;
@@ -221,6 +227,11 @@
             @include mediaquery.sp {
                 margin-top: common.calcResp(24);
             }
+        }
+    }
+    .m-btn-tran {
+        & + .l-under-price__head {
+            margin-top: 40px;
         }
     }
 }

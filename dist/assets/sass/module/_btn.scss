@@ -1,0 +1,82 @@
+@use "../base/fonts";
+@use "../base/mediaquery";
+@use "../layout/common";
+@use "../mixin/clearfix";
+@use "../mixin/csshack";
+
+.m-btn-blue {
+	position: relative;
+	background: var(--color-blue);
+	display: inline-block;
+	color: var(--color-white);
+	font-size: common.calcPc(16);
+	letter-spacing: .2em;
+	font-weight: 500;
+	border-radius: common.calcPc(19);
+	padding: common.calcPc(11) 0;
+	line-height: 1;
+	@include mediaquery.sp {
+		font-size: common.calcResp(13);
+		border-radius: common.calcResp(19);
+		padding: common.calcResp(11) 0;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		right: common.calcPc(16);
+		top: common.calcPc(14);
+		width: common.calcPc(7);
+		height: common.calcPc(7);
+		border-top: 1px solid #fff;
+		border-right: 1px solid #fff;
+		transform: rotate(45deg);
+		@include mediaquery.sp {
+			right: common.calcResp(16);
+			top: common.calcResp(14);
+			width: common.calcResp(7);
+			height: common.calcResp(7);
+		}
+	}
+}
+
+.m-btn-tran {
+	text-align: center;
+	margin-top: common.calcPc(100);
+	@include mediaquery.sp {
+		margin-top: common.calcResp(40);
+	}
+	a {
+		position: relative;
+		border: 1px solid var(--color-blue);
+		display: inline-block;
+		color: var(--color-blue);
+		font-size: common.calcPc(19);
+		letter-spacing: .2em;
+		border-radius: common.calcPc(33);
+		padding: common.calcPc(24) common.calcPc(80) common.calcPc(22) common.calcPc(86);
+		line-height: 1;
+		@include mediaquery.sp {
+			width: 100%;
+			font-size: common.calcResp(14);
+			border-radius: common.calcResp(33);
+			padding: common.calcResp(24) common.calcResp(20) common.calcResp(22) common.calcResp(24);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			right: common.calcPc(16);
+			top: common.calcPc(28);
+			width: common.calcPc(7);
+			height: common.calcPc(7);
+			border-top: 1px solid var(--color-blue);
+			border-right: 1px solid var(--color-blue);
+			transform: rotate(45deg);
+			@include mediaquery.sp {
+				right: common.calcResp(16);
+				top: common.calcResp(28);
+				width: common.calcResp(7);
+				height: common.calcResp(7);
+			}
+		}
+	}
+}

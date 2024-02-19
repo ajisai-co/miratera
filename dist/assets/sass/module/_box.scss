@@ -116,6 +116,7 @@
 				}
 			}
 			.body {
+				width: calc(100% - common.calcPc(60));
 				transform: translateY(-25%);
                 @include mediaquery.sp {
                     width: common.calcResp(240);

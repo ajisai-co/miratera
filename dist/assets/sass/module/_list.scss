@@ -273,6 +273,326 @@
 	}
 }
 
-.m-list04 {
-
+.m-pricelist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include mediaquery.sp {
+		display: block;
+	}
+	&__item {
+		position: relative;
+		background: var(--color-white);
+		padding: common.calcPc(38) common.calcPc(56);
+		width: 48.7%;
+		margin-bottom: common.calcPc(30);
+		@include mediaquery.sp {
+			width: 100%;
+			margin-bottom: common.calcResp(30);
+			padding: common.calcResp(26) common.calcResp(16);
+		}
+		&::before, &::after {
+			content: "";
+			width: common.calcPc(156);
+			height: common.calcPc(62);
+			position: absolute;
+			@include mediaquery.sp {
+				width: common.calcResp(100);
+				height: common.calcResp(48);
+			}
+		}
+		&::before {
+			top: 0;
+			left: 0;
+			border-top: 2px solid var(--color-blue);
+			border-left: 2px solid var(--color-blue);
+		}
+		&::after {
+			right: 0;
+			bottom: 0;
+			border-right: 2px solid var(--color-blue);
+			border-bottom: 2px solid var(--color-blue);
+		}
+		h5 {
+			font-size: common.calcPc(22);
+			font-weight: bold;
+			letter-spacing: .17em;
+			line-height: 1.68;
+			color: var(--color-blue);
+			@include mediaquery.sp {
+				font-size: common.calcResp(16);
+			}
+			& + .column {
+				margin-top: common.calcPc(4);
+				@include mediaquery.sp {
+					margin-top: common.calcResp(4);
+				}
+			}
+		}
+		&.-fullsize{
+			width: 100%;
+			p{
+				color: var(--color-blue);
+			}
+		}
+		&.-flex{
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__head {
+		text-align: center;
+		font-size: common.calcPc(24);
+		color: var(--color-blue);
+		font-weight: bold;
+		letter-spacing: .17em;
+		line-height: 1.714;
+		@include mediaquery.sp {
+			font-size: common.calcResp(18);
+		}
+		span {
+			font-size: common.calcPc(24);
+			color: var(--color-blue);
+			font-weight: bold;
+			letter-spacing: .17em;
+			line-height: 1.714;
+			@include mediaquery.sp {
+				font-size: common.calcResp(18);
+			}
+		}
+		& + .m-pricelist__lead {
+			margin-top: common.calcPc(30);
+			@include mediaquery.sp {
+				margin-top: common.calcResp(20);
+			}
+		}
+		& + .m-pricelist__inner {
+			margin-top: common.calcPc(36);
+			@include mediaquery.sp {
+				margin-top: common.calcResp(36);
+			}
+		}
+	}
+	&__lead {
+		color: var(--color-blue);
+		span {
+			@extend .m-txt-16;
+			line-height: 2;
+		}
+		& + .m-pricelist__inner {
+			margin-top: common.calcPc(36);
+			@include mediaquery.sp {
+				margin-top: common.calcResp(20);
+			}
+		}
+	}
+	&__body {
+		border-top: 1px dashed var(--color-blue);
+		padding-top: common.calcPc(30);
+		margin-top: common.calcPc(32);
+		@include mediaquery.sp {
+			padding-top: common.calcResp(20);
+			margin-top: common.calcResp(20);
+		}
+		.lbl {
+			display: inline-block;
+			font-size: common.calcPc(17);
+			color: #fff;
+			font-weight: 500;
+			letter-spacing: .17em;
+			line-height: 1.7;
+			font-weight: bold;
+			line-height: 1;
+			background: var(--color-blue);
+			padding: common.calcPc(7) common.calcPc(21) common.calcPc(7) common.calcPc(17);
+			clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+			margin-right: common.calcPc(28);
+			@include mediaquery.sp {
+				font-size: common.calcResp(14);
+				padding: common.calcResp(7) common.calcResp(16) common.calcResp(7) common.calcResp(12);
+				margin-right: common.calcResp(12);
+			}
+		}
+		.caption {
+			font-size: common.calcPc(20);
+			color: var(--color-blue);
+			letter-spacing: .1em;
+			line-height: 1.7;
+			margin-top: 16px;
+			@include mediaquery.sp {
+				font-size: common.calcResp(14);
+			}
+		}
+	}
+	&__plan01 {
+		margin-top: common.calcPc(15);
+		@include mediaquery.sp {
+			margin-top: common.calcResp(15);
+		}
+		li, strong {
+			font-size: common.calcPc(20);
+			color: var(--color-blue);
+			font-weight: bold;
+			letter-spacing: .1em;
+			line-height: 1.7;
+			@include mediaquery.sp {
+				font-size: common.calcResp(14);
+			}
+		}
+		& + .lbl {
+			margin-top: 20px;
+		}
+	}
+	&__plan02 {
+		li {
+			display: flex;
+			@include mediaquery.sp {
+				flex-direction: column
+			}
+			& + li {
+				margin-top: common.calcPc(20);
+				@include mediaquery.sp {
+					margin-top: common.calcResp(20);
+				}
+			}
+			.head {
+				@extend .m-txt-18;
+				background: var(--color-blue);
+				color: var(--color-white);
+				font-weight: bold;
+				width: common.calcPc(134);
+				height: common.calcPc(31);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: common.calcPc(16);
+				margin-right: common.calcPc(13);
+				@include mediaquery.sp {
+					width: common.calcResp(134);
+					height: common.calcResp(31);
+					border-radius: common.calcResp(16);
+					margin: 0 0 common.calcResp(13);
+				}
+			}
+			.body {
+				width: calc( 100% - common.calcPc(147) );
+				span {
+					@extend .m-txt-20;
+					color: var(--color-blue);
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	&__inner {
+		border-top: 1px dashed var(--color-blue);
+		li {
+			position: relative;
+			list-style: none;
+			border-bottom: 1px dashed var(--color-blue);
+			padding: common.calcPc(24) 0 common.calcPc(20);
+			@include mediaquery.sp {
+				padding: common.calcResp(28) 0 common.calcResp(22);
+			}
+		}
+		.column {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			width: 100%;
+			@include mediaquery.sp {
+			}
+		}
+		.lbl {
+			font-size: common.calcPc(17);
+			color: #fff;
+			letter-spacing: .17em;
+			line-height: 1;
+			font-weight: bold;
+			background: var(--color-blue);
+			padding: common.calcPc(7) common.calcPc(21) common.calcPc(7) common.calcPc(17);
+			clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+			margin-right: common.calcPc(28);
+			@include mediaquery.sp {
+				font-size: common.calcResp(12);
+				padding: common.calcResp(7) common.calcResp(17) common.calcResp(7) common.calcResp(12);
+				margin-right: common.calcResp(12);
+			}
+		}
+		.price {
+			display: flex;
+			align-items: flex-end;
+			font-size: common.calcPc(38);
+			font-weight: bold;
+			color: var(--color-blue);
+			margin-right: common.calcPc(21);
+			@include mediaquery.sp {
+				margin-right: 0;
+				font-size: common.calcResp(30);
+				width: 70%;
+			}
+			span {
+				color: var(--color-blue);
+			}
+		}
+		.time {
+			display: block;
+			border: 1px solid var(--color-blue);
+			color: var(--color-blue);
+			font-size: common.calcPc(17);
+			letter-spacing: .17em;
+			line-height: 1.7;
+			font-weight: bold;
+			border-radius: common.calcPc(22);
+			padding: common.calcPc(2) common.calcPc(12);
+			@include mediaquery.sp {
+				font-size: common.calcResp(14);
+				border-radius: common.calcResp(22);
+				padding: common.calcResp(2) common.calcResp(12);
+				margin-top: common.calcResp(10);
+			}
+		}
+	}
+	&__caption {
+		color: var(--color-blue);
+		font-size: common.calcPc(20);
+		letter-spacing: .1em;
+		@include mediaquery.sp {
+			font-size: common.calcResp(14);
+			line-height: 1.6;
+			margin-top: common.calcResp(20);
+		}
+		span {
+			font-size: common.calcPc(15);
+			letter-spacing: .1em;
+			line-height: 2.2;
+			color: var(--color-blue);
+			@include mediaquery.sp {
+				font-size: common.calcResp(15);
+				display: block;
+			}
+		}
+		& + .m-btn-tran {
+			margin-top: common.calcPc(116);
+			@include mediaquery.sp {
+				margin-top: common.calcResp(40);
+			}
+		}
+	}
+	&__txt{
+		color: var(--color-blue);
+		font-size: common.calcPc(20);
+		margin-left: common.calcPc(40);
+		@include mediaquery.sp {
+			font-size: common.calcResp(16);
+			margin-left: common.calcResp(30);
+		}
+		span {
+			color: var(--color-blue);
+			font-size: common.calcPc(20);
+			@include mediaquery.sp {
+				font-size: common.calcResp(16);
+			}
+		}
+	}
 }

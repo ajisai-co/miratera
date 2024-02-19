@@ -16,7 +16,7 @@ get_header();
         <div class="m-inner">
             <div class="m-label02"><p>企業の皆様へ 訪問鍼灸とは</p></div>
             <h3 class="m-txt-31">社員の健康管理が売り上げにつながる大切な時代に</h3>
-            <p class="m-txt-16"><span>腰痛や肩こりといったオフィスワークに見られるよくある症状。</span><span>これらを解決するだけでもお仕事でのパフォーマンスの向上が期待できます。</span><span>さらには、外部の人間とお話しする機会が生まれ、</span><span>緊張感を持たずに会話でき心の健康の維持にも効果があります。</span></p>
+            <p class="m-txt-16"><span>腰痛や肩こりといったオフィスワークに見られるよくある症状。</span><span>これらを解決できるとお仕事でのパフォーマンスの向上が期待できます。</span><span>さらには、外部の人間とお話しする機会が生まれ、</span><span>緊張感を持たずに会話でき心の健康の維持にも効果があります。</span></p>
             <div class="m-box-grad01">
                 <div class="m-label01"><p>みらテラの考える健康経営</p></div>
                 <h3 class="m-box-grad01__head"><span>健康リスクの改善は、安定経営の原動力になる</span><span>社員様の健康を守ることは不可欠です</span></h3>
@@ -49,6 +49,20 @@ get_header();
                             <p class="txt"><span>自律神経症状（睡眠の質が良くない、便秘がちなど）</span><span>仕事や生活が忙しくてお身体のケアをする時間がない</span></p>
                         </div>
                     </li>
+                    <li>
+                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_check.svg" alt="" width="" height="" loading="lazy"></div>
+                        <div class="body">
+                            <h4 class="head">POINT 05</h4>
+                            <p class="txt"><span>お仕事や生活環境など社員様を取り巻く健康リスクに効果を発揮</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/under/icon_check.svg" alt="" width="" height="" loading="lazy"></div>
+                        <div class="body">
+                            <h4 class="head">POINT 06</h4>
+                            <p class="txt"><span>「かかりつけ鍼灸師」として社員様の健康維持をサポート</span></p>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <p class="m-txt-16"><span>お仕事や生活習慣など、社員様をとりまく様々な健康リスクに効果を発揮し、</span><span>企業様の「かかりつけ鍼灸師」として、健康維持をサポートします！</span></p>
@@ -65,73 +79,78 @@ get_header();
                 <ul class="m-pricelist">
                     <li class="m-pricelist__item">
                         <h4 class="m-pricelist__head">鍼施術</h4>
-                        <p class="m-pricelist__lead"><span>腰、頚・肩、背中など、事前ヒアリングに合わせて一人ひとりのオーダーメイド施術です。</span><span>お仕事中にも受けられる、優しい刺激で効果が期待できる施術です。</span></p>
+                        <p class="m-pricelist__lead"><span>腰、頚・肩、背中などのこり・痛みの緩和が期待できます。血液循環が良くなるので、冷えにも効果があり施術後はお身体がスッキリします。</span><span>お仕事中にも受けられる、こだわりの鍼施術を提供いたします。</span></p>
                     </li>
                     <li class="m-pricelist__item">
                         <h4 class="m-pricelist__head">ストレッチポール ストレッチ</h4>
-                        <p class="m-pricelist__lead"><span>ストレッチポールを用いての、お身体のストレッチです。</span><span>事前ヒアリングにてストレッチをする箇所にアプローチいたします。</span><span>鍼施術と組み合わせ、相乗効果を生み出します。</span></p>
+                        <p class="m-pricelist__lead"><span>ストレッチポールを用いての、お身体のストレッチです。筋肉を柔らかくし、関節可動域（動かせる範囲）を高めます。</span><span>鍼施術と組み合わせることで、痛みに対する相乗効果を生み出します。</span></p>
                     </li>
                     <li class="m-pricelist__item">
                         <h4 class="m-pricelist__head">マッスルスーツ体幹エクササイズ</h4>
-                        <p class="m-pricelist__lead"><span>マッスルスーツを使用し、体幹を作る筋肉を活性化させるエクササイズです。</span><span>見た目も美しい、より良い姿勢を持続させ、鍼施術・ストレッチの効果を持続させる働きがあります。</span></p>
+                        <p class="m-pricelist__lead"><span>東京理科大で開発されたマッスルスーツⓇを使用し、体幹を作る筋肉を活性化させるエクササイズです。見た目も美しい、より良い姿勢を持続させます。鍼施術効果の持続、痛みなどを予防させる働きがあります。</span></p>
                     </li>
                 </ul>
                 <h3 class="l-under-price__head">【ご利用例／ご利用料金】</h3>
                 <ul class="m-pricelist">
                     <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">鍼施術＋ストレッチポールプラン</h4>
+                        <h4 class="m-pricelist__head"><span>【スタンダードプラン】</span><span>鍼施術＋ストレッチポールプラン</span></h4>
                         <div class="m-pricelist__body">
-                            <div class="lbl">料金</div>
+                            <div class="lbl">ご利用料金</div>
                             <ul class="m-pricelist__plan01">
-                                <li>プレミアム　（週１回）：<strong>200,000円（税別）</strong></li>
-                                <li>スタンダード（月２回）：<strong>100,000円（税別)</strong></li>
-                                <li>ライト　　　（月１回）：<strong>50,000円（税別）</strong></li>
+                                <li>お１人様：<strong>4,800円（税別）</strong></li>
+                                <li>施術時間：<strong>お１人様約30分</strong></li>
+                                <li>1日最大15名施術可能</li>
+                                <li>16名以上の場合、基本月2回の訪問になります。</li>
                             </ul>
+                            <div class="lbl">ご利用例</div>
+                            <ul class="m-pricelist__plan01">
+                                <li>15名の場合（毎月1回の訪問）4,800円×15名＋税：79,200円／月</li>
+                                <li>20名の場合（毎月2回の訪問）4,800円×20名＋税：105,600円／月</li>
+                            </ul>
+                            <p class="caption">※鍼施術のみも対応しております。</p>
                         </div>
                     </li>
                     <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">鍼施術＋ストレッチポールプラン＋マッスルスーツプラン</h4>
+                        <h4 class="m-pricelist__head"><span>【プレミアムプラン】</span><span>鍼施術＆ストレッチポール＆マッスルスーツⓇ</span></h4>
                         <div class="m-pricelist__body">
-                            <div class="lbl">料金</div>
+                            <div class="lbl">ご利用料金</div>
                             <ul class="m-pricelist__plan01">
-                                <li>プレミアム　（週１回）：<strong>240,000円（税別）</strong></li>
-                                <li>スタンダード（月２回）：<strong>120,000円（税別)</strong></li>
-                                <li>ライト　　　（月１回）：<strong>60,000円（税別）</strong></li>
+                                <li>１台につき：<strong>5,973円（税別）</strong></li>
+                                <li>SMサイズ、MLサイズの計2台を貸し出しいたします。</li>
+                            </ul>
+                            <div class="lbl">ご利用例</div>
+                            <ul class="m-pricelist__plan01">
+                                <li>15名の場合（毎月1回の訪問）72,000円（施術料金）＋11,946円（マッスルスーツ2台）＋税：92,340円／月</li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="m-pricelist__item -fullsize">
+                        <h4 class="m-pricelist__head"><span>初期費用</span></h4>
+                        <div class="m-pricelist__body"><p>別途 30,000円（税別）：初回のみ、事務手数料＋施術ベッド１台（複数台の場合別途）</p></div>
                     </li>
                     <li class="m-pricelist__item -fullsize">
                         <h4 class="m-pricelist__head">プランの違い</h4>
                         <div class="m-pricelist__body">
                             <ul class="m-pricelist__plan02">
                                 <li>
-                                    <div class="head">プレミアム</div>
-                                    <div class="body">社員様のお身体症状が顕著な企業様へおススメです。</div>
-                                </li>
-                                <li>
                                     <div class="head">スタンダード</div>
-                                    <div class="body">お身体の症状がひどくないけれど、これ以上悪化させたくない…という企業様へ。みらテラはこちらの施術プランを一番おススメしております。</div>
+                                    <div class="body"><span>鍼施術とストレッチポールを用いたストレッチを組み合わせたプラン。お身体のこり・痛みのほか、冷えの改善に効果を発揮します。一人ひとりの状態に合わせた「オーダーメイド施術」を提供することにより、施術後はお身体がスッキリし、社員様の健康維持・促進と、仕事への集中力向上が期待できます。</span><span>体調チェックシートを用いて、3か月もしくは6か月間隔でお身体の状態を社員様一人ひとりにフィードバックさせていただきます。</span></div>
                                 </li>
                                 <li>
-                                    <div class="head">ライト</div>
-                                    <div class="body">社員様のとりまく様々な症状の「予防」をお考えの企業様へ。定期的なケアが、多方面からの「予防」へとつながります。</div>
+                                    <div class="head">プレミアム</div>
+                                    <div class="body"><span>鍼施術＆ストレッチによるこり・痛みの改善に加え、マッスルスーツⓇによる体幹を作る筋肉の活性化プログラム。</span><span>歪んだ姿勢をリセットすることで、正しい身体の動きを取り戻し、お身体のこりや痛み緩和のほか、睡眠・排泄など自律神経の適切なコントロールにも良い影響を及ぼします。</span><span>気になる症状の改善に加え、予防につなげることを目的とした企業様におすすめのプランです。</span><span>3か月もしくは6か月間隔で、専門スタッフによるマッスルスーツⓇの使い方やお身体のケアに対するレクチャー？を提供いたします。</span></div>
                                 </li>
                             </ul>
-                            <p class="m-pricelist__caption">別途 初期費用　30,000円（税別）：初回のみ、事務手数料＋施術ベッド１台（複数台の場合別途）</p>
                         </div>
                     </li>
                 </ul>
-                <h3 class="l-under-price__head">【施術時間／施術可能人数】</h3>
-                <ul class="m-pricelist">
-                    <li class="m-pricelist__item -fullsize -flex">
-                        <h4 class="m-pricelist__head">お一人様</h4>
-                        <p class="m-pricelist__txt">約25分／1日最大10名</p>
-                    </li>
-                </ul>
-                <div class="m-pricelist__caption">
-                    <p><span>・交通費込みの料金になります。　　<br class="u-device-sp">・施術場所の確保をお願いしております。（施術ベッド（折りたたみ式 185cm×70cm）を使用します。）</span><span>・施術ベッドを使用しない場合も対応しますのでご相談ください。　　<br class="u-device-sp">・施術用のお洋服、タオル、リネン類はこちらでご用意いたします。</span></p>
-                </div>
+                <p class="m-pricelist__caption">※施術料金は交通費込みの料金になります。</p>
+                <p class="m-pricelist__caption">※施術場所の確保をお願いしております。<br>（施術ベッド（折りたたみ式185cm×70cm）を使用します。）</p>
+                <p class="m-pricelist__caption">※施術用のタオル、リネン類等はこちらでご用意いたします。※福利厚生でのご利用は通常、社員様全員が対象となっております。やむを得ず施術を受けられなかった場合、翌月以降の施術となりますのでご容赦ください。</p>
+                <p class="m-pricelist__caption">※施術を受けられる際は、頚・肩・腰、肘や膝が出しやすい柔らかめの服装が望ましいです。</p>
                 <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-b">企業向け訪問鍼灸のご相談はこちら</a></div>
+                <h3 class="l-under-price__head">【体験施術の実施】</h3>
+                <p class="m-pricelist__caption">企業様よりサービス導入へのコンセンサスをいただくため、無料で１度施術体験を実施しております。<br>体調チェックシートにて事前に社員様のお身体の状態を把握させていただき、体験施術のスケジュールなどを提案いたします。</p>
             </div>
         </div>
         <div class="m-inner">
