@@ -137,7 +137,7 @@ get_header();
 
 <section class="m-contact-under -access">
     <div class="m-inner">
-        <h3 class="head">ACCESS</h3>
+        <h3 class="head-en">ACCESS</h3>
         <div class="m-contact-under__column">
             <div class="m-contact-under__info">
                 <dl>
@@ -199,7 +199,7 @@ get_header();
 
 <section class="m-contact-under">
     <div class="m-inner">
-        <h3 class="head">CONTACT</h3>
+        <h3 class="head-en">CONTACT</h3>
         <p class="large">アットホームはりきゅうひの</p>
         <p class="small">ご予約は<?php /*お電話、または*/ ?>メールフォームよりお願いいたします。</p>
         <div class="mail"><a href="<?php echo home_url();?>/contact-c/">
