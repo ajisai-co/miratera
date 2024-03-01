@@ -13,7 +13,7 @@ get_header();
         </div>
     </div>
     <section class="l-under-business">
-        <div class="m-inner">
+        <div class="m-inner l-under-business-about">
             <div class="m-label02"><p>企業の皆様へ 訪問鍼灸とは</p></div>
             <h3 class="m-txt-31">社員の健康管理が売り上げにつながる大切な時代に</h3>
             <p class="m-txt-16"><span>腰痛や肩こりといったオフィスワークに見られるよくある症状。</span><span>これらを解決できるとお仕事でのパフォーマンスの向上が期待できます。</span><span>さらには、外部の人間とお話しする機会が生まれ、</span><span>緊張感を持たずに会話でき心の健康の維持にも効果があります。</span></p>
@@ -65,12 +65,11 @@ get_header();
                     </li>
                 </ul>
             </div>
-            <p class="m-txt-16"><span>お仕事や生活習慣など、社員様をとりまく様々な健康リスクに効果を発揮し、</span><span>企業様の「かかりつけ鍼灸師」として、健康維持をサポートします！</span></p>
         </div>
         <div class="l-under-price">
             <div class="m-inner">
-                <h3 class="l-under-price__head">施術サービス</h3>
-                <p class="l-under-price__lead"><span>企業様向けにサービスを柔軟にカスタマイズして施術可能です。お気軽にご相談ください。</span><span>事前にヒアリングも行えますので、症状にあった施術も提案いたします。</span></p>
+                <h3 class="l-under-price__head">提供中の施術サービス</h3>
+                <p class="l-under-price__lead"><span>下記のサービスを基準に、社員さまのお悩みをヒアリングさせていただき、提供内容を柔軟にカスタマイズいたします。畳2枚分のスペースで施術可能です。掲載以外のものをご要望の場合もご相談ください。</span></p>
                 <ul class="m-treatment__list -white">
                     <li>鍼施術</li>
                     <li>ストレッチポール ストレッチ</li>
@@ -86,8 +85,8 @@ get_header();
                         <p class="m-pricelist__lead"><span>ストレッチポールを用いての、お身体のストレッチです。筋肉を柔らかくし、関節可動域（動かせる範囲）を高めます。</span><span>鍼施術と組み合わせることで、痛みに対する相乗効果を生み出します。</span></p>
                     </li>
                     <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head">マッスルスーツ体幹エクササイズ</h4>
-                        <p class="m-pricelist__lead"><span>東京理科大で開発されたマッスルスーツⓇを使用し、体幹を作る筋肉を活性化させるエクササイズです。見た目も美しい、より良い姿勢を持続させます。鍼施術効果の持続、痛みなどを予防させる働きがあります。</span></p>
+                        <h4 class="m-pricelist__head">マッスルスーツ®︎体幹エクササイズ</h4>
+                        <p class="m-pricelist__lead"><span>東京理科大で開発されたマッスルスーツ®︎を使用し、体幹を作る筋肉を活性化させるエクササイズです。見た目も美しい、より良い姿勢を持続させます。鍼施術効果の持続、痛みなどを予防させる働きがあります。</span></p>
                     </li>
                 </ul>
                 <h3 class="l-under-price__head">【ご利用例／ご利用料金】</h3>
@@ -111,7 +110,7 @@ get_header();
                         </div>
                     </li>
                     <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head"><span>【プレミアムプラン】</span><span>鍼施術＆ストレッチポール＆マッスルスーツⓇ</span></h4>
+                        <h4 class="m-pricelist__head"><span>【プレミアムプラン】</span><span>鍼施術＆ストレッチポール＆マッスルスーツ®︎</span></h4>
                         <div class="m-pricelist__body">
                             <div class="lbl">ご利用料金</div>
                             <ul class="m-pricelist__plan01">
@@ -120,7 +119,7 @@ get_header();
                             </ul>
                             <div class="lbl">ご利用例</div>
                             <ul class="m-pricelist__plan01">
-                                <li>15名の場合（毎月1回の訪問）72,000円（施術料金）＋11,946円（マッスルスーツ2台）＋税：92,340円／月</li>
+                                <li>15名の場合（毎月1回の訪問）72,000円（施術料金）＋11,946円（マッスルスーツ®︎2台）＋税：92,340円／月</li>
                             </ul>
                         </div>
                     </li>
@@ -138,7 +137,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="head">プレミアム</div>
-                                    <div class="body"><span>鍼施術＆ストレッチによるこり・痛みの改善に加え、マッスルスーツⓇによる体幹を作る筋肉の活性化プログラム。</span><span>歪んだ姿勢をリセットすることで、正しい身体の動きを取り戻し、お身体のこりや痛み緩和のほか、睡眠・排泄など自律神経の適切なコントロールにも良い影響を及ぼします。</span><span>気になる症状の改善に加え、予防につなげることを目的とした企業様におすすめのプランです。</span><span>3か月もしくは6か月間隔で、専門スタッフによるマッスルスーツⓇの使い方やお身体のケアに対するレクチャー？を提供いたします。</span></div>
+                                    <div class="body"><span>鍼施術＆ストレッチによるこり・痛みの改善に加え、マッスルスーツ®︎による体幹を作る筋肉の活性化プログラム。</span><span>歪んだ姿勢をリセットすることで、正しい身体の動きを取り戻し、お身体のこりや痛み緩和のほか、睡眠・排泄など自律神経の適切なコントロールにも良い影響を及ぼします。</span><span>気になる症状の改善に加え、予防につなげることを目的とした企業様におすすめのプランです。</span><span>3か月もしくは6か月間隔で、専門スタッフによるマッスルスーツⓇの使い方やお身体のケアに対するレクチャー？を提供いたします。</span></div>
                                 </li>
                             </ul>
                         </div>
@@ -154,7 +153,7 @@ get_header();
             </div>
         </div>
         <div class="m-inner">
-            <h3 class="m-txt-31">ご利用の流れ</h3>
+            <h3 class="m-txt-31 -mb30">ご利用の流れ</h3>
             <?php /*
             <p class="m-txt-16"><span>ステップに分けて理解できるような作図</span></p>
             */?>

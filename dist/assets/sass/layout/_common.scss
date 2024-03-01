@@ -135,6 +135,9 @@ h3 {
 	@include mediaquery.sp {
 		font-size: calcResp(20);
 	}
+	&.-mb30{
+		margin-bottom: 30px;
+	}
 	span {
 		font-size: calcPc(31);
 		color: var(--color-blue);
