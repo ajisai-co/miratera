@@ -17,7 +17,7 @@ require_once(dirname(__FILE__)."/templates/analytics.php"); ?>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T93VQCPF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header role="banner" class="l-header <?php if( is_front_page() ){echo '-front';}?>">
+<header role="banner" class="l-header <?php if( is_front_page() ){echo '-front';}else if( is_page() == 'about' ){echo '-blue';}?>">
 	<h1 class="l-header__logo"><a href="<?php echo home_url();?>/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/_common/logo_small.webp" alt=""></a></h1>
 
 	<div class="l-header__hum js-navBtn">

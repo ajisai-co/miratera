@@ -301,6 +301,29 @@
             }
         }
     }
+    &.-blue{
+        background: var(--color-blue);
+        .l-header__nav__item{
+            color: #fff;
+            border-left: 1px solid #fff;
+            &:last-child{
+                border-right: 1px solid #fff;
+            }
+            & > a{
+                color:#fff;
+            }
+        }
+        .l-header__nav__item.-modifier:after{
+            border-color: #fff;
+        }
+        .l-header__contact a{
+            color: #fff;
+            border-color: #fff;
+            &:after{
+                border-color: #fff;
+            }
+        }
+    }
     &.-fixed{
         background: var(--color-blue);
         .l-header__nav__item{
