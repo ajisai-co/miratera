@@ -73,7 +73,7 @@ get_header();
                 <ul class="m-treatment__list -white">
                     <li>鍼施術</li>
                     <li>ストレッチポール ストレッチ</li>
-                    <li>マッスルスーツ体幹エクササイズ</li>
+                    <li>マッスルスーツ®︎体幹エクササイズ</li>
                 </ul>
                 <ul class="m-pricelist">
                     <li class="m-pricelist__item">
@@ -92,7 +92,7 @@ get_header();
                 <h3 class="l-under-price__head">【ご利用例／ご利用料金】</h3>
                 <ul class="m-pricelist">
                     <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head"><span>【スタンダードプラン】</span><span>鍼施術＋ストレッチポールプラン</span></h4>
+                        <h4 class="m-pricelist__head"><span>【スタンダードプラン】</span><span>鍼施術＋ストレッチポール</span></h4>
                         <div class="m-pricelist__body">
                             <div class="lbl">ご利用料金</div>
                             <ul class="m-pricelist__plan01">
@@ -110,7 +110,7 @@ get_header();
                         </div>
                     </li>
                     <li class="m-pricelist__item">
-                        <h4 class="m-pricelist__head"><span>【プレミアムプラン】</span><span>鍼施術＆ストレッチポール＆マッスルスーツ®︎</span></h4>
+                        <h4 class="m-pricelist__head"><span>【プレミアムプラン】</span><span>鍼施術+ストレッチポール+マッスルスーツ®︎</span></h4>
                         <div class="m-pricelist__body">
                             <div class="lbl">ご利用料金</div>
                             <ul class="m-pricelist__plan01">
@@ -133,11 +133,11 @@ get_header();
                             <ul class="m-pricelist__plan02">
                                 <li>
                                     <div class="head">スタンダード</div>
-                                    <div class="body"><span>鍼施術とストレッチポールを用いたストレッチを組み合わせたプラン。お身体のこり・痛みのほか、冷えの改善に効果を発揮します。一人ひとりの状態に合わせた「オーダーメイド施術」を提供することにより、施術後はお身体がスッキリし、社員様の健康維持・促進と、仕事への集中力向上が期待できます。</span><span>体調チェックシートを用いて、3か月もしくは6か月間隔でお身体の状態を社員様一人ひとりにフィードバックさせていただきます。</span></div>
+                                    <div class="body"><span>鍼施術と、ストレッチポールを用いたストレッチを組み合わせたプラン。お身体のこり・痛みのほか、冷えの改善に効果を発揮します。一人ひとりの状態に合わせた「オーダーメイド施術」を提供することにより、施術後はお身体がスッキリし、社員様の健康維持・促進と、仕事への集中力向上が期待できます。</span><span>体調チェックシートを用いて、3か月もしくは6か月間隔でお身体の状態を社員様一人ひとりにフィードバックさせていただきます。</span></div>
                                 </li>
                                 <li>
                                     <div class="head">プレミアム</div>
-                                    <div class="body"><span>鍼施術＆ストレッチによるこり・痛みの改善に加え、マッスルスーツ®︎による体幹を作る筋肉の活性化プログラム。</span><span>歪んだ姿勢をリセットすることで、正しい身体の動きを取り戻し、お身体のこりや痛み緩和のほか、睡眠・排泄など自律神経の適切なコントロールにも良い影響を及ぼします。</span><span>気になる症状の改善に加え、予防につなげることを目的とした企業様におすすめのプランです。</span><span>3か月もしくは6か月間隔で、専門スタッフによるマッスルスーツⓇの使い方やお身体のケアに対するレクチャー？を提供いたします。</span></div>
+                                    <div class="body"><span>鍼施術＆ストレッチによるこり・痛みの改善に加え、マッスルスーツ®︎による体幹を作る筋肉の活性化プログラム。</span><span>歪んだ姿勢をリセットすることで、正しい身体の動きを取り戻し、お身体のこりや痛み緩和のほか、睡眠・排泄など自律神経の適切なコントロールにも良い影響を及ぼします。</span><span>気になる症状の改善に加え、予防につなげることを目的とした企業様におすすめのプランです。</span><span>3か月もしくは6か月間隔で、専門スタッフによるマッスルスーツ®︎の使い方やお身体のケアに対するレクチャーを提供いたします。</span></div>
                                 </li>
                             </ul>
                         </div>
@@ -145,7 +145,7 @@ get_header();
                 </ul>
                 <p class="m-pricelist__caption">※施術料金は交通費込みの料金になります。</p>
                 <p class="m-pricelist__caption">※施術場所の確保をお願いしております。<br>（施術ベッド（折りたたみ式185cm×70cm）を使用します。）</p>
-                <p class="m-pricelist__caption">※施術用のタオル、リネン類等はこちらでご用意いたします。※福利厚生でのご利用は通常、社員様全員が対象となっております。やむを得ず施術を受けられなかった場合、翌月以降の施術となりますのでご容赦ください。</p>
+                <p class="m-pricelist__caption">※施術用のタオル、リネン類等はこちらでご用意いたします。<br>※福利厚生でのご利用は通常、社員様全員が対象となっております。やむを得ず施術を受けられなかった場合、次回以降の施術となりますのでご容赦ください。</p>
                 <p class="m-pricelist__caption">※施術を受けられる際は、頚・肩・腰、肘や膝が出しやすい柔らかめの服装が望ましいです。</p>
                 <div class="m-btn-tran"><a href="<?php echo home_url();?>/contact-b">企業向け訪問鍼灸のご相談はこちら</a></div>
                 <h3 class="l-under-price__head">【体験施術の実施】</h3>
